@@ -1,0 +1,126 @@
+[
+    {
+        "text": "Home",
+        "route": "/"
+    },      
+    {
+        "text": "Sobre",
+        "route": "/sobre"
+    },
+    {
+        "text": "Clube",
+        "route": "/clube"
+    },
+    {
+        "text": "Seguros",
+        "route": null,
+        "child": [
+            {
+                "text": "Vida",
+                "route": "/seguros/vida",
+                "chiled": [
+                    {
+                        "text": "Terceiro Submenu Exemplo",
+                        "route": null
+                    }
+                ]
+            },
+            {
+                "text": "Residencial",
+                "route": "/seguros/residencial"
+            },
+            {
+                "text": "Ap Premiado",
+                "route": "/seguros/ap-premiado"
+            },
+            {
+                "text": "APP (Automóvel)",
+                "route": "/seguros/app-automovel"
+            }
+        ]
+    },
+    {
+        "text": "Assistências",
+        "route": null,
+        "child": [
+            {
+                "text": "Carro",
+                "route": null,
+                "child": [
+                    {
+                        "text": "Assistência 24hs",
+                        "route": "/assistencias/carro/assistencia-24hs"
+                    },
+                    {
+                        "text": "Carro Reserva",
+                        "route": "/assistencias/carro/carro-reserva"
+                    },
+                    {
+                        "text": "Vidro",
+                        "route": "/assistencias/carro/vidro"
+                    }
+                ]
+            },
+            {
+                "text": "Casa",
+                "route": null,
+                "child": [
+                    {
+                        "text": "Residencial",
+                        "route": "/assistencias/casa/residencial"
+                    },
+                    {
+                        "text": "Pet",
+                        "route": "/assistencias/casa/pet"
+                    },
+                    {
+                        "text": "Bike",
+                        "route": "/assistencias/casa/bike"
+                    }
+                ]
+            },
+            {
+                "text": "Vida e Saúde",
+                "route": null,
+                "child": [
+                    {
+                        "text": "Funeral",
+                        "route": "/assistencias/vida-e-saude/funeral"
+                    },
+                    {
+                        "text": "Odonto",
+                        "route": "/assistencias/vida-e-saude/odonto"
+                    },
+                    {
+                        "text": "Telemedicina",
+                        "route": "/assistencias/vida-e-saude/telemedicina"
+                    },
+                    {
+                        "text": "CheckUp Médico",
+                        "route": "/assistencias/vida-e-saude/checkup-medico"
+                    },
+                    {
+                        "text": "Auxílio Medicamentos",
+                        "route": "/assistencias/vida-e-saude/auxilio-medicamentos"
+                    },
+                    {
+                        "text": "+Saúde",
+                        "route": "/assistencias/vida-e-saude/mais-saude"
+                    },
+                    {
+                        "text": "Consultas e Exames",
+                        "route": "/assistencias/vida-e-saude/consultas-e-exames"
+                    },
+                    {
+                        "text": "Orientação Médica",
+                        "route": "/assistencias/vida-e-saude/orientacao-medica"
+                    }
+                ]
+            }
+        ]
+    },      
+    {
+        "text": "Contato",
+        "route": "/contato"
+    }   
+]

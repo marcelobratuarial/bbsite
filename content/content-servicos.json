@@ -1,0 +1,117 @@
+{
+    "para-entidades-do-3-setor": {
+        "title_page": "Entidades do 3º Setor",
+        "content" : [
+            {
+                "title": "RATEIO: APURAÇÃO E IMPLEMENTAÇÃO",
+                "body": "Apuração refinada afim de identificar a metodologia de rateio aderente às características da base através de testes de adequação, pesquisa de mercado e simulações do modelo. Após definida a metodologia, a Brasil Atuarial oferece todo o suporte técnico e operacional na implementação do rateio e acompanhamento mensal."
+            },
+            {
+                "title": "ANÁLISE FINANCEIRA",
+                "body": "Realização de análises financeiras da carteira afim de verificar e acompanhar a evolução dos custos com base no plano de contas padrão, seguindo as boas práticas de gestão. A análise financeira, além de apurar o resultado da operação, possibilita melhor entendimento a cerca da participação de cada centro de custos e, consequentemente, auxilia na formação do valor da contribuição mensal do plano. A análise financeira é de suma importância para análise de liquidez e solvência da <strong>Entidade</strong>."
+            },
+            {
+                "title": "ANÁLISE ATUARIAL",
+                "body": "Consiste na análise técnica-atuarial da carteira, através da análise de exposição e apuração de diversos indicadores essenciais para auxiliar na tomada de decisões estratégicas para obter melhora contínua de resultado operacional e performance."
+            },
+            {
+                "title": "PLANEJAMENTO ORÇAMENTÁRIO",
+                "body": "Análise da situação financeira atual para construção de orçamento baseado em metodologia de trabalho previamente implantada e metas do planejamento estratégico definidas."
+            },
+            {
+                "title": "CÁLCULO DA CONTRIBUIÇÃO MENSAL",
+                "body": "Apuração do valor mensal do plano para adequação dos valores praticados da carteira existente ou para distribuição de novos planos com diferentes características."
+            },
+            {
+                "title": "ESTUDOS DE VIABILIDADE",
+                "body": "Avaliação da viabilidade e sustentabilidade de determinada operação relacionada diretamente com os serviços oferecidos pela <strong>Entidade</strong>, análises de mercado e planejamentos financeiros."
+            },
+            {
+                "title": "APURAÇÃO DA RESERVA DE RUÍNA",
+                "body": "Apuração da modelagem de cálculo para a constituição de reserva aplicada às entidades de autogestão. A reserva de ruína é constituída previamente para resguardar o momento que os eventos ocorridos superem as contribuições mensais."
+            },
+            {
+                "title": "ALIENAÇÃO DA CARTEIRA",
+                "body": "Estudos e avaliações para a aquisição ou a transferência de carteiras."
+            },
+            {
+                "title": "NOTA TÉCNICA ATUARIAL",
+                "body": "Elaboração de nota técnica atuarial para demonstração da viabilidade econômico-financeira dos planos e serviços. Este documento tem por objetivo descrever as características gerais do plano de benefícios, a formulação de cálculo do rateio e da reserva técnica, bem como as bases técnicas e premissas utilizadas."
+            },
+            {
+                "title": "INDICADORES MERCADOLÓGICOS",
+                "body": "Relatório com detalhamento amplo do mercado de planos de autogestão e seguros de Automóvel, contemplando informações abrangentes relacionadas à frota nacional de veículos, frota segura, perfil, região, indicadores sociais regionalizados e reserva de mercado."
+            },
+            {
+                "title": "ELABORAÇÃO DE NOVOS PRODUTOS",
+                "body": "Elaboração de produtos que observem a realidade e a tendência do mercado, com desenvolvimento de um plano de ação que atenda o planejamento estratégico da <strong>Entidade</strong>."
+            },
+            {
+                "title": "PLANEJAMENTO ESTRATÉGICO DE DISTRIBUIÇÃO",
+                "body": "Avaliação e reestruturação das principais políticas de distribuição da <strong>Entidade</strong>, tais como: remuneração, inadimplência, retenção e manutenção dos contratos de adesão."
+            }
+        ]
+    },
+    "para-seguradoras": {
+        "title_page": "Para Seguradoras",
+        "content" : [
+            {
+                "title": "AVALIAÇÃO ATUARIAL",
+                "body": "Responsabilidade técnica junto à SUSEP, nota técnica de registro de produto e de provisões técnicas, tarifação de seguro, cálculo e análise da sinistralidade, cálculo e acompanhamento das garantias financeiras, avaliação do equilíbrio atuarial da seguradora e de seus planos de seguros, elaboração e manutenção da política de subscrição de risco."
+            },
+            {
+                "title": "ELABORAÇÃO DE NOVOS PRODUTOS",
+                "body": "Elaboração de produtos que observem a realidade e a tendência do mercado, com desenvolvimento de um plano de ação que atenda o planejamento estratégico da organização."
+            },
+            {
+                "title": "OTIMIZAÇÃO DE PRICING",
+                "body": "Consiste na utilização de algoritmos capazes de melhorar a rentabilidade de uma carteira de seguros adotando diferentes componentes para que o processo funcione corretamente. Bem como, objetiva adequar o prêmio do seguro às características de risco do segurado."
+            },
+            {
+                "title": "PORTIFÓLIO DE PRODUTOS",
+                "body": "Avaliação dos produtos comercializados versus mercado em que a seguradora está inserida, com possíveis adequações de acordo com a necessidade observada."
+            },
+            {
+                "title": "ALIENAÇÃO DA CARTEIRA",
+                "body": "Estudos e avaliações para a aquisição ou transferência de carteira de seguros."
+            }
+        ]
+    },
+    "para-insurtechs": {
+        "title_page": "Para Insurtechs",
+        "content" : [
+            {
+                "title": "PLANO DE NEGÓCIOS",
+                "body": "Elaboração de um plano de negócios estruturado para determinar os objetivos do negócio, testar ideias e a viabilidade operacional, mercadológica e financeira do projeto."
+            },
+            {
+                "title": "CONDIÇÕES GERAIS DO PLANO DE SEGURO",
+                "body": "Elaboração das condições gerais de acordo com os planos de seguros a serem comercializados, contendo minimamente as obrigações e direitos da seguradora, dos segurados e dos beneficiários."
+            },
+            {
+                "title": "NOTA TÉCNICA ATUARIAL DO PLANO DE SEGURO",
+                "body": "Elaboração de nota técnica atuarial para demonstração da viabilidade econômico-financeira dos planos de seguros. Este documento tem por objetivo descrever as características gerais do plano, a formulação de cálculo dos prêmios e das provisões técnicas."
+            },
+            {
+                "title": "PLANO FINANCEIRO",
+                "body": "Elaboração do planejamento financeiro a partir das três principais demonstrações financeiras projetadas para o futuro, são elas: a Demonstração de Resultados, o Fluxo de Caixa e o Balanço Patrimonial. Essas demonstrações são necessárias para avaliar o potencial do negócio. O plano financeiro também incluem a apuração dos indicadores de desempenho, análise de break-even e outras informações financeiras relevantes para o neócio."
+            },
+            {
+                "title": "CÁLCULOS DAS PROVISÕES TÉCNICAS OBRIGATÓRIAS",
+                "body": "Apuração dos valores exigidos pela SUSEP, utilizando informações contábeis, referente aos Recursos Próprios Mínimos e Provisões Técnicas."
+            },
+            {
+                "title": "PLANO DE DESCONTINUEDADE DAS ATIVIDADES",
+                "body": "Consiste na elaboração do planejamento quando do encerramento das atividades."
+            },
+            {
+                "title": "APURAÇÃO DO CAPITAL DE RISCO",
+                "body": "Apuração do montante variável de capital que a seguradora deverá manter, a qualquer tempo, para garantir os riscos inerentes à operação."
+            },
+            {
+                "title": "AUTORIZAÇÃO PARA FUNCIONAMENTO",
+                "body": "Assessoria e condução de processo junto à SUSEP – Superintendência de Seguros Privados, no registro dos produtos a serem comercializados pela operadora e na autorização temporária de funcionamento."
+            }
+        ]
+    }
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "text": "Home",
+        "route": "/"
+    },      
+    {
+        "text": "Sobre",
+        "route": "/sobre"
+    },      
+    {
+        "text": "Soluções",
+        "route": null,
+        "child": [
+            {
+                "text": "Consultoria Actuarial",
+                "route": "/solucoes/brasil-atuarial"
+            },
+            {
+                "text": "Plataformas",
+                "route": "/solucoes/brasil-plataformas"
+            },
+            {
+                "text": "Agência Digital",
+                "route": "/solucoes/agencia-brasil-digital"
+            },
+            {
+                "text": "Universidade Corporativa",
+                "route": "/solucoes/dygo"
+            },
+            {
+                "text": "Cursos e palestras",
+                "route": "/solucoes/cursos-palestras"
+            }
+        ]
+    },      
+    {
+        "text": "BLOG",
+        "route": "/blog"
+    },      
+    {
+        "text": "Contato",
+        "route": "/contato"
+    }   
+]
