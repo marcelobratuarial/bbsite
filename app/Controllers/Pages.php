@@ -89,6 +89,11 @@ class Pages extends BaseController
 		return view('about', ['main_menu' => $this->main_menu]);
 	}
 
+	public function faq()
+	{
+		return view('faq', ['main_menu' => $this->main_menu]);
+	}
+
 	public function servicos($serv_slug = null, $content_slug = null)
 	{
 		if(!empty($content_slug)) {

@@ -2,33 +2,33 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-10 col-md-6">
-                            <h3 class="color-primary fs-2 fs-lg-3">Titulo titulo</h3>
-                            <p class="px-lg-4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a nam, libero nihil ex sed fugit sequi magni sapiente voluptatum necessitatibus sint vel ullam quis eligendi pariatur ipsam aspernatur inventore.</p>
+                            <h3 class="color-primary fs-2 fs-lg-3">NÓS SOMOS UMA EMPRESA DE GESTÃO DE BENEFÍCIOS</h3>
+                            <p class="px-lg-4 mt-3">Com nossas linhas de serviços, personalizamos o seu programa com os benefícios que se encaixam a necessidade de seus associados.</p>
                             <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll"
                             /> </div>
                     </div>
                     <div class="row mt-4 mt-md-5">
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                                <span class="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Digital-Drawing fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
-                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Titulo Item</h5>
+                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Soluções para Carro, Casa, Vida e Saúde</h5>
                             <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Solution for every business related problems, readily
                                 <br/>and skillfully.</p>
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Clock fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Digital-Drawing fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
-                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Titulo Item</h5>
+                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Processo 100% digital. Contratação e acionamento na palma da mão</h5>
                             <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Calculate every possible risk in your business, take
                                 <br/>control over them.</p>
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Idea-2 fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Assistant fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
-                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Titulo Item</h5>
+                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Assessoria técnica na definição dos planos e preços a serem praticados</h5>
                             <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Know the market before taking any step, reduce
                                 <br/>risks before you go. </p>
                         </div>
@@ -36,7 +36,7 @@
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
                                 <span class="icon-Headset fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
-                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Titulo Item</h5>
+                            <h5 class="mt-4" data-zanim='{"delay":0.1}'>Suporte 24 horas por dia através de nossa central de atendimentos</h5>
                             <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Experience unparalleled service, from beginning
                                 <br/>to final construction.</p>
                         </div>
@@ -92,7 +92,7 @@
             </section>
             <section class="background-11">
                 <div class="container">
-                    <h3 class="text-center fs-2 fs-md-3">Titulo</h3>
+                    <h3 class="text-center fs-2 fs-md-3">Benefícios Mais Amados:</h3>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                     <div class="row no-gutters pos-relative mt-6">
                         <div class="elixir-caret d-none d-lg-block"></div>
@@ -104,12 +104,24 @@
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Serviço 01</h5>
+                                        <h5 data-zanim='{"delay":0}'>Carro Reserva</h5>
                                     </div>
                                     <div class="overflow-hidden">
-                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, nesciunt? Veritatis consequuntur recusandae numquam laudantium labore distinctio earum corporis quibusdam? Totam sed voluptatibus quod labore autem deleniti incidunt assumenda itaque!</p>
+                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Com o nosso serviço de Carro Reserva você proporciona muito mais segurança e praticidade aos seus associados. O produto é disponível para veículos de passeio e utilitário, e três planos são disponibilizados: 7, 15 ou 30 dias. Trabalhamos com a Localiza Rent a Car, a maior rede brasileira de lojas especializadas em aluguel de carros.</p>
                                     </div>
                                     <div class="overflow-hidden">
+                                        <h6  data-zanim='{"delay":0.1}'>Vantagens</h6>
+                                        <ul data-zanim='{"delay":0.2}'>
+                                            <li>Parceiro de confiaça</li>
+                                            <li>Mais credibilidade para sua entidade</li>
+                                            <li>Comodidade para os seus associados</li>
+                                            <li>Veículos de qualidade</li>
+                                            <li>Atendimento ágil</li>
+                                            <li>Uso personalizado</li>
+                                            <li>Conforto ao substituir o veículo sem custos adicionais</li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="overflow-hidden">
                                         <div data-zanim='{"delay":0.2}'>
                                             <a class="d-flex align-items-center" href="#">Saiba mais
                                                 <div class="overflow-hidden ml-2">
@@ -117,7 +129,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -160,12 +172,20 @@
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Serviço 03</h5>
+                                        <h5 data-zanim='{"delay":0}'>Seguro de Vida</h5>
                                     </div>
                                     <div class="overflow-hidden">
-                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus iure vitae ullam eveniet laboriosam nam ratione. Aut, quis voluptatum, ipsa consequatur sit ipsum incidunt nihil et reprehenderit dolorum, error deserunt.</p>
+                                        <p class="mt-3" data-zanim='{"delay":0.1}'>O Seguro de Vida é um produto que traz conforto e tranquilidade aos beneficiários do seu associado nos momentos difíceis. Ao contratar esse produto o associado estará coberto em caso de morte natural, morte acidental ou invalidez por acidente. São disponibilizados planos com capital de cobertura a partir de R$5.000 até R$20.000 em caso de evento coberto.</p>
                                     </div>
                                     <div class="overflow-hidden">
+                                        <h6  data-zanim='{"delay":0.1}'>Vantagens</h6>
+                                        <ul data-zanim='{"delay":0.2}'>
+                                            <li>Contratação sem necessidade de Declaração Pessoal de Saúde</li>
+                                            <li>Indenização paga aos beneficiários em até 30 dias após entregue toda a documentação</li>
+                                            <li>Preços bem inferiores aos praticados pelo mercado tradicional</li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="overflow-hidden">
                                         <div data-zanim='{"delay":0.2}'>
                                             <a class="d-flex align-items-center" href="#">Saiba mais
                                                 <div class="overflow-hidden ml-2">
@@ -173,7 +193,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -447,27 +467,27 @@
                             <div class="media">
                                 <span class="ion-android-checkmark-circle fs-5 color-warning mr-3" style="transform: translateY(-1rem);"></span>
                                 <div class="media-body">
-                                    <h2 class="color-warning fs-3 fs-lg-4">Lorem ipsum dolor
+                                    <h2 class="color-warning fs-3 fs-lg-4">Conheça nossos 
                                         <br/>
-                                        <span class="color-white"> sit amet consectetur.</span>
+                                        <span class="color-white"> números:</span>
                                     </h2>
                                     <div class="row mt-4 pr-lg-10">
                                         <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>52k</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Item titulo</h6>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>2.5m</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>164</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Item titulo</h6>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>5k</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todo mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
                                         <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>38</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Item titulo</h6>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>1.4k</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>100%</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Item titulo</h6>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>3k</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
                                         </div>
                                     </div>
                                 </div>

@@ -28,7 +28,7 @@
                                 <a class="color-white" href="#">Fale Conosco</a>
                             </li>
                             <li class="mb-3">
-                                <a class="color-white" href="#">Perguntas Frequentes</a>
+                                <a class="color-white" href="<?= base_url('faq') ?>">Perguntas Frequentes</a>
                             </li>
                             <li class="mb-3">
                                 <a class="color-white" href="#">Portal de Benefícios</a>

@@ -56,6 +56,7 @@ $routes->get('/', 'Pages::index', ['as' => 'hoome']);
 $routes->get('/sobre', 'Pages::about', ['as' => 'ab']);
 $routes->get('/cursos-palestras', 'Pages::courses');
 $routes->get('/servicos', 'Pages::solutions');
+$routes->get('/faq', 'Pages::faq');
 $routes->get('/servicos/dygo', 'Pages::dygo', ['as' => 'dygo']);
 $routes->get('/servicos/(:any)', 'Pages::servicos/$1');
 $routes->get('/servicos/(:any)/(:any)', 'Pages::servicos/$1/$2');
