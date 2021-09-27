@@ -69,21 +69,25 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-users color-primary mr-3"></span>Titulo item</h5>
-                            <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda officia quam officiis,
-                                <br/>consectetur adipisicing elit.</p>
+                                <span class="fa fa-users color-primary mr-3"></span>Missão</h5>
+                            <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores.</p>
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-comments color-primary mr-3"></span>Titulo item</h5>
-                            <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda officia quam officiis,
-                                <br/>consectetur adipisicing elit.</p>
+                                <span class="fa fa-comments color-primary mr-3"></span>Visão</h5>
+                            <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Ser a empresa de benefícios mais amada do Brasil</p>
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-bolt color-primary mr-3"></span>Titulo item</h5>
-                            <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda officia quam officiis,
-                                <br/>consectetur adipisicing elit.</p>
+                                <span class="fa fa-bolt color-primary mr-3"></span>Nossos valores</h5>
+                            <!-- <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'> -->
+                            <ul data-zanim='{"delay":0.2}'>
+                                <li>Honestidade: Agimos com coerência e verdade</li>
+                                <li>Inovação: Gerar e implementar novas ideias</li>
+                                <li>Lealdade: Manter a lealdade à empresa e seus interesses</li>
+                                <li>Responsabilidade: Aceitamos as consequências de nossas ações</li>
+                                <li>Confiabilidade: Mantemos sempre nossas promessas</p></li>
+                            </ul>
                         </div>
                     </div>
                     <!--/.row-->
@@ -259,9 +263,9 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md">
-                            <h4 class="color-white mb-0">Lorem ipsum dolor adipisicing elit..
+                            <h4 class="color-white mb-0">Um seguro continua arriscado
 
-                                <br class="d-md-none" />adipisicing dolor</h4>
+                                <br class="d-md-none" /> quando pode-se prevê-lo?</h4>
                         </div>
                         <div class="col-md-auto mt-md-0 mt-4">
                             <a class="btn btn-white btn-capsule" href="contact.html">Nos contate</a>
