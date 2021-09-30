@@ -158,25 +158,94 @@ img[class="image"] {
   <tr>
     <td style="text-align:center; padding: 40px;">
       <a href="<?= base_url("/")?>" title="Brasil Atuarial">
-        <img src="http://bplink.com.br/projetos/bbsitegit/assets/images/logo-dark.png" alt="">
+        <img width="250" src="http://bplink.com.br/projetos/bbsitegit/assets/images/logo-dark.png" alt="">
       </a>
     </td>
   </tr>
   <tr>
-    <td class="content-wrapper" style="font-family:Segoe UI, Helvetica, Arial, sans-serif;padding-left:24px;padding-right:24px;text-align: center;">
+    <td class="content-wrapper" style="font-family:Segoe UI, Helvetica, Arial, sans-serif;padding-left:24px;padding-right:24px;text-align: left;">
       <p style="text-transform:uppercase;font-size: 24px !important;margin-top: 15px; margin-bottom: 15px;">Nova mensagem</p> 
       <?php /* <p style="font-family:sans-serif;font-size: 14px !important;margin-top: 15px; margin-bottom: 15px;line-height: 1.4 !important;">We're happy to announce that the creative companies you have trusted for years – including Comp24, AdProps and Dennis Curtin Studio – are now joined together under one powerful brand-imaging studio: <a href="http://coloredge.com" title="Coloredge" style="color:#f0782d;font-weight: bold;text-decoration:none;">Coloredge</a>.</p> 
       <p style="font-family:sans-serif;font-size: 14px !important;margin-top: 15px; line-height: 1.4;">Our exceptionally talented teams, with their unrivaled craftsmanship, are ready to meet your most demanding creative production needs.</p><br>
       */ ?>
       <hr style="border-bottom: solid 1px #000; border-top: 0;">
+        <h4>DADOS DA EMPRESA</h4>
         <p>
-            Nome: <strong><?= $nome ?></strong>
+            Empresa: <strong><?= $NomeEmpresa ?></strong>
         </p>
         <p>
-            E-mail: <strong><?= $email ?></strong>
+            Solicitante: <strong><?= $SolicitanteEmpresa ?></strong>
         </p>
         <p>
-            Mensagem: <strong><?= $mensagem ?></strong>
+            Telefone Solicitante: <strong><?= $TelefoneEmpresa ?></strong>
+        </p>
+        <p>
+            Email Solicitante: <strong><?= $EmailEmpresa ?></strong>
+        </p>
+        <hr style="border-bottom: solid 1px #000; border-top: 0;">
+        <h4>DADOS DA CLIENTE</h4>
+        <p>
+        CPF Associado: <strong><?= $CPF ?></strong>
+        </p>
+        <p>
+        Nome Associado: <strong><?= $Nome ?></strong>
+        </p>
+        <p>
+        Email: <strong><?= $Email ?></strong>
+        </p>
+        
+        <p>
+        Telefone: <strong><?= $Telefone ?></strong>
+        </p>
+        <p>
+          <br>
+        </p>
+        <p>
+        CEP: <strong><?= $CEP ?></strong>
+        </p>
+        <p>
+        Logradouro: <strong><?= $Logradouro ?></strong>
+        </p>
+        <p>
+        Bairro: <strong><?= $Bairro ?></strong>
+        </p>
+        <p>
+        Cidade: <strong><?= $Cidade ?></strong>
+        </p>
+        <p>
+        Estado: <strong><?= $Estado ?></strong>
+        </p>
+        <p>
+        Número: <strong><?= $Numero ?></strong>
+        </p>
+        <p>
+        Complemento: <strong><?= $Complemento ?></strong>
+        </p>
+        <hr style="border-bottom: solid 1px #000; border-top: 0;">
+        <h4>DADOS DA SOLICITAÇÃO</h4>
+        <p>
+        Placa: <strong><?= $Placa ?></strong>
+        </p>
+        <p>
+        Quantidade de Diarias: <strong><?= $QuantidadeDeDiarias ?></strong>
+        </p>
+        <p>
+        Estado Retirada: <strong><?= $EstadoRetirada ?></strong>
+        </p>
+        <p>
+        Cidade Retirada: <strong><?= $CidadeRetirada ?></strong>
+        </p>
+        <p>
+        Data Retirada: <strong><?= $DataRetirada ?></strong>
+        </p>
+        <p>
+        Hora Retirada: <strong><?= $HoraRetirada ?></strong>
+        </p>
+        <p>
+        Nome Responsavel Cartao: <strong><?= $NomeResponsavelCartao ?></strong>
+        </p>
+        <p>
+        CPF Responsavel Cartao: <strong><?= $CPFResponsavelCartao ?></strong>
         </p>
       <hr style="border-bottom: solid 1px #000; border-top: 0;">
     </td>

@@ -10,7 +10,7 @@
                     <div class="row mt-4 mt-md-5">
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                                <span class="icon-Digital-Drawing fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Idea-2 fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Soluções para Carro, Casa, Vida e Saúde</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Solution for every business related problems, readily
@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Digital-Drawing fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Computer fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Processo 100% digital. Contratação e acionamento na palma da mão</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Calculate every possible risk in your business, take
@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Assistant fs-3 color-blueish mx-auto fw-600"></span>
+                                <span class="icon-Support fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Assessoria técnica na definição dos planos e preços a serem praticados</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Know the market before taking any step, reduce
@@ -69,12 +69,12 @@
                     <div class="row">
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-users color-primary mr-3"></span>Missão</h5>
+                                <span class="fa fa-bullseye color-primary mr-3"></span>Missão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores.</p>
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-comments color-primary mr-3"></span>Visão</h5>
+                                <span class="fa fa-eye color-primary mr-3"></span>Visão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Ser a empresa de benefícios mais amada do Brasil</p>
                         </div>
                         <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
