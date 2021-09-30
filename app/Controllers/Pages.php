@@ -168,12 +168,13 @@ class Pages extends BaseController
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
+		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
 		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '587';
+		$config['SMTPPort'] = '465';
 		$config['SMTPCrypto'] = 'ssl';
 		$email->initialize($config);
 
