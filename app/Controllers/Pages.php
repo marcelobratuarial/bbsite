@@ -170,12 +170,13 @@ class Pages extends BaseController
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
+		$config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
 		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '465';
-		$config['SMTPCrypto'] = 'ssl';
+		$config['SMTPPort'] = '587';
+		$config['SMTPCrypto'] = 'tsl';
 		$email->initialize($config);
 
 		$email->setSubject('AVISO DE SINISTRO CARRO');
