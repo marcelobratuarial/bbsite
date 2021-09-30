@@ -175,7 +175,7 @@ class Pages extends BaseController
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
 		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '587';
+		$config['SMTPPort'] = '25';
 		$config['SMTPCrypto'] = 'tsl';
 		$email->initialize($config);
 
