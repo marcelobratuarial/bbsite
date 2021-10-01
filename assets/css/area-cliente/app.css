@@ -1,0 +1,198 @@
+#regras-app{
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    background-color: #0E385F;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+#regras-app img {
+    width: 60px;
+}
+#regras-app span {
+    display: inline-block;
+    padding-top: 5px;
+}
+.solicitacao .slogan {
+    margin-bottom: 30px;
+}
+body{
+    background-color: #FFF !important;
+}
+.solicitacao{
+    background-color:#dff5ff;
+}
+.solicitacao h1{
+    font-size: 32px;
+}
+.form-sinistro{
+    margin-top: -21px;
+}
+.form-sinistro input, .form-sinistro select{
+    background-color:transparent;
+}
+.form-sinistro .custom-file-label{
+    margin-left:0px !important;
+}
+.form-sinistro .custom-file-label {
+    margin-left: 15px;
+    width: 100%;
+}
+textarea{
+    width: 400px;
+    background-color: transparent;
+    height: 120px;
+}
+.icon_sinistro {
+    width: 200px !important;
+    margin-right: 0px !important;
+}
+.carousel-caption h5 {
+    font-size: 32px;
+    margin-top: -20px;
+}
+.etapa{
+    border-radius:50%;
+    display:inline-block;
+    background-color:#70cdf5;
+    padding: 15px;
+    margin-left: -5px;
+}
+.linha{
+    display:inline-block;
+    width: 35px;
+    border-top: solid 2px #70cdf5;
+    margin: 0;
+    margin-left: -5px;
+}
+.linhainativa{
+    display:inline-block;
+    width: 35px;
+    border-top: solid 2px #383838;
+    margin: 0;
+    margin-left: -5px;
+}
+.linhaoculta{
+    display:inline-block;
+    width: 35px;
+    margin: 0;
+    margin-left: -5px;
+}
+.titulo{
+    display: inline-block;
+    width: 60px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #0e385f;
+}
+.etapa img{
+    width:32px;
+    height:32px;
+}
+.inativo{
+    background-color:#383838 !important;
+}
+.ativo{
+    animation: pulse 1.25s infinite cubic-bezier(0.66,0,0,1);
+    box-shadow: 0 0 0 0 #3773ab;
+    content: '';
+}
+.campo{
+    outline: none !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: solid 2px #0e385f !important;
+    width: 250px;
+    margin-bottom: 30px;
+}
+.titulostep{
+    font-family: Calibri !important;
+    padding: 10px !important;
+    display: inline-block !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    color: #c7e5f0 !important;
+    background-color: #0e385f;
+    border-radius: 40px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+.divcampo, .dadosSolicitacao, .dadosAnexos, .dadosDoCliente{
+    display:none;
+}
+.nomearquivo{
+    border-bottom: dashed 3px #c7e5f0;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    overflow:hidden;
+    font-size:12px;
+    margin-top: 25px;
+}
+.anexo{
+    position:relative;
+}
+.anexo img{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    cursor:pointer;
+    margin-left: -30px;
+}
+.botaoAvancar{
+    background-color: #0e385f !important;
+    border: 0 !important;
+    color: #FFF !important;
+    padding: 10px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-top: 20px !important;
+}
+.homem_sinistro {
+    max-width: 270px !important;
+}
+@-webkit-keyframes pulse {
+    to {
+        -webkit-box-shadow: 0 0 0 15px rgba(232,76,61,0);
+        box-shadow: 0 0 0 15px rgba(232,76,61,0)
+    }
+}
+
+@keyframes pulse {
+    to {
+        -webkit-box-shadow: 0 0 0 15px rgba(232,76,61,0);
+        box-shadow: 0 0 0 15px rgba(232,76,61,0)
+    }
+}
+
+@media screen and (max-width:767px){
+    .etapa{
+        padding-left:19px;
+        padding-right:18px;
+    }
+    .etapa img {
+        width: 16px;
+        height: 16px;
+    }
+    .linhainativa, .linha{
+        width:35px;
+    }
+    .linhaoculta{
+        width:0px;
+    }
+    .titulo{
+        width:79px;
+    }
+}
+input[disabled] {
+    background-color: #CCC !important;
+    color: #434343 !important;
+}

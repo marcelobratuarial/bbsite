@@ -59,7 +59,10 @@ $routes->get('/servicos', 'Pages::solutions');
 $routes->get('/faq', 'Pages::faq');
 $routes->post('/area-cliente/carro-reserva/send', 'Pages::sendCarroReserva');
 $routes->get('/area-cliente/carro-reserva', 'Pages::carroReserva');
+$routes->post('/area-cliente/app/send', 'Pages::sendApp');
+$routes->get('/area-cliente/app', 'Pages::App');
 $routes->get('/area-cliente', 'Pages::areaCliente');
+$routes->post('/f-modelos', 'Pages::carregaModelos');
 $routes->post('/f-empresa', 'Pages::findEmpresa');
 $routes->post('/f-cep', 'Pages::findCEP');
 $routes->get('/servicos/dygo', 'Pages::dygo', ['as' => 'dygo']);
@@ -76,6 +79,7 @@ $routes->get('/blog/(:any)', 'Pages::blogPost/$1');
 $routes->get('/contato', 'Pages::contact');
 $routes->post('/contact/send', 'Pages::contact');
 
+$routes->get('/(:any)', 'Pages::pagina/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

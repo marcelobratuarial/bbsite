@@ -42,7 +42,9 @@
         <!-- Main stylesheet and color file-->
         <link href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet"> </head>
+        <?= $this->renderSection('cCss') ?>
+        <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
+    </head>
     <body data-spy="scroll" data-target=".inner-link" data-offset="60">
 
     <?= $this->renderSection('header') ?>
@@ -81,7 +83,8 @@
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
         <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
         <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
-        <script src="<?= base_url("assets/js/area-cliente.js") ?>"></script>
+        <?= $this->renderSection('cScripts') ?>
+        
         <script>
             var base_url = '<?= base_url('/') ?>';
         </script>

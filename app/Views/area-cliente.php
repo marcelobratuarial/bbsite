@@ -97,7 +97,7 @@
                         </li>
                         <li>
                             <img src="<?= base_url("assets/img/app.png")?>" alt="">
-                            <a href="">
+                            <a href="<?= base_url("area-cliente/app")?>">
                                 APP
                             </a>
                         </li>

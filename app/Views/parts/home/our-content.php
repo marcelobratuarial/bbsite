@@ -1,6 +1,6 @@
 
 <!--? Blog Area Start -->
-<div class="home-blog-area section-padding30">
+<div class="home-blog-area section-padding30 zin">
     <div class="container">
         <!-- Section Tittle -->
         <div class="row">

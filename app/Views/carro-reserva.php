@@ -372,3 +372,12 @@
 <?= $this->section('footer') ?>
     <?= $this->include('layouts/main/parts/footer') ?>
 <?= $this->endSection() ?>
+
+<?= $this->section('cCss') ?>
+<!-- Carro Reserva CSS -->
+<link href="<?= base_url("assets/css/area-cliente/carro-reserva.css") ?>" rel="stylesheet"> </head>
+<?= $this->endSection() ?>
+<?= $this->section('cScripts') ?>
+<!-- Carro Reserva Scripts -->
+<script src="<?= base_url("assets/js/area-cliente/carro-reserva.js") ?>"></script>
+<?= $this->endSection() ?>

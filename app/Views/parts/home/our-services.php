@@ -1,6 +1,6 @@
 
 <!--? Categories Area Start -->
-<div class="categories-area section-padding30">
+<div class="categories-area section-padding30 zin">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="cl-xl-7 col-lg-8 col-md-10">

@@ -1,7 +1,7 @@
 
 <!--? Testimonial Start -->
 <!-- <div class="testimonial-area fix pt-180 pb-180 section-bg" data-background="<?= base_url("assets/img/gallery/section_bg03.png") ?>"> -->
-<div class="testimonial-area fix pt-50 pb-50 section-bg">
+<div class="testimonial-area fix pt-50 pb-50 section-bg zin">
     <div class="section-tittle text-center mb-70">
         <span>DEPOIMENTOS</span>
         <h2>Veja o que estão falando sobre nós</h2>

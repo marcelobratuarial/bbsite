@@ -1,23 +1,10 @@
-<section style="background-color: #3D4C6F;">
+<section class="py-0" style="background-color: #3D4C6F;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="background-primary color-white p-5 p-lg-6 radius-secondary">
-                    <h4 class="color-white fs-1 fs-lg-2 mb-1">Receba nossas novidades</h4>
-                    <p class="color-white">Inscreva-se para acompanhar a news Brasil Benefícios</p>
-                    <form class="mt-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-7 pr-md-0">
-                                <div class="input-group">
-                                    <input class="form-control" type="email" placeholder="Enter Email Here" /> </div>
-                            </div>
-                            <div class="col-md-5 mt-3 mt-md-0">
-                                <button class="btn btn-warning btn-block" type="submit">
-                                    <span class="color-primary fw-600">Participar</span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="p-5 p-lg-6 radius-secondary">
+                   <img width="30%" src="assets/svg/branca_vertical.png" alt="">
+                   <h5 class="text-white mt-4">Conquistar um novo associado é muito bom, fidelizá-lo é muito melhor!</h5>
                 </div>
             </div>
             <div class="col-lg-6 mt-4 mt-lg-0">

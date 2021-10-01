@@ -21,6 +21,31 @@ class Pages extends BaseController
 		}
 	}
 
+	public function carregaModelos() {
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		$cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM modeloCarro where codMontadora = '".$cod."'");
+        
+		$res = $query->getResultArray();
+		$responses = "";
+		foreach($res as $m) {
+			$responses .=  $m["modeloCarro"]. "|";
+		}
+		$responses = rtrim($responses, "|");
+		// $responses = $res["IDCodigo"]."|".$res["RazaoSocial"]."|".$res["PessoaContato"]."|".$res["Telefone"]."|".$res["Email"]."|".$res["Refaturado"];
+		
+		echo $responses;
+	}
+
 	public function findEmpresa() {
 		$db = \Config\Database::connect('atuarial');
 		$cnpj = $this->request->getPost("CPFCNPJ");
@@ -49,40 +74,279 @@ class Pages extends BaseController
 		
 	}
 
-	public function sendCarroReserva() {
+	public function sendApp() {
+		// print_r("teste");exit;
 		// var_dump($this->request->getFile("SinistroEmpresa"));
 		// exit;
-		$DataRetirada = $this->request->getPost("DataRetirada");
-		$vetorData = explode("/",$DataRetirada);
-		$DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		// $DataRetirada = $this->request->getPost("DataRetirada");
+		// $vetorData = explode("/",$DataRetirada);
+		// $DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
 		$formData = [
 			"IDEmpresa" => $this->request->getPost("IDEmpresa"),
+			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
 			"SolicitanteEmpresa" => $this->request->getPost("SolicitanteEmpresa"),
 			"TelefoneEmpresa" => $this->request->getPost("TelefoneEmpresa"),
 			"EmailEmpresa" => $this->request->getPost("EmailEmpresa"),
 			"Nome" => $this->request->getPost("Nome"),
+			"TelefoneComercial" => $this->request->getPost("TelefoneComercial"),
+			"RG" => $this->request->getPost("CPF"),
 			"CPF" => $this->request->getPost("CPF"),
 			"Email" => $this->request->getPost("Email"),
-			"Telefone" => $this->request->getPost("Telefone"),
-			"TipoSolicitacao" => $this->request->getPost("TipoSolicitacao"),
-			"Placa" => $this->request->getPost("Placa"),
-			"Chassi" => $this->request->getPost("Chassi"),
-			"CidadeRetirada" => $this->request->getPost("CidadeRetirada"),
-			"EstadoRetirada" => $this->request->getPost("EstadoRetirada"),
-			"DataRetirada" => $DataRetirada,
-			"HoraRetirada" => $this->request->getPost("HoraRetirada"),
-			"NomeResponsavelCartao" => $this->request->getPost("NomeResponsavelCartao"),
-			"CPFResponsavelCartao" => $this->request->getPost("CPFResponsavelCartao"),
-			"QuantidadeDeDiarias" => $this->request->getPost("QuantidadeDeDiarias"),
-			"EnviarDados" => $this->request->getPost("EnviarDados"),
 			"CEP" => $this->request->getPost("CEP"),
 			"Logradouro" => $this->request->getPost("Logradouro"),
-			"Bairro" => $this->request->getPost("Bairro"),
-			"Cidade" => $this->request->getPost("Cidade"),
-			"Estado" => $this->request->getPost("Estado"),
 			"Numero" => $this->request->getPost("Numero"),
 			"Complemento" => $this->request->getPost("Complemento"),
-			"vetorData" => $this->request->getPost("vetorData"),
+			"Bairro" => $this->request->getPost("Bairro"),
+			"Cidade" => $this->request->getPost("Cidade"),
+			"UF" => $this->request->getPost("UF"),
+			
+			"Nome2" => $this->request->getPost("Nome2"),
+			"CPF2" => $this->request->getPost("CPF2"),
+			"Telefone2" => $this->request->getPost("Telefone2"),
+			"Email2" => $this->request->getPost("Email2"),
+			
+			"Placa" => $this->request->getPost("Placa"),
+			"Montadora" => $this->request->getPost("Montadora"),
+			"Modelo" => $this->request->getPost("Modelo"),
+			"Categoria" => $this->request->getPost("Categoria"),
+			"Ano" => $this->request->getPost("Ano"),
+			"Chassi" => $this->request->getPost("Chassi"),
+			"Renavam" => $this->request->getPost("Renavam"),
+			"LotacaoMaxima" => $this->request->getPost("LotacaoMaxima"),
+			"Utilizacao" => $this->request->getPost("Utilizacao"),
+			"Cobertura" => $this->request->getPost("Cobertura"),
+			"CapitalSegurado" => $this->request->getPost("CapitalSegurado"),
+		];
+
+		$db = \Config\Database::connect('atuarial');
+		$query = "INSERT INTO app (IDEmpresa, 
+			SolicitanteEmpresa, 
+			TelefoneEmpresa, 
+			EmailEmpresa, 
+			Nome, 
+			TelefoneComercial, 
+			RG,
+			CPF, 
+			Email, 
+			CEP, 
+			Logradouro, 
+			Numero, 
+			Complemento, 
+			Bairro, 
+			Cidade, 
+			UF, 
+			Nome2, 
+			CPF2, 
+			Telefone2, 
+			Email2, 
+			Placa, 
+			Montadora, 
+			Modelo, 
+			Categoria, 
+			Ano, 
+			Chassi, 
+			Renavam, 
+			LotacaoMaxima, 
+			Utilizacao, 
+			Cobertura, 
+			CapitalSegurado, 
+			DataSolicitacao) 
+		values (".
+			$formData['IDEmpresa'] . ",'" . 
+			$formData['SolicitanteEmpresa'] . "','".
+			$formData['TelefoneEmpresa'] ."','" .
+			$formData['EmailEmpresa'] . "','" .
+			$formData['Nome'] ."','" .
+			$formData['TelefoneComercial'] ."','". 
+			$formData['RG'] . "', '".
+			$formData['CPF'] ."','". 
+			$formData['Email'] . "','" .
+			$formData['CEP'] . "','" .
+			$formData['Logradouro'] . "','" .
+			$formData['Numero'] . "','" .
+			$formData['Complemento'] . "','" .
+			$formData['Bairro'] . "','" .
+			$formData['Cidade'] . "','" .
+			$formData['UF'] . "','" .
+			$formData['Nome2'] . "','" .
+			$formData['CPF2'] . "','" .
+			$formData['Telefone2'] . "','" .
+			$formData['Email2'] . "','" .
+			$formData['Placa'] . "','" . 
+			$formData['Montadora'] . "','" .
+			$formData['Modelo'] . "','" .
+			$formData['Categoria'] . "','" .
+			$formData['Ano'] . "','" .
+			$formData['Chassi'] . "','" .
+			$formData['Renavam'] . "','" .
+			$formData['LotacaoMaxima'] . "','" .
+			$formData['Utilizacao'] . "','" .
+			$formData['Cobertura'] . "','" .
+			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
+		// print_r($query);exit;
+		$qry = $db->query($query);
+        
+		// $r = $db->query('select IDCodigo from carro_reserva order by IDCodigo desc limit 1');
+		// $id = $r->getRowArray()["IDCodigo"];
+		// print_r($id);exit;
+		$id = $db->insertID();
+		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
+        
+
+
+		$email = \Config\Services::email();
+		$config['mailType'] = 'html';
+		$config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'smtp';
+		// $config['CRLF'] = "\r\n";
+		$config['newline'] = "\r\n";
+		$config['SMTPHost'] = 'br540.hostgator.com.br';
+		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
+		$config['SMTPPass'] = 'contato@2015';
+		$config['SMTPPort'] = '25';
+		$config['SMTPCrypto'] = 'tsl';
+		$email->initialize($config);
+
+		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
+
+
+		$NomeEmpresa = $this->request->getPost("NomeEmpresa");
+		$formData["NomeEmpresa"] = $NomeEmpresa;
+ 
+
+
+		
+		// $body = "<b>Dados da Empresa</b><br>Empresa:" . $NomeEmpresa . "<br />Solicitante: ".$formData['SolicitanteEmpresa']. "<br />Telefone Solicitante: $TelefoneEmpresa<br />E-mail Solicitante: $EmailEmpresa<br /><br><b>Dados do Cliente</b><br>CPF Associado: $CPF<br />Nome Associado: $Nome<br />Email: $Email<br>Telefone: $Telefone<br><br>CEP: $CEP<br>Logradouro: $Logradouro<br>Bairro: $Bairro<br>Cidade: $Cidade<br>Estado: $Estado<br>Número: $Numero<br>Complemento: $Complemento<br><br><b>Dados da Solicitação</b><br>Placa: $Placa<br>Quantidade de Diarias: $QuantidadeDeDiarias<br>Estado Retirada: $EstadoRetirada<br>Cidade Retirada: $CidadeRetirada<br>Data Retirada: $DataRetirada<br>Hora Retirada: $HoraRetirada<br>Nome Responsavel Cartao: $NomeResponsavelCartao<br>CPF Responsavel Cartao: $CPFResponsavelCartao";
+		
+		// $body = strtoupper($body);
+		// $body2 = "Prezado(a), <br><br>Sua solicitação foi realizada com sucesso. Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!<br><br><a href='https://brasilatuarial.com.br/virtual_office/areaDoCliente.php'>Clique aqui</a> para acompanhar a sua socilitação em tempo real!";
+		
+		// require("class.phpmailer.php");
+		// date_default_timezone_set('Brazil/East');
+		
+		// $emailConfirm = new PHPMailer();
+		// $emailConfirm->IsSMTP();
+		// $emailConfirm->Host = "br540.hostgator.com.br";
+		// $emailConfirm->SMTPAuth = true;
+		// $emailConfirm->SMTPSecure = "ssl";
+		// $emailConfirm->Port = 465;
+		// $emailConfirm->SetFrom('contato@brasilatuarial.com.br','Contato');
+		// $emailConfirm->Username = "contato@brasilatuarial.com.br";
+		// $emailConfirm->Password = "contato@2015";
+		// $emailConfirm->AddAddress($Email,$Email);
+
+		// if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
+		// 	if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
+		// 		$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $SinistroEmpresa);
+		// 		$email->attach($this->request->getFile("BoletimOcorrencia")->getPathname(), "attachment", $BoletimOcorrencia);
+		// 		$email->attach($this->request->getFile("CRLVVeiculo")->getPathname(), "attachment", $CRLVVeiculo);
+		// 		$email->attach($this->request->getFile("CHNCliente")->getPathname(), "attachment", $CHNCliente);
+		// 		$email->attach($this->request->getFile("AutorizacaoReparo")->getPathname(), "attachment", $AutorizacaoReparo);
+		// 	}
+		// }
+
+		$email->setFrom('contato@brasilatuarial.com.br', "Site");
+		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		$message = view('mail/to_client', $formData);
+		
+		$email->setMessage($message);
+
+		if(!$email->send()) {
+			print_r($email->printDebugger());
+		} else {
+
+		}
+		// var_dump($message);
+		exit;
+		// $emailConfirm->Subject = utf8_decode("AVISO DE SINISTRO CARRO");
+		$emailConfirm->MsgHTML(utf8_decode($body2));
+		$send2 = $emailConfirm->Send();
+
+		$email = new PHPMailer();
+		$email->IsSMTP();
+		$email->Host = "br540.hostgator.com.br";
+		$email->SMTPAuth = true;
+		$email->SMTPSecure = "ssl";
+		$email->Port = 465;
+		$email->SetFrom('contato@brasilatuarial.com.br','Contato');
+		$email->Username = "contato@brasilatuarial.com.br";
+		$email->Password = "contato@2015";
+		
+		$query = "select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='carro_reserva.php'";
+		$result = mysqli_query($conexao, $query);
+		while ($linha = mysqli_fetch_array($result)){
+			$email->AddAddress($linha["Email"],$linha["Nome"]);
+		}
+		/*$email->AddAddress("enrico.neto@brasilatuarial.com.br","Enrico Neto");
+		$email->AddAddress("cristiano.fernandes@brasilatuarial.com.br","Cristiano Fernandes");
+		$email->AddAddress("gabriela.guimaraes@brasilatuarial.com.br","Gabriela Guimaraes");
+		$email->AddAddress("julliano.vasconcelos@brasilatuarial.com.br","Julliano Vasconcelos");
+		$email->AddAddress("mayra.mariz@brasilatuarial.com.br","Mayra Mariz");
+		$email->AddAddress("stephany.duarte@brasilatuarial.com.br","Stephany Duarte");
+		$email->AddAddress("nara.nunes@brasilatuarial.com.br","Nara Nunes");
+		$email->AddAddress("isabela.duarte@brasilatuarial.com.br","Isabela Duarte");*/
+		// if (isset($_FILES["SinistroEmpresa"]["name"])){
+		// 	if ($_FILES["SinistroEmpresa"]["name"] != ""){
+		// 		$email->AddAttachment($_FILES["SinistroEmpresa"]["tmp_name"],$SinistroEmpresa);
+		// 		$email->AddAttachment($_FILES["BoletimOcorrencia"]["tmp_name"],$BoletimOcorrencia);
+		// 		$email->AddAttachment($_FILES["CRLVVeiculo"]["tmp_name"],$CRLVVeiculo);
+		// 		$email->AddAttachment($_FILES["CHNCliente"]["tmp_name"],$CHNCliente);
+		// 		$email->AddAttachment($_FILES["AutorizacaoReparo"]["tmp_name"],$AutorizacaoReparo);
+		// 	}
+		// }
+
+		$email->Subject = utf8_decode("AVISO DE SINISTRO CARRO");	
+		$email->MsgHTML(utf8_decode($body));
+		$send = $email->Send();
+		
+		// if (isset($_FILES["SinistroEmpresa"]["name"])){
+		// 	if ($_FILES["SinistroEmpresa"]["name"] != ""){
+		// 		move_uploaded_file($_FILES["SinistroEmpresa"]["tmp_name"],"arquivos/".$id.$SinistroEmpresa);
+		// 		move_uploaded_file($_FILES["BoletimOcorrencia"]["tmp_name"],"arquivos/".$id.$BoletimOcorrencia);
+		// 		move_uploaded_file($_FILES["CRLVVeiculo"]["tmp_name"],"arquivos/".$id.$CRLVVeiculo);
+		// 		move_uploaded_file($_FILES["CHNCliente"]["tmp_name"],"arquivos/".$id.$CHNCliente);
+		// 		move_uploaded_file($_FILES["AutorizacaoReparo"]["tmp_name"],"arquivos/".$id.$AutorizacaoReparo);
+		// 	}
+		// }
+	}
+
+	public function sendCarroReserva() {
+		// $request = \Config\Services::request();
+		// var_dump($this->request->getFile("SinistroEmpresa"));
+		$DataRetirada = $this->request->getVar("DataRetirada");
+		// var_dump($DataRetirada);
+		// exit;
+		$vetorData = explode("/",$DataRetirada);
+		$DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		$formData = [
+			"IDEmpresa" => $this->request->getVar("IDEmpresa"),
+			"SolicitanteEmpresa" => $this->request->getVar("SolicitanteEmpresa"),
+			"TelefoneEmpresa" => $this->request->getVar("TelefoneEmpresa"),
+			"EmailEmpresa" => $this->request->getVar("EmailEmpresa"),
+			"Nome" => $this->request->getVar("Nome"),
+			"CPF" => $this->request->getVar("CPF"),
+			"Email" => $this->request->getVar("Email"),
+			"Telefone" => $this->request->getVar("Telefone"),
+			"TipoSolicitacao" => $this->request->getVar("TipoSolicitacao"),
+			"Placa" => $this->request->getVar("Placa"),
+			"Chassi" => $this->request->getVar("Chassi"),
+			"CidadeRetirada" => $this->request->getVar("CidadeRetirada"),
+			"EstadoRetirada" => $this->request->getVar("EstadoRetirada"),
+			"DataRetirada" => $DataRetirada,
+			"HoraRetirada" => $this->request->getVar("HoraRetirada"),
+			"NomeResponsavelCartao" => $this->request->getVar("NomeResponsavelCartao"),
+			"CPFResponsavelCartao" => $this->request->getVar("CPFResponsavelCartao"),
+			"QuantidadeDeDiarias" => $this->request->getVar("QuantidadeDeDiarias"),
+			"EnviarDados" => $this->request->getVar("EnviarDados"),
+			"CEP" => $this->request->getVar("CEP"),
+			"Logradouro" => $this->request->getVar("Logradouro"),
+			"Bairro" => $this->request->getVar("Bairro"),
+			"Cidade" => $this->request->getVar("Cidade"),
+			"Estado" => $this->request->getVar("Estado"),
+			"Numero" => $this->request->getVar("Numero"),
+			"Complemento" => $this->request->getVar("Complemento"),
+			"vetorData" => $this->request->getVar("vetorData"),
 		];
 
 
@@ -137,10 +401,10 @@ class Pages extends BaseController
 		// print_r($query);exit;
 		$qry = $db->query($query);
         
-		$r = $db->query('select IDCodigo from carro_reserva order by IDCodigo desc limit 1');
-		$id = $r->getRowArray()["IDCodigo"];
+		// $r = $db->query('select IDCodigo from carro_reserva order by IDCodigo desc limit 1');
+		// $id = $r->getRowArray()["IDCodigo"];
 		// print_r($id);exit;
-
+		$id = $db->insertID();
 		$query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		$qry = $db->query($query);
         
@@ -170,7 +434,7 @@ class Pages extends BaseController
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
-		$config['CRLF'] = "\r\n";
+		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
@@ -283,6 +547,14 @@ class Pages extends BaseController
 	}
 
 
+
+	public function pagina($pagina)
+	{
+		$data['pagina'] = $pagina;
+		$data['main_menu'] = $this->main_menu;
+		return view('layout', $data );
+	}
+
 	public function index()
 	{
 		// print_r($this->main_menu);exit;
@@ -355,6 +627,32 @@ class Pages extends BaseController
 	public function faq()
 	{
 		return view('faq', ['main_menu' => $this->main_menu]);
+	}
+
+	public function App()
+	{
+		
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('app', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
 	}
 
 	public function carroReserva()

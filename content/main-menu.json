@@ -8,7 +8,7 @@
         "route": "/sobre"
     },
     {
-        "text": "Clube de Descontos",
+        "text": "Clube",
         "route": "/clube"
     },
     {
@@ -17,7 +17,7 @@
         "child": [
             {
                 "text": "Vida",
-                "route": "/seguros/vida",
+                "route": "/seguro_vida",
                 "chiled": [
                     {
                         "text": "Terceiro Submenu Exemplo",
@@ -27,15 +27,15 @@
             },
             {
                 "text": "Residencial",
-                "route": "/seguros/residencial"
+                "route": "/seguro_residencial"
             },
             {
-                "text": "Ap Premiado",
-                "route": "/seguros/ap-premiado"
+                "text": "Seguro Ap",
+                "route": "/seguro_ap"
             },
             {
-                "text": "APP (Automóvel)",
-                "route": "/seguros/app-automovel"
+                "text": "Seguro App",
+                "route": "/seguro_app"
             }
         ]
     },
@@ -49,15 +49,19 @@
                 "child": [
                     {
                         "text": "Assistência 24hs",
-                        "route": "/assistencias/carro/assistencia-24hs"
+                        "route": "/assistencia24"
                     },
                     {
                         "text": "Carro Reserva",
-                        "route": "/assistencias/carro/carro-reserva"
+                        "route": "/carro_reserva"
                     },
                     {
                         "text": "Vidro",
-                        "route": "/assistencias/carro/vidro"
+                        "route": "/vidro"
+                    },
+                    {
+                        "text": "Terceiro",
+                        "route": "/terceiro"
                     }
                 ]
             },
@@ -67,15 +71,15 @@
                 "child": [
                     {
                         "text": "Residencial",
-                        "route": "/assistencias/casa/residencial"
+                        "route": "/residencial"
                     },
                     {
                         "text": "Pet",
-                        "route": "/assistencias/casa/pet"
+                        "route": "/pet"
                     },
                     {
                         "text": "Bike",
-                        "route": "/assistencias/casa/bike"
+                        "route": "/bike"
                     }
                 ]
             },
@@ -85,36 +89,29 @@
                 "child": [
                     {
                         "text": "Funeral",
-                        "route": "/assistencias/vida-e-saude/funeral"
+                        "route": "/funeral"
                     },
                     {
                         "text": "Odonto",
-                        "route": "/assistencias/vida-e-saude/odonto"
+                        "route": "/odonto"
+                    },
+                    {
+                        "text": "Bem estar",
+                        "route": "/bem_estar"
                     },
                     {
                         "text": "Telemedicina",
-                        "route": "/assistencias/vida-e-saude/telemedicina"
+                        "route": "/telemedicina"
                     },
                     {
                         "text": "CheckUp Médico",
-                        "route": "/assistencias/vida-e-saude/checkup-medico"
-                    },
-                    {
-                        "text": "Auxílio Medicamentos",
-                        "route": "/assistencias/vida-e-saude/auxilio-medicamentos"
+                        "route": "checkup_medico"
                     },
                     {
                         "text": "+Saúde",
-                        "route": "/assistencias/vida-e-saude/mais-saude"
-                    },
-                    {
-                        "text": "Consultas e Exames",
-                        "route": "/assistencias/vida-e-saude/consultas-e-exames"
-                    },
-                    {
-                        "text": "Orientação Médica",
-                        "route": "/assistencias/vida-e-saude/orientacao-medica"
+                        "route": "mais_saude"
                     }
+
                 ]
             }
         ]

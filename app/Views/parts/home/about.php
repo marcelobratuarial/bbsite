@@ -1,4 +1,4 @@
-<section class="background-white  text-center">
+<section class="bg-white  text-center zin">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-10 col-md-6">
@@ -7,34 +7,34 @@
                             <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll"
                             /> </div>
                     </div>
-                    <div class="row mt-4 mt-md-5">
+                    <div class="row mt-md-5">
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                                <span class="icon-Idea-2 fs-3 color-blueish mx-auto fw-600"></span>
+                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex justify-content-center align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
+                                <img src="assets/images/shiled.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Soluções para Carro, Casa, Vida e Saúde</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Solution for every business related problems, readily
                                 <br/>and skillfully.</p> -->
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Computer fs-3 color-blueish mx-auto fw-600"></span>
+                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex justify-content-center align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
+                                <img class="ml-3" src="assets/images/mobile.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Processo 100% digital. Contratação e acionamento na palma da mão</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Calculate every possible risk in your business, take
                                 <br/>control over them.</p> -->
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Support fs-3 color-blueish mx-auto fw-600"></span>
+                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center justify-content-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
+                                <span class="icon-Assistant fs-3 color-blueish mx-auto fw-600"></span>
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Assessoria técnica na definição dos planos e preços a serem praticados</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Know the market before taking any step, reduce
                                 <br/>risks before you go. </p> -->
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
-                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <span class="icon-Headset fs-3 color-blueish mx-auto fw-600"></span>
+                            <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center justify-content-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
+                            <img src="assets/images/call.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Suporte 24 horas por dia através de nossa central de atendimentos</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Experience unparalleled service, from beginning
@@ -45,7 +45,7 @@
                 </div>
                 <!--/.container-->
             </section>
-            <section class="pt-0">
+            <section class="pt-0 bg-white">
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-11 col-md-12">
@@ -64,22 +64,21 @@
                 </div>
                 <!--/.container-->
             </section>
-            <section class="pt-0">
+            <section class="pt-0 bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="col-sm-6  col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-bullseye color-primary mr-3"></span>Missão</h5>
+                            <img width="5%" src="assets/svg/target.png" alt=""> Missão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores.</p>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-eye color-primary mr-3"></span>Visão</h5>
+                            <img width="5%" src="assets/svg/eye.png" alt=""> Visão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Ser a empresa de benefícios mais amada do Brasil</p>
                         </div>
-                        <div class="col-sm-6 col-lg-4 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="col-sm-6 col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <span class="fa fa-bolt color-primary mr-3"></span>Nossos valores</h5>
+                                <img width="5%" src="assets/svg/diamond.png" alt=""> Nossos valores</h5>
                             <!-- <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'> -->
                             <ul data-zanim='{"delay":0.2}'>
                                 <li>Honestidade: Agimos com coerência e verdade</li>
@@ -94,35 +93,32 @@
                 </div>
                 <!--/.container-->
             </section>
-            <section class="background-11">
+            <section class="pt-0 background-11">
                 <div class="container">
                     <h3 class="text-center fs-2 fs-md-3">Benefícios Mais Amados:</h3>
                     <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                     <div class="row no-gutters pos-relative mt-6">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-                            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/k.webp") ?>);"> </div>
+                            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/k.jpg") ?>);"> </div>
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Carro Reserva</h5>
+                                        <h5 data-zanim='{"delay":0}'>Seguro Pet</h5>
                                     </div>
                                     <div class="overflow-hidden">
-                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Com o nosso serviço de Carro Reserva você proporciona muito mais segurança e praticidade aos seus associados. O produto é disponível para veículos de passeio e utilitário, e três planos são disponibilizados: 7, 15 ou 30 dias. Trabalhamos com a Localiza Rent a Car, a maior rede brasileira de lojas especializadas em aluguel de carros.</p>
+                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Os pets fazem parte de muitas famílias e eles também merecem um cuidado especial! Com a Assistência PET da Brasil Benefícios você oferece ao seu associado um combo de serviços veterinários com uma ampla rede de atendimento para cães e gatos.</p>
                                     </div>
                                     <div class="overflow-hidden">
                                         <h6  data-zanim='{"delay":0.1}'>Vantagens</h6>
                                         <ul data-zanim='{"delay":0.2}'>
-                                            <li>Parceiro de confiaça</li>
-                                            <li>Mais credibilidade para sua entidade</li>
-                                            <li>Comodidade para os seus associados</li>
-                                            <li>Veículos de qualidade</li>
-                                            <li>Atendimento ágil</li>
-                                            <li>Uso personalizado</li>
-                                            <li>Conforto ao substituir o veículo sem custos adicionais</li>
+                                            <li>Ampla variedade de serviços como assistência funeral, agendamento de consultas, consultas veterinárias, envio de ração, entre outros.</li>
+                                            <li>Tranquilidade e segurança;</li>
+                                            <li>Melhor custo-benefício;</li>
+                                            <li>Atendimento de qualidade.</li>
                                         </ul>
                                     </div>
                                     <!-- <div class="overflow-hidden">
@@ -141,26 +137,25 @@
                     <div class="row no-gutters pos-relative mt-4 mt-lg-0">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="col-lg-6 py-3 py-lg-0 mb-0 order-lg-2" style="min-height:400px;">
-                            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/l.webp") ?>);"> </div>
+                            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/dental.jpg") ?>);"> </div>
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Serviço 02</h5>
+                                        <h5 data-zanim='{"delay":0}'>Assistência Odontológica</h5>
                                     </div>
                                     <div class="overflow-hidden">
-                                        <p class="mt-3" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sequi in consequatur tenetur cupiditate ipsum accusamus quas reprehenderit praesentium aspernatur harum possimus velit, cumque atque magni molestias corporis corrupti sapiente.</p>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <div data-zanim='{"delay":0.2}'>
-                                            <a class="d-flex align-items-center" href="#">Saiba mais
-                                                <div class="overflow-hidden ml-2">
-                                                    <span class="d-inline-block" data-zanim='{"from":{"opacity":0,"x":-30},"to":{"opacity":1,"x":0},"delay":0.8}'>&xrarr;</span>
-                                                </div>
-                                            </a>
-                                        </div>
+                                        <p class="mt-3" data-zanim='{"delay":0.1}'>A saúde começa pela boca! Com a Assistência Odontológica da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
+                                        <p><b>Vantagens:</b></p>
+                                        <ul>
+                                            <li>Tranquilidade em emergências;</li>
+                                            <li>Serviços domiciliares;</li>
+                                            <li>Ampla abrangência;</li>
+                                            <li>Segurança aos seus associados;</li>
+                                            <li>Melhor custo-benefício</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -202,32 +197,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-7">
-                        <div class="col-sm-6 col-lg-4 px-4 px-sm-3 text-lg-x" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <h5 data-zanim='{"delay":0}'>
-                                <span class="ion-card color-primary fs-2 icon-position-fix mr-3"></span>Item 01</h5>
-                            <p class="mt-3 pr-3 pr-lg-5 mb-0" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <!--/.container-->
+            </section>
+
+            <section class="backgroundd py-6">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md">
+                            <h4 class="color-white mb-0">Conquistar um novo associado é muito bom,<br> fidelizá-lo é muito melhor!</h4>
                         </div>
-                        <div class="col-sm-6 col-lg-4 px-4 px-sm-3 mt-4 mt-sm-0 text-lg-x" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <h5 data-zanim='{"delay":0}'>
-                                <span class="ion-chatbox-working color-primary mr-3"></span>Item 02</h5>
-                            <p class="mt-3 pr-3 pr-lg-5 mb-0" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                <a href="#">Link
-                                    <span class="fa fa-external-link ml-1 icon-position-fix"></span>
-                                </a>
-                            </p>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 px-4 px-sm-3 mt-4 mt-lg-0 text-lg-x" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <h5 data-zanim='{"delay":0}'>
-                                <span class="ion-android-call color-primary mr-3"></span>Item 03</h5>
-                            <p class="mt-3 pr-3 pr-lg-5 mb-0" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="col-md-auto mt-md-0 mt-4">
+                            <a class="btn btn-white btn-capsule" href="contact.html">Nos contate</a>
                         </div>
                     </div>
                     <!--/.row-->
                 </div>
                 <!--/.container-->
             </section>
-            <section>
+
+
+            <section class="pt-5 bg-white">
                 <div class="container">
                     <div class="row mb-6">
                         <div class="col">
@@ -259,210 +249,8 @@
                 </div>
                 <!--/.container-->
             </section>
-            <section class=" background-primary py-6">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md">
-                            <h4 class="color-white mb-0">Um seguro continua arriscado
 
-                                <br class="d-md-none" /> quando pode-se prevê-lo?</h4>
-                        </div>
-                        <div class="col-md-auto mt-md-0 mt-4">
-                            <a class="btn btn-white btn-capsule" href="contact.html">Nos contate</a>
-                        </div>
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </section>
-            <section class="text-center">
-                <div class="container">
-                    <h3>Titulo</h3>
-                    <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Double-Circle fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'>Item titulo</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Mail-2 fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'>Item titulo</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Archery-2 fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'>Item titulo</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Globe-2 fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'>Item titulo</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Money-2 fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'>Item titulo</h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="px-3 py-4 px-lg-4">
-                                <div class="overflow-hidden">
-                                    <span class="icon-Bar-Chart fs-3 color-primary fw-600" data-zanim='{"delay":0}'></span>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <h5 class="mt-3" data-zanim='{"delay":0.1}'></h5>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </section>
-            <section class="background-primary">
-                <div class="container">
-                    <div class="row align-items-center color-white">
-                        <div class="col-lg-4">
-                            <div class="border border-2x border-color-warning p-4 py-lg-5 text-center radius-secondary" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="overflow-hidden">
-                                    <h4 class="color-white" data-zanim='{"delay":0}'>Titulo</h4>
-                                </div>
-                                <div class="overflow-hidden">
-                                    <p class="px-lg-1 color-11 mb-0" data-zanim='{"delay":0.1}'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti sit magni quia cupiditate error debitis inventore nesciunt. Blanditiis, autem ratione beatae error odit corrupti, totam debitis ab architecto similique alias.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 pl-lg-5 mt-6 mt-lg-0">
-                            <h5 class="color-white">Nos envie um email:</h5>
-                            <form class="zform mt-4" method="post">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
-                                        <input class="form-control" type="text" placeholder="Seu nome" aria-label="Text input with dropdown button" /> </div>
-                                    <div class="col-6">
-                                        <input class="form-control" type="text" placeholder="Telefone" aria-label="Text input with dropdown button" /> </div>
-                                    <div class="col-6 mt-4">
-                                        <input class="form-control" type="text" placeholder="Assunto" aria-label="Text input with dropdown button" /> </div>
-                                    <div class="col-6 mt-4">
-                                        <button class="btn btn-warning btn-block" type="submit">Enviar</button>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="zform-feedback mt-4"></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </section>
-            <section class="background-11  text-center">
-                <div class="container">
-                    <div class="row mb-6">
-                        <div class="col">
-                            <h3 class="fs-2 fs-md-3">Time</h3>
-                            <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll"> </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="background-white pb-4 h-100 radius-secondary">
-                                <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Profile Picture" />
-                                <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                    <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Nome Sobrenome</h5>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>Cargo</h6>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <p class="py-3 mb-0" data-zanim='{"delay":0.2}'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nobis, pariatur facilis iure labore nostrum natus quia excepturi?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mt-4 mt-sm-0">
-                            <div class="background-white pb-4 h-100 radius-secondary">
-                                <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="Profile Picture" />
-                                <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                    <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Lily Anderson</h5>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>Cargo</h6>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <p class="py-3 mb-0" data-zanim='{"delay":0.2}'>Lily leads Elixir UK and oversees the company’s Customer Operations teams supporting millions ofr users.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mt-4 mt-lg-0">
-                            <div class="background-white pb-4 h-100 radius-secondary">
-                                <img class="mb-4 radius-tr-secondary radius-tl-secondary" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="Profile Picture" />
-                                <div class="px-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                    <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Thomas Anderson</h5>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <h6 class="fw-400 color-7" data-zanim='{"delay":0.1}'>Cargo</h6>
-                                    </div>
-                                    <div class="overflow-hidden">
-                                        <p class="py-3 mb-0" data-zanim='{"delay":0.2}'>As the VP of People, Thomas’s focus lies in the development and optimization of talent retention.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </section>
-            <section>
+            <section class="bg-secondary">
                 <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
                 <!--/.background-holder-->
                 <div class="container">
@@ -481,16 +269,16 @@
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>5k</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todo mês</h6>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>5.000</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
                                         <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>1.4k</div>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>1.400</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>3k</div>
+                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>3.000</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
                                         </div>
                                     </div>
@@ -544,31 +332,33 @@
                 </div>
                 <!--/.container-->
             </section>
+            <!--
             <section class="background-10 py-6">
                 <div class="container">
                     <div class="row align-items-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                         <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
+                            <img src="assets/svg/aruana_logo.png" alt="">
                         </div>
                         <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
+                            <img width="80%" src="assets/svg/autoglass.png" alt="">
                         </div>
                         <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
+                            <img src="assets/svg/carglass.png" alt="">
+                        </div>
+                        <div class="col-4 col-md-2 my-3 overflow-hidden text-center">
+                            <img width="70%" src="assets/svg/ike_logo.png" alt="">
                         </div>
                         <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
+                            <img src="assets/svg/localiza_logo.png" alt="">
                         </div>
                         <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
-                        </div>
-                        <div class="col-4 col-md-2 my-3 overflow-hidden">
-                            Logo parceiro
+                            <img src="assets/svg/sura_logo.png" alt="">
                         </div>
                     </div>
                 </div>
         </section>
-            
+-->
+        <!--    
             <section class="background-11">
                 <div class="container">
                     <div class="row">
@@ -661,3 +451,4 @@
                     </div>
                 </div>
             </section>
+-->

@@ -1,7 +1,7 @@
 
 <!--? Team Ara Start -->
 <?php /*<div class="team-area pt-160 pb-160 section-bg" data-background="<?= base_url("assets/img/gallery/section_bg02.png") ?>"> */?>
-<div class="team-area section-bg">
+<div class="team-area section-bg zin">
     <div class="container">
         <div class="row justify-content-center">
             <div class="cl-xl-7 col-lg-8 col-md-10">
