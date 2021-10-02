@@ -75,12 +75,7 @@ class Pages extends BaseController
 
 
 	public function sendApp() {
-		// print_r("teste");exit;
-		// var_dump($this->request->getFile("SinistroEmpresa"));
-		// exit;
-		// $DataRetirada = $this->request->getPost("DataRetirada");
-		// $vetorData = explode("/",$DataRetirada);
-		// $DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		// throw new \Exception("Some message goes here");
 		$formData = [
 			"IDEmpresa" => $this->request->getPost("IDEmpresa"),
 			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
@@ -183,101 +178,59 @@ class Pages extends BaseController
 			$formData['Utilizacao'] . "','" .
 			$formData['Cobertura'] . "','" .
 			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
-		// print_r($query);exit;
+		
+			// print_r($query);exit;
 		// $qry = $db->query($query);
         
 		// $id = $db->insertID();
 		// $query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		// $qry = $db->query($query);
-        
 
-
+		
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = 'br540.hostgator.com.br';
-		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
-		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '465';
-		$config['SMTPCrypto'] = 'ssl';
+		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
-
-
-		$NomeEmpresa = $this->request->getPost("NomeEmpresa");
-		$formData["NomeEmpresa"] = $NomeEmpresa;
- 
-
-
-		
-		
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
-		$message = view('mail/to_client_app', $formData);
+		$message = view('area-cliente/mail/to_team_app', $formData);
 		
 		$email->setMessage($message);
 
-		if(!$email->send()) {
-			print_r($email->printDebugger());
-		} else {
+		try {
+			$s = $email->send();
+			if($s) {
+				echo json_encode(["message" => "success", "error" => false]);
+				
+				$email->clear();
+				$email->setSubject('CONFIRMAÇÃO DE SOLICITAÇÃO DE CONTRATAÇÃO APP');
+				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+				$message = view('area-cliente/mail/to_client_app', $formData);
+				
+				$email->setMessage($message);
 
+				$s = $email->send();
+				
+			} else {
+				throw new \Exception("Não enviado: MAIL TEAM");
+			}
+			
+		} catch (\Exception $e) {
+			echo json_encode(['message'=>$e->getMessage(), 'error' => true]);
 		}
-		// var_dump($message);
 		exit;
-		// $emailConfirm->Subject = utf8_decode("AVISO DE SINISTRO CARRO");
-		$emailConfirm->MsgHTML(utf8_decode($body2));
-		$send2 = $emailConfirm->Send();
-
-		$email = new PHPMailer();
-		$email->IsSMTP();
-		$email->Host = "br540.hostgator.com.br";
-		$email->SMTPAuth = true;
-		$email->SMTPSecure = "ssl";
-		$email->Port = 465;
-		$email->SetFrom('contato@brasilatuarial.com.br','Contato');
-		$email->Username = "contato@brasilatuarial.com.br";
-		$email->Password = "contato@2015";
 		
-		$query = "select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='carro_reserva.php'";
-		$result = mysqli_query($conexao, $query);
-		while ($linha = mysqli_fetch_array($result)){
-			$email->AddAddress($linha["Email"],$linha["Nome"]);
-		}
-		/*$email->AddAddress("enrico.neto@brasilatuarial.com.br","Enrico Neto");
-		$email->AddAddress("cristiano.fernandes@brasilatuarial.com.br","Cristiano Fernandes");
-		$email->AddAddress("gabriela.guimaraes@brasilatuarial.com.br","Gabriela Guimaraes");
-		$email->AddAddress("julliano.vasconcelos@brasilatuarial.com.br","Julliano Vasconcelos");
-		$email->AddAddress("mayra.mariz@brasilatuarial.com.br","Mayra Mariz");
-		$email->AddAddress("stephany.duarte@brasilatuarial.com.br","Stephany Duarte");
-		$email->AddAddress("nara.nunes@brasilatuarial.com.br","Nara Nunes");
-		$email->AddAddress("isabela.duarte@brasilatuarial.com.br","Isabela Duarte");*/
-		// if (isset($_FILES["SinistroEmpresa"]["name"])){
-		// 	if ($_FILES["SinistroEmpresa"]["name"] != ""){
-		// 		$email->AddAttachment($_FILES["SinistroEmpresa"]["tmp_name"],$SinistroEmpresa);
-		// 		$email->AddAttachment($_FILES["BoletimOcorrencia"]["tmp_name"],$BoletimOcorrencia);
-		// 		$email->AddAttachment($_FILES["CRLVVeiculo"]["tmp_name"],$CRLVVeiculo);
-		// 		$email->AddAttachment($_FILES["CHNCliente"]["tmp_name"],$CHNCliente);
-		// 		$email->AddAttachment($_FILES["AutorizacaoReparo"]["tmp_name"],$AutorizacaoReparo);
-		// 	}
-		// }
-
-		$email->Subject = utf8_decode("AVISO DE SINISTRO CARRO");	
-		$email->MsgHTML(utf8_decode($body));
-		$send = $email->Send();
-		
-		// if (isset($_FILES["SinistroEmpresa"]["name"])){
-		// 	if ($_FILES["SinistroEmpresa"]["name"] != ""){
-		// 		move_uploaded_file($_FILES["SinistroEmpresa"]["tmp_name"],"arquivos/".$id.$SinistroEmpresa);
-		// 		move_uploaded_file($_FILES["BoletimOcorrencia"]["tmp_name"],"arquivos/".$id.$BoletimOcorrencia);
-		// 		move_uploaded_file($_FILES["CRLVVeiculo"]["tmp_name"],"arquivos/".$id.$CRLVVeiculo);
-		// 		move_uploaded_file($_FILES["CHNCliente"]["tmp_name"],"arquivos/".$id.$CHNCliente);
-		// 		move_uploaded_file($_FILES["AutorizacaoReparo"]["tmp_name"],"arquivos/".$id.$AutorizacaoReparo);
-		// 	}
-		// }
 	}
 
 	public function sendCarroReserva() {
@@ -515,7 +468,118 @@ class Pages extends BaseController
 		}
 	}
 
+	public function Pet()
+	{
+		
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
 
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('area-cliente/pet', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+	}
+
+	public function Vidros()
+	{
+		
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('area-cliente/vidros', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+	}
+
+	public function Funeral()
+	{
+		
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('area-cliente/funeral', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+	}
+
+	public function App()
+	{
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('area-cliente/app', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+	}
+
+	public function carroReserva()
+	{
+		return view('area-cliente/carro-reserva', ['main_menu' => $this->main_menu]);
+	}
+
+	public function areaCliente()
+	{
+		return view('area-cliente/index', ['main_menu' => $this->main_menu]);
+	}
 
 	public function pagina($pagina)
 	{
@@ -598,119 +662,7 @@ class Pages extends BaseController
 		return view('faq', ['main_menu' => $this->main_menu]);
 	}
 
-	public function Pet()
-	{
-		
-		$db = \Config\Database::connect('atuarialAlt');
-		// $cod = $_POST["cod"];
-		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
-		// $sql = mysqli_query($db, $query);
-		// while ($linha=mysqli_fetch_array($sql)){
-		// 	echo utf8_encode($linha["modeloCarro"])."|";
-		// }
-
-		
-		// $cod = $this->request->getPost("cod");
-
-		$query = $db->query("SELECT * FROM montadora");
-        
-		$montadoras = $query->getResultArray();
-		
-		foreach($montadoras as $i=> $m) {
-			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
-			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
-		}
-		// print_r($montadoras);exit;
-		return view('area-cliente/pet', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
-	}
-
-	public function Vidros()
-	{
-		
-		$db = \Config\Database::connect('atuarialAlt');
-		// $cod = $_POST["cod"];
-		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
-		// $sql = mysqli_query($db, $query);
-		// while ($linha=mysqli_fetch_array($sql)){
-		// 	echo utf8_encode($linha["modeloCarro"])."|";
-		// }
-
-		
-		// $cod = $this->request->getPost("cod");
-
-		$query = $db->query("SELECT * FROM montadora");
-        
-		$montadoras = $query->getResultArray();
-		
-		foreach($montadoras as $i=> $m) {
-			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
-			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
-		}
-		// print_r($montadoras);exit;
-		return view('area-cliente/vidros', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
-	}
-
-	public function Funeral()
-	{
-		
-		$db = \Config\Database::connect('atuarialAlt');
-		// $cod = $_POST["cod"];
-		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
-		// $sql = mysqli_query($db, $query);
-		// while ($linha=mysqli_fetch_array($sql)){
-		// 	echo utf8_encode($linha["modeloCarro"])."|";
-		// }
-
-		
-		// $cod = $this->request->getPost("cod");
-
-		$query = $db->query("SELECT * FROM montadora");
-        
-		$montadoras = $query->getResultArray();
-		
-		foreach($montadoras as $i=> $m) {
-			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
-			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
-		}
-		// print_r($montadoras);exit;
-		return view('area-cliente/funeral', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
-	}
-
-	public function App()
-	{
-		
-		$db = \Config\Database::connect('atuarialAlt');
-		// $cod = $_POST["cod"];
-		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
-		// $sql = mysqli_query($db, $query);
-		// while ($linha=mysqli_fetch_array($sql)){
-		// 	echo utf8_encode($linha["modeloCarro"])."|";
-		// }
-
-		
-		// $cod = $this->request->getPost("cod");
-
-		$query = $db->query("SELECT * FROM montadora");
-        
-		$montadoras = $query->getResultArray();
-		
-		foreach($montadoras as $i=> $m) {
-			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
-			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
-		}
-		// print_r($montadoras);exit;
-		return view('area-cliente/app', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
-	}
-
-	public function carroReserva()
-	{
-		return view('area-cliente/carro-reserva', ['main_menu' => $this->main_menu]);
-	}
-
-	public function areaCliente()
-	{
-		return view('area-cliente/index', ['main_menu' => $this->main_menu]);
-	}
+	
 
 	public function servicos($serv_slug = null, $content_slug = null)
 	{

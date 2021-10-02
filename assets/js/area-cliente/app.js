@@ -427,7 +427,12 @@ $(document).ready(function() {
         }
     });
     
-
+    $("#formSuccess .message-response-try-again-btn").on("click", function() {
+        $(".solicitacao").parent('section').slideDown(300)
+        $("#formSuccess .message-response-try-again-btn").slideUp(300)
+        $("#formSuccess .message-response-btn").slideDown(300)
+        $("#formSuccess").slideUp(100)
+    })
     $(".form-sinistro").on("submit", function(e) {
         e.preventDefault();
         console.warn("send")
@@ -450,33 +455,77 @@ $(document).ready(function() {
                 processData: false,
                 contentType: false
 
-            }).done(function (data) {
-                console.log(data)
-                $(".form-sinistro")[0].reset()
-                $(".solicitacao").parent('section').slideUp(200)
-                $("#formLoading").slideUp(200)
-                $("#EnviarDados").attr("disabled", false);
-                $("#EnviarDados").removeClass("disabled");
-                console.log("Before TImeout")
-                // $("div.container-fluid").html(data);
-                var pro = new Promise((resolve, reject) => {
-                    $("#formSuccess").slideDown(200)
-                    setTimeout(() => {
-                        console.log("timeouOK")
-                        resolve('OK');
-                    }, 210);
-                })
-                pro.then(()=>{
-                    console.log("Then animate")
-                    $("html,body").animate({scrollTop: $("body").offset().top - 100},450);
-                })
+            }).done(function (resp) {
+                console.log(resp)
+                var data = JSON.parse(resp);
+                if(data.error){
+                    confError();
 
+                } else {
+                    $("#formSuccess").find(".icon-message").removeClass("error")
+                    $("#formSuccess").find(".message-response-try-again-btn").slideUp(100)
+                    $("#formSuccess").find(".message-response-btn").slideDown(100)
+                    $("#formSuccess").find(".icon-message span").
+                    removeClass("icon-Danger").addClass("icon-Yes")
+                    $("#formSuccess").find("h4").text("Sucesso!")
+                    var m = 'Sua solicitação foi realizada com sucesso..<br>'+
+                    'Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!';
+                    $("#formSuccess").find(".message-response").html(m)
+                    
+                    console.log(data)
+                    $(".form-sinistro")[0].reset()
+                    $(".solicitacao").parent('section').slideUp(200)
+                    $("#formLoading").slideUp(200)
+                    $("#EnviarDados").attr("disabled", false);
+                    $("#EnviarDados").removeClass("disabled");
+                    console.log("Before Timeout")
+                    // $("div.container-fluid").html(data);
+                    var pro = new Promise((resolve, reject) => {
+                        $("#formSuccess").slideDown(200)
+                        setTimeout(() => {
+                            console.log("timeouOK")
+                            resolve('OK');
+                        }, 210);
+                    })
+                    pro.then(()=>{
+                        console.log("Then animate")
+                        $("html,body").animate({scrollTop: $("body").offset().top - 100},450);
+                    })
+                }
+                
+
+            }).fail(function (resp) {
+                confError();
             });
         })
         
     });
 
-
+    function confError() {
+        
+        var pro = new Promise((resolve, reject) => {
+            $("#formLoading").slideUp(100)
+            $("#formSuccess").find(".icon-message").addClass("error")
+            $("#formSuccess").find(".icon-message span").
+            removeClass("icon-Yes").addClass("icon-Danger")
+            $("#formSuccess").find("h4").text("Algo aconteceu!")
+            var m = 'Algo aconteceu tentando enviar sua mensagem.<br>'+
+            'Tente novamente.';
+            $("#formSuccess").find(".message-response").html(m)
+            $("#formSuccess").find(".message-response-try-again-btn").slideDown(100)
+            $("#formSuccess").find(".message-response-btn").slideUp(100)
+            $(".solicitacao").parent('section').slideUp(200)
+            $("#formSuccess").slideDown(200)
+            setTimeout(() => {
+                console.log("timeouOK")
+                resolve('OK');
+            }, 210);
+        })
+        pro.then(()=>{
+            console.log("Then animate")
+            $("html,body").animate({scrollTop: $("body").offset().top - 100},450);
+        })
+    }
     function CapSegCob() {
         console.warn("Entra");
         console.warn($(this));
