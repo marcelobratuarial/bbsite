@@ -598,6 +598,32 @@ class Pages extends BaseController
 		return view('faq', ['main_menu' => $this->main_menu]);
 	}
 
+	public function Pet()
+	{
+		
+		$db = \Config\Database::connect('atuarialAlt');
+		// $cod = $_POST["cod"];
+		// $query = "SELECT * FROM modeloCarro where codMontadora = ".$cod;
+		// $sql = mysqli_query($db, $query);
+		// while ($linha=mysqli_fetch_array($sql)){
+		// 	echo utf8_encode($linha["modeloCarro"])."|";
+		// }
+
+		
+		// $cod = $this->request->getPost("cod");
+
+		$query = $db->query("SELECT * FROM montadora");
+        
+		$montadoras = $query->getResultArray();
+		
+		foreach($montadoras as $i=> $m) {
+			$montadoras[$i]["montadora"] = utf8_decode($m["montadora"]);
+			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
+		}
+		// print_r($montadoras);exit;
+		return view('ac-pet', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+	}
+
 	public function Vidros()
 	{
 		

@@ -65,6 +65,8 @@ $routes->post('/area-cliente/funeral/send', 'Pages::sendFuneral');
 $routes->get('/area-cliente/funeral', 'Pages::Funeral');
 $routes->post('/area-cliente/vidros/send', 'Pages::sendVidros');
 $routes->get('/area-cliente/vidros', 'Pages::Vidros');
+$routes->post('/area-cliente/pet/send', 'Pages::sendPet');
+$routes->get('/area-cliente/pet', 'Pages::Pet');
 $routes->get('/area-cliente', 'Pages::areaCliente');
 $routes->post('/f-modelos', 'Pages::carregaModelos');
 $routes->post('/f-empresa', 'Pages::findEmpresa');
