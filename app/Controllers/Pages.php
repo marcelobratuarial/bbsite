@@ -58,7 +58,6 @@ class Pages extends BaseController
 		echo $responses;
 	}
 
-
 	public function findCEP() {
 		$cep = $_POST['cep'];
 
@@ -73,6 +72,7 @@ class Pages extends BaseController
 		echo json_encode($dados);
 		
 	}
+
 
 	public function sendApp() {
 		// print_r("teste");exit;
@@ -621,7 +621,7 @@ class Pages extends BaseController
 			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
 		}
 		// print_r($montadoras);exit;
-		return view('ac-pet', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+		return view('area-cliente/pet', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
 	}
 
 	public function Vidros()
@@ -647,7 +647,7 @@ class Pages extends BaseController
 			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
 		}
 		// print_r($montadoras);exit;
-		return view('vidros', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+		return view('area-cliente/vidros', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
 	}
 
 	public function Funeral()
@@ -673,7 +673,7 @@ class Pages extends BaseController
 			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
 		}
 		// print_r($montadoras);exit;
-		return view('ac-funeral', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+		return view('area-cliente/funeral', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
 	}
 
 	public function App()
@@ -699,17 +699,17 @@ class Pages extends BaseController
 			// $responses .=  utf8_encode($m["modeloCarro"]). "|";
 		}
 		// print_r($montadoras);exit;
-		return view('app', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
+		return view('area-cliente/app', ['main_menu' => $this->main_menu, "montadoras" => $montadoras]);
 	}
 
 	public function carroReserva()
 	{
-		return view('carro-reserva', ['main_menu' => $this->main_menu]);
+		return view('area-cliente/carro-reserva', ['main_menu' => $this->main_menu]);
 	}
 
 	public function areaCliente()
 	{
-		return view('area-cliente', ['main_menu' => $this->main_menu]);
+		return view('area-cliente/index', ['main_menu' => $this->main_menu]);
 	}
 
 	public function servicos($serv_slug = null, $content_slug = null)
