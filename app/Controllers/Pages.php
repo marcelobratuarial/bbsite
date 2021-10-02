@@ -196,7 +196,7 @@ class Pages extends BaseController
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
-		$config['CRLF'] = "\r\n";
+		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
