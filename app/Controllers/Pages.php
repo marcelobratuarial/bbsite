@@ -201,8 +201,8 @@ class Pages extends BaseController
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
 		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '465';
-		$config['SMTPCrypto'] = 'ssl';
+		$config['SMTPPort'] = '25';
+		$config['SMTPCrypto'] = 'tsl';
 		$email->initialize($config);
 
 		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
