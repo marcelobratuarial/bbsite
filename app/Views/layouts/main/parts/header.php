@@ -25,7 +25,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand overflow-hidden pr-3" href="index.php">
-                            <img src="assets/svg/logo_horizontal.png" alt="" style="height:35px;"/>
+                            <img src="<?= base_url("assets/img/svg/logo_horizontal.png")?>" alt="" style="height:35px;"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <div class="hamburger hamburger--emphatic">
