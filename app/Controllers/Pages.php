@@ -184,14 +184,11 @@ class Pages extends BaseController
 			$formData['Cobertura'] . "','" .
 			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
 		// print_r($query);exit;
-		$qry = $db->query($query);
+		// $qry = $db->query($query);
         
-		// $r = $db->query('select IDCodigo from carro_reserva order by IDCodigo desc limit 1');
-		// $id = $r->getRowArray()["IDCodigo"];
-		// print_r($id);exit;
-		$id = $db->insertID();
-		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		$qry = $db->query($query);
+		// $id = $db->insertID();
+		// $query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
         
 
 
@@ -199,13 +196,13 @@ class Pages extends BaseController
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
-		// $config['CRLF'] = "\r\n";
+		$config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = 'br540.hostgator.com.br';
 		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
 		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '25';
-		$config['SMTPCrypto'] = 'tsl';
+		$config['SMTPPort'] = '465';
+		$config['SMTPCrypto'] = 'ssl';
 		$email->initialize($config);
 
 		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
@@ -217,38 +214,10 @@ class Pages extends BaseController
 
 
 		
-		// $body = "<b>Dados da Empresa</b><br>Empresa:" . $NomeEmpresa . "<br />Solicitante: ".$formData['SolicitanteEmpresa']. "<br />Telefone Solicitante: $TelefoneEmpresa<br />E-mail Solicitante: $EmailEmpresa<br /><br><b>Dados do Cliente</b><br>CPF Associado: $CPF<br />Nome Associado: $Nome<br />Email: $Email<br>Telefone: $Telefone<br><br>CEP: $CEP<br>Logradouro: $Logradouro<br>Bairro: $Bairro<br>Cidade: $Cidade<br>Estado: $Estado<br>Número: $Numero<br>Complemento: $Complemento<br><br><b>Dados da Solicitação</b><br>Placa: $Placa<br>Quantidade de Diarias: $QuantidadeDeDiarias<br>Estado Retirada: $EstadoRetirada<br>Cidade Retirada: $CidadeRetirada<br>Data Retirada: $DataRetirada<br>Hora Retirada: $HoraRetirada<br>Nome Responsavel Cartao: $NomeResponsavelCartao<br>CPF Responsavel Cartao: $CPFResponsavelCartao";
 		
-		// $body = strtoupper($body);
-		// $body2 = "Prezado(a), <br><br>Sua solicitação foi realizada com sucesso. Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!<br><br><a href='https://brasilatuarial.com.br/virtual_office/areaDoCliente.php'>Clique aqui</a> para acompanhar a sua socilitação em tempo real!";
-		
-		// require("class.phpmailer.php");
-		// date_default_timezone_set('Brazil/East');
-		
-		// $emailConfirm = new PHPMailer();
-		// $emailConfirm->IsSMTP();
-		// $emailConfirm->Host = "br540.hostgator.com.br";
-		// $emailConfirm->SMTPAuth = true;
-		// $emailConfirm->SMTPSecure = "ssl";
-		// $emailConfirm->Port = 465;
-		// $emailConfirm->SetFrom('contato@brasilatuarial.com.br','Contato');
-		// $emailConfirm->Username = "contato@brasilatuarial.com.br";
-		// $emailConfirm->Password = "contato@2015";
-		// $emailConfirm->AddAddress($Email,$Email);
-
-		// if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
-		// 	if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
-		// 		$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $SinistroEmpresa);
-		// 		$email->attach($this->request->getFile("BoletimOcorrencia")->getPathname(), "attachment", $BoletimOcorrencia);
-		// 		$email->attach($this->request->getFile("CRLVVeiculo")->getPathname(), "attachment", $CRLVVeiculo);
-		// 		$email->attach($this->request->getFile("CHNCliente")->getPathname(), "attachment", $CHNCliente);
-		// 		$email->attach($this->request->getFile("AutorizacaoReparo")->getPathname(), "attachment", $AutorizacaoReparo);
-		// 	}
-		// }
-
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
-		$message = view('mail/to_client', $formData);
+		$message = view('mail/to_client_app', $formData);
 		
 		$email->setMessage($message);
 

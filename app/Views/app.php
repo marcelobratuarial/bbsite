@@ -402,7 +402,7 @@
                         <hr>
                         <p>
                             <!-- <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Carro Reserva</a> -->
-                            <a href="<?= base_url("area-cliente/carro-reserva")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" target="_blank">
+                            <a href="<?= base_url("area-cliente/app")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" target="_blank">
                                 APP
                             </a>
                         </p>
