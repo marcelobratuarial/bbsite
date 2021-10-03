@@ -242,18 +242,22 @@
             </section>
             <section id="formSuccess">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div style="color: #4d9436">
-                        <span class="icon-Yes fs-8 fw-600"></span>
+                    <div class="icon-message">
+                        <span class="icon-Danger fs-8 fw-600"></span>
                     </div>
                     <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
-                    <div class="text-center" style="">
-                        Sua solicitação foi realizada com sucesso.<br>
-                        Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!
+                    <div class="text-center">
+                        <div class="message-response">A sua solicitação foi enviada com sucesso!
+                        </div>
                         <hr>
-                        <p>
-                            <!-- <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Carro Reserva</a> -->
-                            <a href="<?= base_url("area-cliente/app")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" target="_blank">
-                                APP
+                        <p class="message-response-try-again-btn">
+                            <a href="#" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                OK
+                            </a>
+                        </p>
+                        <p class="message-response-btn">
+                            <a href="<?= base_url("area-cliente/pet")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                PET
                             </a>
                         </p>
                     </div>

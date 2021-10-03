@@ -684,6 +684,103 @@ class Pages extends BaseController
 		exit;
 	}
 
+	public function sendPet() {
+		// throw new \Exception("0 (zero)");
+		// $request = \Config\Services::request();
+		// var_dump($this->request->getFile("SinistroEmpresa"));
+		$DataNascimento = $this->request->getVar("DataNascimento");
+		// var_dump($DataNascimento);
+		// exit;
+		$vetorData = explode("/",$DataNascimento);
+		$DataNascimento = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		$formData = [
+			"Nome" => $this->request->getVar("Nome"),
+			"CPF" => $this->request->getVar("cpf"),
+			"DataNascimento" => $DataNascimento,
+			"Email" => $this->request->getVar("Email"),
+			"Celular" => $this->request->getVar("Celular"),
+			"CEP" => $this->request->getPost("cep"),
+			"Logradouro" => $this->request->getVar("rua"),
+			"Bairro" => $this->request->getVar("bairro"),
+			"Estado" => $this->request->getVar("estado"),
+			"Cidade" => $this->request->getVar("cidade"),
+			"Numero" => $this->request->getVar("Numero"),
+			"Complemento" => $this->request->getVar("Complemento"),
+			"Plano" => $this->request->getVar("plano")
+		];
+
+
+		
+		$db = \Config\Database::connect('atuarial');
+		$query = "INSERT INTO pet (DataSolicitacao, Nome, CPF, 
+		DataNascimento, Email, Celular, CEP, Logradouro, Bairro, 
+		Estado, Cidade, Numero, Complemento, Plano, Arquivado) 
+		values (CURRENT_DATE, " . 
+		$formData['Nome'] . ",'" . 
+		$formData['CPF'] . "','".
+		$formData['DataNascimento'] . "','" .
+		$formData['Email'] ."','" .
+		$formData['Celular'] ."','". 
+		$formData['CEP'] . "', '".
+		$formData['Logradouro'] ."','". 
+		$formData['Bairro'] ."','" .
+		$formData['Estado'] . "','" .
+		$formData['Cidade'] . "','" .
+		$formData['Numero'] . "','" .
+		$formData['Complemento'] . "','" .
+		$formData['Plano'] . "',0)";
+		
+		// $qry = $db->query($query);
+        // $id = $db->insertID();
+		// $query = "insert into pet_status (IDPet, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
+        
+		$email = \Config\Services::email();
+		$config['mailType'] = 'html';
+		$config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'smtp';
+		// $config['CRLF'] = "\r\n";
+		$config['newline'] = "\r\n";
+		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		$email->initialize($config);
+
+		$email->setSubject('PEDIDO DE PET BRASIL ATUARIAL');
+		$email->setFrom('contato@brasilatuarial.com.br', "Site");
+		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		$message = view('area-cliente/mail/to_team_pet', $formData);
+		
+		$email->setMessage($message);
+		
+
+		try {
+			$s = $email->send();
+			if($s) {
+				echo json_encode(["message" => "success", "error" => false]);
+				
+				$email->clear();
+				$email->setSubject('CONFIRMAÇÃO PEDIDO DE PET BRASIL ATUARIAL');
+				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+				$message = view('area-cliente/mail/to_client_pet', $formData);
+				
+				$email->setMessage($message);
+
+				$s = $email->send();
+				
+			} else {
+				throw new \Exception("Não enviado: MAIL TEAM");
+			}
+			
+		} catch (\Exception $e) {
+			echo json_encode(['message'=>$e->getMessage(), 'error' => true]);
+		}
+		exit;
+	}
+
 	public function Pet()
 	{
 		
