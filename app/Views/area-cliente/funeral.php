@@ -104,187 +104,191 @@
                 </div>
             </section>
             <section>
-            <div class="container-fluid pb-4 position-relative solicitacao">
-            <img src="<?= base_url("assets/img/homem_sinistro_carro.png") ?>" class="homem_sinistro">
-            <div class="row">
-                <div class="d-none d-md-inline-block col-md-5 col-lg-4">
-                    
-                </div>
-                <div class="col-12 col-md-7 col-lg-5 text-center pl-5 pr-5 pb-5 fluxo">
-                    <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
-                        <div class="text-left texto">
-                            <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
-                            <div class="text-center mt-5 mb-3">
-                                <div class="titulo">
-                                    Dados da<br>Empresa
+                <div class="container-fluid pb-4 position-relative solicitacao">
+                <img src="<?= base_url("assets/img/homem_sinistro_carro.png") ?>" class="homem_sinistro">
+                <div class="row">
+                    <div class="d-none d-md-inline-block col-md-5 col-lg-4">
+                        
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-5 text-center pl-5 pr-5 pb-5 fluxo">
+                        <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
+                            <div class="text-left texto">
+                                <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
+                                <div class="text-center mt-5 mb-3">
+                                    <div class="titulo">
+                                        Dados da<br>Empresa
+                                    </div>
+                                    <div class="linhaoculta"></div>
+                                    <div class="titulo">
+                                        Dados do<br>Cliente
+                                    </div>
+                                    <div class="linhaoculta"></div>
+                                    <div class="titulo" style="vertical-align:top">
+                                        Anexos
+                                    </div>
+                                    <div></div>
                                 </div>
-                                <div class="linhaoculta"></div>
-                                <div class="titulo">
-                                    Dados do<br>Cliente
+                                <div class="text-center">
+                                    <div class="etapa ativo" id="etapa1">
+                                        <img src="<?= base_url("assets/img/icon_business.png")?>">
+                                    </div>
+                                    <div class="linhainativa"></div>
+                                    <div class="etapa inativo" id="etapa2">
+                                        <img src="<?= base_url("assets/img/icon_client.png")?>" style="filter: contrast(0.5);">
+                                        <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa1">VOLTAR</div>
+                                    </div>
+                                    <div class="linhainativa"></div>
+                                    <div class="etapa inativo" id="etapa3">
+                                        <img src="<?= base_url("assets/img/icon_attach.png") ?>" style="filter: contrast(0.5);">
+                                        <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa2">VOLTAR</div>
+                                    </div>
+                                    <div></div>
                                 </div>
-                                <div class="linhaoculta"></div>
-                                <div class="titulo" style="vertical-align:top">
-                                    Anexos
+                                <div class="text-center d-none">
+                                    <h1 class="titulostep">Dados da Associação</h1>
                                 </div>
-                                <div></div>
-                            </div>
-                            <div class="text-center">
-                                <div class="etapa ativo" id="etapa1">
-                                    <img src="<?= base_url("assets/img/icon_business.png")?>">
-                                </div>
-                                <div class="linhainativa"></div>
-                                <div class="etapa inativo" id="etapa2">
-                                    <img src="<?= base_url("assets/img/icon_client.png")?>" style="filter: contrast(0.5);">
-                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa1">VOLTAR</div>
-                                </div>
-                                <div class="linhainativa"></div>
-                                <div class="etapa inativo" id="etapa3">
-                                    <img src="<?= base_url("assets/img/icon_attach.png") ?>" style="filter: contrast(0.5);">
-                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa2">VOLTAR</div>
-                                </div>
-                                <div></div>
-                            </div>
-                            <div class="text-center d-none">
-                                <h1 class="titulostep">Dados da Associação</h1>
-                            </div>
-                            <div class="row dadosDaAssociacao mt-5" style="height:100%">
-                                <div class="col-12 text-center">
-                                    <label>CNPJ</label><br>
-                                    <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" class="campo cnpj" autocomplete="off">
-                                    <input type="hidden" name="IDEmpresa" id="IDEmpresa">
-                                    <input type="hidden" name="NomeEmpresa" id="NomeEmpresa">
-                                </div>
-                                <div class="col-12 text-center divcampo campoEmpresa">
-                                    <label>Solicitante</label><br>
-                                    <input type="text" name="SolicitanteEmpresa" id="SolicitanteEmpresa" class="campo" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo campoEmpresa">
-                                    <label>Telefone</label><br>
-                                    <input type="text" name="TelefoneEmpresa" id="TelefoneEmpresa" class="campo telefone" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo campoEmpresa">
-                                    <label>E-mail</label><br>
-                                    <input type="text" name="EmailEmpresa" id="EmailEmpresa" class="campo" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo campoEmpresa">
-                                    <input type="button" name="AvancarEtapa2" id="AvancarEtapa2" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
-                                </div>
-                            </div>
-                            <div class="row dadosDoCliente mt-5" style="height:100%">
-                                <div class="col-12 text-center">
-                                    <label>Nome</label><br>
-                                    <input type="text" name="Nome" id="Nome" class="campo" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo">
-                                    <label>CPF</label><br>
-                                    <input type="text" name="CPF" id="CPF" class="campo cpf" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo ocultarSeCPF">
-                                    <label>E-mail</label><br>
-                                    <input type="text" name="Email" id="Email" class="campo" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo ocultarSeCPF">
-                                    <label>Telefone</label><br>
-                                    <input type="text" name="Telefone" id="Telefone" class="campo telefone" autocomplete="off">
-                                </div>
-                                <div class="col-12 text-center divcampo ocultarSeCPF">
-                                    <label>Tipo</label><br>
-                                    <select name="Tipo" id="Tipo" class="campo tipo">
-                                        <option></option>
-                                        <option>Individual</option>
-                                        <option>Familiar</option>
-                                        <option>Multi-Familiar</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 text-center divcampo ocultarSeCPF">
-                                    <label>Capital Segurado</label><br>
-                                    <select name="CapitalSegurado" id="CapitalSegurado" class="campo tipo">
-                                        <option></option>
-                                        <option>2.000,00</option>
-                                        <option>3.000,00</option>
-                                        <option>5.000,00</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 text-center divcampo ocultarSeCPF">
-                                    <input type="button" name="AvancarEtapa3" id="AvancarEtapa3" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
-                                </div>
-                            </div>
-                            <div class="row dadosAnexos mt-5" style="height:100%">
-                                <div class="col-12 text-center">
-                                    <label class="m-0">Atestado de Óbito</label><br>
-                                    <input type="file" name="Anexo1" id="Anexo1" class="campo d-none">
-                                    <div class="anexo">
-                                        <label class="nomearquivo">Escolher um arquivo...</label>
-                                        <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                <div class="row dadosDaAssociacao mt-5" style="height:100%">
+                                    <div class="col-12 text-center">
+                                        <label>CNPJ</label><br>
+                                        <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" class="campo cnpj" autocomplete="off">
+                                        <input type="hidden" name="IDEmpresa" id="IDEmpresa">
+                                        <input type="hidden" name="NomeEmpresa" id="NomeEmpresa">
+                                    </div>
+                                    <div class="col-12 text-center divcampo campoEmpresa">
+                                        <label>Solicitante</label><br>
+                                        <input type="text" name="SolicitanteEmpresa" id="SolicitanteEmpresa" class="campo" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo campoEmpresa">
+                                        <label>Telefone</label><br>
+                                        <input type="text" name="TelefoneEmpresa" id="TelefoneEmpresa" class="campo telefone" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo campoEmpresa">
+                                        <label>E-mail</label><br>
+                                        <input type="text" name="EmailEmpresa" id="EmailEmpresa" class="campo" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo campoEmpresa">
+                                        <input type="button" name="AvancarEtapa2" id="AvancarEtapa2" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
                                     </div>
                                 </div>
-                                <div class="col-12 text-center divcampo mt-4">
-                                    <label class="m-0">Cópia do RG e CPF do Beneficiário</label><br>
-                                    <input type="file" name="Anexo2" id="Anexo2" class="campo d-none">
-                                    <div class="anexo">
-                                        <label class="nomearquivo">Escolher um arquivo...</label>
-                                        <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                <div class="row dadosDoCliente mt-5" style="height:100%">
+                                    <div class="col-12 text-center">
+                                        <label>Nome</label><br>
+                                        <input type="text" name="Nome" id="Nome" class="campo" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo">
+                                        <label>CPF</label><br>
+                                        <input type="text" name="CPF" id="CPF" class="campo cpf" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo ocultarSeCPF">
+                                        <label>E-mail</label><br>
+                                        <input type="text" name="Email" id="Email" class="campo" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo ocultarSeCPF">
+                                        <label>Telefone</label><br>
+                                        <input type="text" name="Telefone" id="Telefone" class="campo telefone" autocomplete="off">
+                                    </div>
+                                    <div class="col-12 text-center divcampo ocultarSeCPF">
+                                        <label>Tipo</label><br>
+                                        <select name="Tipo" id="Tipo" class="campo tipo">
+                                            <option></option>
+                                            <option>Individual</option>
+                                            <option>Familiar</option>
+                                            <option>Multi-Familiar</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 text-center divcampo ocultarSeCPF">
+                                        <label>Capital Segurado</label><br>
+                                        <select name="CapitalSegurado" id="CapitalSegurado" class="campo tipo">
+                                            <option></option>
+                                            <option>2.000,00</option>
+                                            <option>3.000,00</option>
+                                            <option>5.000,00</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 text-center divcampo ocultarSeCPF">
+                                        <input type="button" name="AvancarEtapa3" id="AvancarEtapa3" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
                                     </div>
                                 </div>
-                                <div class="col-12 text-center divcampo mt-4">
-                                    <label class="m-0">Cópia do RG e CPF do Titular</label><br>
-                                    <input type="file" name="Anexo3" id="Anexo3" class="campo d-none">
-                                    <div class="anexo">
-                                        <label class="nomearquivo">Escolher um arquivo...</label>
-                                        <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                <div class="row dadosAnexos mt-5" style="height:100%">
+                                    <div class="col-12 text-center">
+                                        <label class="m-0">Atestado de Óbito</label><br>
+                                        <input type="file" name="Anexo1" id="Anexo1" class="campo d-none">
+                                        <div class="anexo">
+                                            <label class="nomearquivo">Escolher um arquivo...</label>
+                                            <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 text-center divcampo mt-4">
-                                    <label class="m-0">Comprovante Bancário para Depósito</label><br>
-                                    <input type="file" name="Anexo4" id="Anexo4" class="campo d-none">
-                                    <div class="anexo">
-                                        <label class="nomearquivo">Escolher um arquivo...</label>
-                                        <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                    <div class="col-12 text-center divcampo mt-4">
+                                        <label class="m-0">Cópia do RG e CPF do Beneficiário</label><br>
+                                        <input type="file" name="Anexo2" id="Anexo2" class="campo d-none">
+                                        <div class="anexo">
+                                            <label class="nomearquivo">Escolher um arquivo...</label>
+                                            <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 text-center divcampo mt-4">
-                                    <label class="m-0">Nota Fiscal</label><br>
-                                    <input type="file" name="Anexo5" id="Anexo5" class="campo d-none">
-                                    <div class="anexo">
-                                        <label class="nomearquivo">Escolher um arquivo...</label>
-                                        <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                    <div class="col-12 text-center divcampo mt-4">
+                                        <label class="m-0">Cópia do RG e CPF do Titular</label><br>
+                                        <input type="file" name="Anexo3" id="Anexo3" class="campo d-none">
+                                        <div class="anexo">
+                                            <label class="nomearquivo">Escolher um arquivo...</label>
+                                            <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 text-center divcampo mt-4">
-                                    <input type="submit" name="EnviarDados" id="EnviarDados" class="campo botaoAvancar" value="ENVIAR AVISO DE SINISTRO">
+                                    <div class="col-12 text-center divcampo mt-4">
+                                        <label class="m-0">Comprovante Bancário para Depósito</label><br>
+                                        <input type="file" name="Anexo4" id="Anexo4" class="campo d-none">
+                                        <div class="anexo">
+                                            <label class="nomearquivo">Escolher um arquivo...</label>
+                                            <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center divcampo mt-4">
+                                        <label class="m-0">Nota Fiscal</label><br>
+                                        <input type="file" name="Anexo5" id="Anexo5" class="campo d-none">
+                                        <div class="anexo">
+                                            <label class="nomearquivo">Escolher um arquivo...</label>
+                                            <img src="<?= base_url("assets/img/icon_upload.png") ?>" class="botaoUpload" data-toggle="tooltip" data-placement="top" title="Tamanho Máximo 5MB">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center divcampo mt-4">
+                                        <input type="submit" name="EnviarDados" id="EnviarDados" class="campo botaoAvancar" value="ENVIAR AVISO DE SINISTRO">
+                                    </div>
                                 </div>
                             </div>
+                        </form>
+                    </div>
+                    <div class="d-none d-lg-inline-block col-md-3 text-right">
+                        <img src="<?= base_url("assets/img/icon_funeral.png") ?>" class="icon_sinistro">
+                        <div class="slogan">
+                            <span style="color:#91D8F7">SIMPLES</span>
+                            <span style="color:#4CAFD9">FÁCIL</span>
+                            <span style="color:#245F96">RÁPIDO</span>
                         </div>
-                    </form>
-                </div>
-                <div class="d-none d-lg-inline-block col-md-3 text-right">
-                    <img src="<?= base_url("assets/img/icon_funeral.png") ?>" class="icon_sinistro">
-                    <div class="slogan">
-                        <span style="color:#91D8F7">SIMPLES</span>
-                        <span style="color:#4CAFD9">FÁCIL</span>
-                        <span style="color:#245F96">RÁPIDO</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid pl-0 pr-0 position-relative" id="divSolicitacao">
-            
-        </div>
+            <div class="container-fluid pl-0 pr-0 position-relative" id="divSolicitacao">
+                
+            </div>
             </section>
             <section id="formSuccess">
                 <div class="d-flex flex-column justify-content-center align-items-center">
-                    <div style="color: #4d9436">
-                        <span class="icon-Yes fs-8 fw-600"></span>
+                    <div class="icon-message">
+                        <span class="icon-Danger fs-8 fw-600"></span>
                     </div>
                     <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
-                    <div class="text-center" style="">
-                        Sua solicitação foi realizada com sucesso.<br>
-                        Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!
+                    <div class="text-center">
+                        <div class="message-response">A sua solicitação foi enviada com sucesso!
+                        </div>
                         <hr>
-                        <p>
-                            <!-- <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Carro Reserva</a> -->
-                            <a href="<?= base_url("area-cliente/app")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" target="_blank">
-                                APP
+                        <p class="message-response-try-again-btn">
+                            <a href="#" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                OK
+                            </a>
+                        </p>
+                        <p class="message-response-btn">
+                            <a href="<?= base_url("area-cliente/funeral")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                FUNERAL
                             </a>
                         </p>
                     </div>

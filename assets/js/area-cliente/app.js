@@ -468,8 +468,7 @@ $(document).ready(function() {
                     $("#formSuccess").find(".icon-message span").
                     removeClass("icon-Danger").addClass("icon-Yes")
                     $("#formSuccess").find("h4").text("Sucesso!")
-                    var m = 'Sua solicitação foi realizada com sucesso..<br>'+
-                    'Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!';
+                    var m = 'A sua solicitação foi enviada com sucesso!';
                     $("#formSuccess").find(".message-response").html(m)
                     
                     console.log(data)

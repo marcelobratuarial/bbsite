@@ -397,8 +397,7 @@
                     </div>
                     <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
                     <div class="text-center">
-                        <div class="message-response">Sua solicitação foi realizada com sucesso.<br>
-                            Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!
+                        <div class="message-response">Sua solicitação foi realizada com sucesso.
                         </div>
                         <hr>
                         <p class="message-response-try-again-btn">

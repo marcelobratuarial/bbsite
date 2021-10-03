@@ -392,6 +392,146 @@ class Pages extends BaseController
 		exit;
 	}
 
+	public function sendFuneral() {
+		// throw new \Exception("0 (zero)");
+		// $request = \Config\Services::request();
+		// var_dump($this->request->getFile("SinistroEmpresa"));
+		// $DataRetirada = $this->request->getVar("DataRetirada");
+		// var_dump($DataRetirada);
+		// exit;
+		// $vetorData = explode("/",$DataRetirada);
+		// $DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		$formData = [
+			"IDEmpresa" => $this->request->getVar("IDEmpresa"),
+			"SolicitanteEmpresa" => $this->request->getVar("SolicitanteEmpresa"),
+			"TelefoneEmpresa" => $this->request->getVar("TelefoneEmpresa"),
+			"EmailEmpresa" => $this->request->getVar("EmailEmpresa"),
+			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
+			"Nome" => $this->request->getVar("Nome"),
+			"CPF" => $this->request->getVar("CPF"),
+			"Email" => $this->request->getVar("Email"),
+			"Telefone" => $this->request->getVar("Telefone"),
+			"Tipo" => $this->request->getVar("Tipo"),
+			"CapitalSegurado" => $this->request->getVar("CapitalSegurado")
+		];
+
+
+		// $SinistroEmpresa = "";
+		// $BoletimOcorrencia = "";
+		// $CRLVVeiculo = "";
+		// $CHNCliente = "";
+		// $AutorizacaoReparo = "";
+		// if ($this->request->getFile("Anexo1")->getName() !== null) {
+		if ($this->request->getFile("Anexo1")->getName() != ""){
+			$anexo1 = $this->request->getFile("Anexo1")->getName();
+		}
+		if ($this->request->getFile("Anexo2")->getName() != ""){
+			$anexo2 = $this->request->getFile("Anexo2")->getName();
+		}
+		if ($this->request->getFile("Anexo3")->getName() != ""){
+			$anexo3 = $this->request->getFile("Anexo3")->getName();
+		}
+		if ($this->request->getFile("Anexo4")->getName() != ""){
+			$anexo4 = $this->request->getFile("Anexo4")->getName();
+		}
+		if ($this->request->getFile("Anexo5")->getName() != ""){
+			$anexo5 = $this->request->getFile("Anexo5")->getName();
+		}
+		// }
+		// print_r($CRLVVeiculo);
+		// exit;
+		
+		$db = \Config\Database::connect('atuarial');
+		$query = "INSERT INTO funeral (DataSolicitacao, IDEmpresa, SolicitanteEmpresa, TelefoneEmpresa, 
+		EmailEmpresa, Nome, Email, CPF, Telefone, Tipo, CapitalSegurado) 
+		values (CURRENT_DATE, " . 
+		$formData['IDEmpresa'] . ",'" . 
+		$formData['SolicitanteEmpresa'] . "','".
+		$formData['TelefoneEmpresa'] . "','" .
+		$formData['EmailEmpresa'] ."','" .
+		$formData['Nome'] ."','". 
+		$formData['Email'] ."','". 
+		$formData['CPF'] . "', '".
+		$formData['Telefone'] ."','" .
+		$formData['Tipo'] . "','" .
+		$formData['CapitalSegurado'] . "')";
+		
+		// $qry = $db->query($query);
+        // $id = $db->insertID();
+		// $query = "insert into funeral_status (IDFuneral, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
+        
+		if ($this->request->getFile("Anexo1")->getName() !== null){
+			if ($this->request->getFile("Anexo1")->getName() != ""){
+				// $query = "update funeral set AtestadoObito='".$id.$anexo1."', CPFeRGBeneficiario='".$id.$anexo2."', CPFeRGTitular='".$id.$anexo3."', ComprovanteBancario='".$id.$anexo4."', NotaFiscal='".$id.$anexo5."' where IDCodigo=".$id;
+				// $qry = $db->query($query);
+				
+			}
+		}
+
+
+		$email = \Config\Services::email();
+		$config['mailType'] = 'html';
+		$config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'smtp';
+		// $config['CRLF'] = "\r\n";
+		$config['newline'] = "\r\n";
+		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		$email->initialize($config);
+
+		$email->setSubject('AVISO DE ACIONAMENTO FUNERAL');
+		$email->setFrom('contato@brasilatuarial.com.br', "Site");
+		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		$message = view('area-cliente/mail/to_client_funeral', $formData);
+		
+		$email->setMessage($message);
+		
+		if ($this->request->getFile("Anexo1")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $anexo1);
+		}
+		if ($this->request->getFile("Anexo2")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $anexo2);
+		}
+		if ($this->request->getFile("Anexo3")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $anexo3);
+		}
+		if ($this->request->getFile("Anexo4")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo4")->getPathname(), "attachment", $anexo4);
+		}
+		if ($this->request->getFile("Anexo5")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo5")->getPathname(), "attachment", $anexo5);
+		}
+
+
+		try {
+			$s = $email->send();
+			if($s) {
+				echo json_encode(["message" => "success", "error" => false]);
+				
+				$email->clear();
+				$email->setSubject('CONFIRMAÇÃO AVISO DE ACIONAMENTO FUNERAL');
+				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+				$message = view('area-cliente/mail/to_client_funeral', $formData);
+				
+				$email->setMessage($message);
+
+				$s = $email->send();
+				
+			} else {
+				throw new \Exception("Não enviado: MAIL TEAM");
+			}
+			
+		} catch (\Exception $e) {
+			echo json_encode(['message'=>$e->getMessage(), 'error' => true]);
+		}
+		exit;
+	}
+
 	public function Pet()
 	{
 		
