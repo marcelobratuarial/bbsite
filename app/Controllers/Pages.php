@@ -353,7 +353,7 @@ class Pages extends BaseController
 		$email->setSubject('AVISO DE SINISTRO CARRO');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
-		$message = view('area-cliente/mail/to_client_carro_reserva', $formData);
+		$message = view('area-cliente/mail/to_team_carro_reserva', $formData);
 		
 		$email->setMessage($message);
 		
@@ -486,7 +486,7 @@ class Pages extends BaseController
 		$email->setSubject('AVISO DE ACIONAMENTO FUNERAL');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
-		$message = view('area-cliente/mail/to_client_funeral', $formData);
+		$message = view('area-cliente/mail/to_team_funeral', $formData);
 		
 		$email->setMessage($message);
 		
@@ -517,6 +517,158 @@ class Pages extends BaseController
 				$email->setFrom('contato@brasilatuarial.com.br', "Site");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_funeral', $formData);
+				
+				$email->setMessage($message);
+
+				$s = $email->send();
+				
+			} else {
+				throw new \Exception("Não enviado: MAIL TEAM");
+			}
+			
+		} catch (\Exception $e) {
+			echo json_encode(['message'=>$e->getMessage(), 'error' => true]);
+		}
+		exit;
+	}
+
+	public function sendVidros() {
+		// throw new \Exception("0 (zero)");
+		// $request = \Config\Services::request();
+		// var_dump($this->request->getFile("SinistroEmpresa"));
+		// $DataRetirada = $this->request->getVar("DataRetirada");
+		// var_dump($DataRetirada);
+		// exit;
+		// $vetorData = explode("/",$DataRetirada);
+		// $DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
+		$formData = [
+			"IDEmpresa" => $this->request->getVar("IDEmpresa"),
+			"SolicitanteEmpresa" => $this->request->getVar("SolicitanteEmpresa"),
+			"TelefoneEmpresa" => $this->request->getVar("TelefoneEmpresa"),
+			"EmailEmpresa" => $this->request->getVar("EmailEmpresa"),
+			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
+			
+			"Nome" => $this->request->getVar("Nome"),
+			"CPF" => $this->request->getVar("CPF"),
+			"Email" => $this->request->getVar("Email"),
+			"Telefone" => $this->request->getVar("Telefone"),
+
+			"Placa" => $this->request->getVar("Placa"),
+			"Chassi" => $this->request->getVar("Chassi"),
+			"Tipo" => $this->request->getVar("Tipo"),
+			"Fabricante" => $this->request->getVar("Fabricante"),
+			"modelo" => $this->request->getVar("modelo"),
+			"AnoFabricacao" => $this->request->getVar("AnoFabricacao"),
+			"AnoModelo" => $this->request->getVar("AnoModelo"),
+			"Cidade" => $this->request->getVar("Cidade"),
+			"Estado" => $this->request->getVar("Estado"),
+			"Peca" => $this->request->getVar("Peca"),
+			"Sensor" => $this->request->getVar("Sensor"),
+			"ModeloVidro" => $this->request->getVar("ModeloVidro"),
+			"DescricaoSinistro" => $this->request->getVar("DescricaoSinistro")
+		];
+
+
+		$AvisoSinistro = "";
+		$FotosVistoriaPrevia = "";
+		$FotosVidroDanificado = "";
+
+		// if ($this->request->getFile("Anexo1")->getName() !== null) {
+		if ($this->request->getFile("Anexo1")->getName() != ""){
+			$AvisoSinistro = $this->request->getFile("Anexo1")->getName();
+		}
+		if ($this->request->getFile("Anexo2")->getName() != ""){
+			$FotosVistoriaPrevia = $this->request->getFile("Anexo2")->getName();
+		}
+		if ($this->request->getFile("Anexo3")->getName() != ""){
+			$FotosVidroDanificado = $this->request->getFile("Anexo3")->getName();
+		}
+		// }
+		// print_r($CRLVVeiculo);
+		// exit;
+		
+		$db = \Config\Database::connect('atuarial');
+		$query = "INSERT INTO vidro (DataSolicitacao, IDEmpresa, SolicitanteEmpresa,
+		TelefoneEmpresa, EmailEmpresa, Nome, CPF, Email, Telefone, Placa, Chassi, Tipo, 
+		Montadora, Modelo, AnoFabricacao, UF, Cidade, PecaDanificada, PossuiSensor, 
+		ModeloVidro, DescricaoSinistro, AnoModelo) 
+		values (CURRENT_DATE, " . 
+		$formData['IDEmpresa'] . ",'" . 
+		$formData['SolicitanteEmpresa'] . "','".
+		$formData['TelefoneEmpresa'] . "','" .
+		$formData['EmailEmpresa'] ."','" .
+		$formData['Nome'] ."','". 
+		$formData['CPF'] . "', '".
+		$formData['Email'] ."','". 
+		$formData['Telefone'] ."','" .
+		$formData['Placa'] . "','" .
+		$formData['Chassi'] . "','" .
+		$formData['Fabricante'] . "','" .
+		$formData['modelo'] . "','" .
+		$formData['AnoFabricacao'] . "','" .
+		$formData['Estado'] . "','" .
+		$formData['Cidade'] . "','" .
+		$formData['Peca'] . "','" .
+		$formData['Sensor'] . "','" .
+		$formData['ModeloVidro'] . "','" .
+		$formData['DescricaoSinistro'] . "','" .
+		$formData['AnoModelo'] . "')";
+		
+		// $qry = $db->query($query);
+        // $id = $db->insertID();
+		// $query = "insert into vidro_status (IDVidro, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
+        
+		if ($this->request->getFile("Anexo1")->getName() !== null){
+			if ($this->request->getFile("Anexo1")->getName() != ""){
+				// $query = "update vidro set AvisoSinistro='".$id.$AvisoSinistro."', FotosVistoriaPrevia='".$id.$FotosVistoriaPrevia."', FotosVidroDanificado='".$id.$FotosVidroDanificado."' where IDCodigo=".$id;
+				// $qry = $db->query($query);
+				
+			}
+		}
+
+
+		$email = \Config\Services::email();
+		$config['mailType'] = 'html';
+		$config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'smtp';
+		// $config['CRLF'] = "\r\n";
+		$config['newline'] = "\r\n";
+		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		$email->initialize($config);
+
+		$email->setSubject('AVISO DE SINISTRO VIDRO');
+		$email->setFrom('contato@brasilatuarial.com.br', "Site");
+		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		$message = view('area-cliente/mail/to_team_vidros', $formData);
+		
+		$email->setMessage($message);
+		
+		if ($this->request->getFile("Anexo1")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $AvisoSinistro);
+		}
+		if ($this->request->getFile("Anexo2")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $FotosVistoriaPrevia);
+		}
+		if ($this->request->getFile("Anexo3")->getName() != ""){
+			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $FotosVidroDanificado);
+		}
+
+
+		try {
+			$s = $email->send();
+			if($s) {
+				echo json_encode(["message" => "success", "error" => false]);
+				
+				$email->clear();
+				$email->setSubject('CONFIRMAÇÃO AVISO DE SINISTRO VIDRO');
+				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+				$message = view('area-cliente/mail/to_client_vidros', $formData);
 				
 				$email->setMessage($message);
 
