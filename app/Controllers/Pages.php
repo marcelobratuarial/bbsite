@@ -75,7 +75,7 @@ class Pages extends BaseController
 
 
 	public function sendApp() {
-		// throw new \Exception("Some message goes here");
+		// throw new \Exception("0 (zero)");
 		$formData = [
 			"IDEmpresa" => $this->request->getPost("IDEmpresa"),
 			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
@@ -180,11 +180,11 @@ class Pages extends BaseController
 			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
 		
 			// print_r($query);exit;
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
         
-		// $id = $db->insertID();
-		// $query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$id = $db->insertID();
+		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
 
 		
 		$email = \Config\Services::email();
@@ -234,6 +234,7 @@ class Pages extends BaseController
 	}
 
 	public function sendCarroReserva() {
+		// throw new \Exception("0 (zero)");
 		// $request = \Config\Services::request();
 		// var_dump($this->request->getFile("SinistroEmpresa"));
 		$DataRetirada = $this->request->getVar("DataRetirada");
@@ -243,6 +244,7 @@ class Pages extends BaseController
 		$DataRetirada = $vetorData[2]."-".$vetorData[1]."-".$vetorData[0];
 		$formData = [
 			"IDEmpresa" => $this->request->getVar("IDEmpresa"),
+			"NomeEmpresa" => $this->request->getPost("NomeEmpresa"),
 			"SolicitanteEmpresa" => $this->request->getVar("SolicitanteEmpresa"),
 			"TelefoneEmpresa" => $this->request->getVar("TelefoneEmpresa"),
 			"EmailEmpresa" => $this->request->getVar("EmailEmpresa"),
@@ -320,36 +322,19 @@ class Pages extends BaseController
 		$formData['Estado'] . "','" .
 		$formData['Numero'] . "','" .
 		$formData['Complemento'] . "')";
-		// print_r($query);exit;
-		$qry = $db->query($query);
-        
-		// $r = $db->query('select IDCodigo from carro_reserva order by IDCodigo desc limit 1');
-		// $id = $r->getRowArray()["IDCodigo"];
-		// print_r($id);exit;
-		$id = $db->insertID();
-		$query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		$qry = $db->query($query);
-        
-		// $res = $qry->getResultArray();
-		// print_r($res);exit;
-		// mysqli_query($conexao, $query) or die($query);
-		// $id = mysqli_insert_id($conexao);
 		
-		// mysqli_query($conexao, );
-		// $this->request->getFile("SinistroEmpresa")->getName() !== null
+		// $qry = $db->query($query);
+        // $id = $db->insertID();
+		// $query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
+        
 		if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
 			if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
-				$query = "update carro_reserva set SinistroEmpresa='".$id.$SinistroEmpresa."', BoletimOcorrencia='".$id.$BoletimOcorrencia."', CRLVVeiculo='".$id.$CRLVVeiculo."', CHNCliente='".$id.$CHNCliente."', AutorizacaoReparo='".$id.$AutorizacaoReparo."' where IDCodigo=".$id;
-				// $query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-				$qry = $db->query($query);
+				// $query = "update carro_reserva set SinistroEmpresa='".$id.$SinistroEmpresa."', BoletimOcorrencia='".$id.$BoletimOcorrencia."', CRLVVeiculo='".$id.$CRLVVeiculo."', CHNCliente='".$id.$CHNCliente."', AutorizacaoReparo='".$id.$AutorizacaoReparo."' where IDCodigo=".$id;
+				// $qry = $db->query($query);
 				
-				// $res = $qry->getResultArray();
-
-
-				// mysqli_query($conexao, $query) or die($query);
 			}
 		}
-		// print_r("eeeee");exit;
 
 
 		$email = \Config\Services::email();
@@ -358,41 +343,20 @@ class Pages extends BaseController
 		$config['protocol'] = 'smtp';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = 'br540.hostgator.com.br';
-		$config['SMTPUser'] = 'contato@brasilatuarial.com.br';
-		$config['SMTPPass'] = 'contato@2015';
-		$config['SMTPPort'] = '25';
-		$config['SMTPCrypto'] = 'tsl';
+		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('AVISO DE SINISTRO CARRO');
-
-
-		$NomeEmpresa = $this->request->getPost("NomeEmpresa");
-		$formData["NomeEmpresa"] = $NomeEmpresa;
- 
-
-
+		$email->setFrom('contato@brasilatuarial.com.br', "Site");
+		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		$message = view('area-cliente/mail/to_client_carro_reserva', $formData);
 		
-		// $body = "<b>Dados da Empresa</b><br>Empresa:" . $NomeEmpresa . "<br />Solicitante: ".$formData['SolicitanteEmpresa']. "<br />Telefone Solicitante: $TelefoneEmpresa<br />E-mail Solicitante: $EmailEmpresa<br /><br><b>Dados do Cliente</b><br>CPF Associado: $CPF<br />Nome Associado: $Nome<br />Email: $Email<br>Telefone: $Telefone<br><br>CEP: $CEP<br>Logradouro: $Logradouro<br>Bairro: $Bairro<br>Cidade: $Cidade<br>Estado: $Estado<br>Número: $Numero<br>Complemento: $Complemento<br><br><b>Dados da Solicitação</b><br>Placa: $Placa<br>Quantidade de Diarias: $QuantidadeDeDiarias<br>Estado Retirada: $EstadoRetirada<br>Cidade Retirada: $CidadeRetirada<br>Data Retirada: $DataRetirada<br>Hora Retirada: $HoraRetirada<br>Nome Responsavel Cartao: $NomeResponsavelCartao<br>CPF Responsavel Cartao: $CPFResponsavelCartao";
+		$email->setMessage($message);
 		
-		// $body = strtoupper($body);
-		// $body2 = "Prezado(a), <br><br>Sua solicitação foi realizada com sucesso. Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!<br><br><a href='https://brasilatuarial.com.br/virtual_office/areaDoCliente.php'>Clique aqui</a> para acompanhar a sua socilitação em tempo real!";
-		
-		// require("class.phpmailer.php");
-		// date_default_timezone_set('Brazil/East');
-		
-		// $emailConfirm = new PHPMailer();
-		// $emailConfirm->IsSMTP();
-		// $emailConfirm->Host = "br540.hostgator.com.br";
-		// $emailConfirm->SMTPAuth = true;
-		// $emailConfirm->SMTPSecure = "ssl";
-		// $emailConfirm->Port = 465;
-		// $emailConfirm->SetFrom('contato@brasilatuarial.com.br','Contato');
-		// $emailConfirm->Username = "contato@brasilatuarial.com.br";
-		// $emailConfirm->Password = "contato@2015";
-		// $emailConfirm->AddAddress($Email,$Email);
-
 		if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
 			if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
 				$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $SinistroEmpresa);
@@ -403,69 +367,29 @@ class Pages extends BaseController
 			}
 		}
 
-		$email->setFrom('contato@brasilatuarial.com.br', "Site");
-		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
-		$message = view('mail/to_client', $formData);
-		
-		$email->setMessage($message);
+		try {
+			$s = $email->send();
+			if($s) {
+				echo json_encode(["message" => "success", "error" => false]);
+				
+				$email->clear();
+				$email->setSubject('CONFIRMAÇÃO AVISO DE SINISTRO CARRO');
+				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+				$message = view('area-cliente/mail/to_client_carro_reserva', $formData);
+				
+				$email->setMessage($message);
 
-		if(!$email->send()) {
-			print_r($email->printDebugger());
-		} else {
-
+				$s = $email->send();
+				
+			} else {
+				throw new \Exception("Não enviado: MAIL TEAM");
+			}
+			
+		} catch (\Exception $e) {
+			echo json_encode(['message'=>$e->getMessage(), 'error' => true]);
 		}
-		// var_dump($message);
 		exit;
-		// $emailConfirm->Subject = utf8_decode("AVISO DE SINISTRO CARRO");
-		$emailConfirm->MsgHTML(utf8_decode($body2));
-		$send2 = $emailConfirm->Send();
-
-		$email = new PHPMailer();
-		$email->IsSMTP();
-		$email->Host = "br540.hostgator.com.br";
-		$email->SMTPAuth = true;
-		$email->SMTPSecure = "ssl";
-		$email->Port = 465;
-		$email->SetFrom('contato@brasilatuarial.com.br','Contato');
-		$email->Username = "contato@brasilatuarial.com.br";
-		$email->Password = "contato@2015";
-		
-		$query = "select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='carro_reserva.php'";
-		$result = mysqli_query($conexao, $query);
-		while ($linha = mysqli_fetch_array($result)){
-			$email->AddAddress($linha["Email"],$linha["Nome"]);
-		}
-		/*$email->AddAddress("enrico.neto@brasilatuarial.com.br","Enrico Neto");
-		$email->AddAddress("cristiano.fernandes@brasilatuarial.com.br","Cristiano Fernandes");
-		$email->AddAddress("gabriela.guimaraes@brasilatuarial.com.br","Gabriela Guimaraes");
-		$email->AddAddress("julliano.vasconcelos@brasilatuarial.com.br","Julliano Vasconcelos");
-		$email->AddAddress("mayra.mariz@brasilatuarial.com.br","Mayra Mariz");
-		$email->AddAddress("stephany.duarte@brasilatuarial.com.br","Stephany Duarte");
-		$email->AddAddress("nara.nunes@brasilatuarial.com.br","Nara Nunes");
-		$email->AddAddress("isabela.duarte@brasilatuarial.com.br","Isabela Duarte");*/
-		if (isset($_FILES["SinistroEmpresa"]["name"])){
-			if ($_FILES["SinistroEmpresa"]["name"] != ""){
-				$email->AddAttachment($_FILES["SinistroEmpresa"]["tmp_name"],$SinistroEmpresa);
-				$email->AddAttachment($_FILES["BoletimOcorrencia"]["tmp_name"],$BoletimOcorrencia);
-				$email->AddAttachment($_FILES["CRLVVeiculo"]["tmp_name"],$CRLVVeiculo);
-				$email->AddAttachment($_FILES["CHNCliente"]["tmp_name"],$CHNCliente);
-				$email->AddAttachment($_FILES["AutorizacaoReparo"]["tmp_name"],$AutorizacaoReparo);
-			}
-		}
-
-		$email->Subject = utf8_decode("AVISO DE SINISTRO CARRO");	
-		$email->MsgHTML(utf8_decode($body));
-		$send = $email->Send();
-		
-		if (isset($_FILES["SinistroEmpresa"]["name"])){
-			if ($_FILES["SinistroEmpresa"]["name"] != ""){
-				move_uploaded_file($_FILES["SinistroEmpresa"]["tmp_name"],"arquivos/".$id.$SinistroEmpresa);
-				move_uploaded_file($_FILES["BoletimOcorrencia"]["tmp_name"],"arquivos/".$id.$BoletimOcorrencia);
-				move_uploaded_file($_FILES["CRLVVeiculo"]["tmp_name"],"arquivos/".$id.$CRLVVeiculo);
-				move_uploaded_file($_FILES["CHNCliente"]["tmp_name"],"arquivos/".$id.$CHNCliente);
-				move_uploaded_file($_FILES["AutorizacaoReparo"]["tmp_name"],"arquivos/".$id.$AutorizacaoReparo);
-			}
-		}
 	}
 
 	public function Pet()
