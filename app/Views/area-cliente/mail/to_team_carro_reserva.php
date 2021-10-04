@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- So that mobile will display zoomed in -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
   <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
-  <title>SOLICITAÇÃO DE CONTRATAÇÃO APP</title>
+  <title>AVISO DE SINISTRO CARRO</title>
 
   <style type="text/css">
 body {
@@ -164,7 +164,7 @@ img[class="image"] {
   </tr>
   <tr>
     <td class="content-wrapper" style="font-family:Segoe UI, Helvetica, Arial, sans-serif;padding-left:24px;padding-right:24px;text-align: left;">
-      <p style="text-transform:uppercase;font-size: 24px !important;margin-top: 15px; margin-bottom: 15px;">SOLICITAÇÃO DE CONTRATAÇÃO APP</p> 
+      <p style="text-transform:uppercase;font-size: 24px !important;margin-top: 15px; margin-bottom: 15px;">AVISO DE SINISTRO CARRO</p> 
       <?php /* <p style="font-family:sans-serif;font-size: 14px !important;margin-top: 15px; margin-bottom: 15px;line-height: 1.4 !important;">We're happy to announce that the creative companies you have trusted for years – including Comp24, AdProps and Dennis Curtin Studio – are now joined together under one powerful brand-imaging studio: <a href="http://coloredge.com" title="Coloredge" style="color:#f0782d;font-weight: bold;text-decoration:none;">Coloredge</a>.</p> 
       <p style="font-family:sans-serif;font-size: 14px !important;margin-top: 15px; line-height: 1.4;">Our exceptionally talented teams, with their unrivaled craftsmanship, are ready to meet your most demanding creative production needs.</p><br>
       */ ?>

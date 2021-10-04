@@ -75,6 +75,22 @@ class Pages extends BaseController
 
 
 	public function sendApp() {
+		// $db = \Config\Database::connect('atuarial');
+		// $query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='app.php'");
+        
+		// $res = $query->getResultArray();
+
+
+
+		// $team_mails = [];
+		// foreach($res as $i=>$v){
+		// 	// print_r($i);
+		// 	// print_r($v);
+		// 	$team_mails[] = $v["Email"];
+		// }
+		// print_r($team_mails);
+		// echo json_encode($res);exit;
+
 		// throw new \Exception("0 (zero)");
 		$formData = [
 			"IDEmpresa" => $this->request->getPost("IDEmpresa"),
@@ -180,18 +196,17 @@ class Pages extends BaseController
 			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
 		
 			// print_r($query);exit;
-		$qry = $db->query($query);
+		// $qry = $db->query($query);
         
-		$id = $db->insertID();
-		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		$qry = $db->query($query);
+		// $id = $db->insertID();
+		// $query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		// $qry = $db->query($query);
 
-		
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
-		// $config['CRLF'] = "\r\n";
+		$config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
 		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
@@ -203,6 +218,21 @@ class Pages extends BaseController
 		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+		
+
+		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='app.php'");
+		$res = $query->getResultArray();
+		
+		if(count($res) > 0) {
+			$team_mails = [];
+			foreach($res as $i=>$v){
+				$team_mails[] = $v["Email"];
+			}
+			$team_mails = implode(', ', $team_mails);
+			$email->setCC($team_mails);
+		}
+
+
 		$message = view('area-cliente/mail/to_team_app', $formData);
 		
 		$email->setMessage($message);
@@ -223,7 +253,7 @@ class Pages extends BaseController
 				$s = $email->send();
 				
 			} else {
-				throw new \Exception("Não enviado: MAIL TEAM");
+				throw new \Exception("Não enviado: MAIL TEAM: " . $email->printDebugger());
 			}
 			
 		} catch (\Exception $e) {
@@ -353,6 +383,19 @@ class Pages extends BaseController
 		$email->setSubject('AVISO DE SINISTRO CARRO');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+
+		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='carro_reserva.php'");
+		$res = $query->getResultArray();
+		
+		if(count($res) > 0) {
+			$team_mails = [];
+			foreach($res as $i=>$v){
+				$team_mails[] = $v["Email"];
+			}
+			$team_mails = implode(', ', $team_mails);
+			$email->setCC($team_mails);
+		}
+
 		$message = view('area-cliente/mail/to_team_carro_reserva', $formData);
 		
 		$email->setMessage($message);
@@ -486,6 +529,19 @@ class Pages extends BaseController
 		$email->setSubject('AVISO DE ACIONAMENTO FUNERAL');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+
+		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='funeral.php'");
+		$res = $query->getResultArray();
+		
+		if(count($res) > 0) {
+			$team_mails = [];
+			foreach($res as $i=>$v){
+				$team_mails[] = $v["Email"];
+			}
+			$team_mails = implode(', ', $team_mails);
+			$email->setCC($team_mails);
+		}
+
 		$message = view('area-cliente/mail/to_team_funeral', $formData);
 		
 		$email->setMessage($message);
@@ -644,6 +700,21 @@ class Pages extends BaseController
 		$email->setSubject('AVISO DE SINISTRO VIDRO');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+
+		
+		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='vidros.php'");
+		$res = $query->getResultArray();
+		
+		if(count($res) > 0) {
+			$team_mails = [];
+			foreach($res as $i=>$v){
+				$team_mails[] = $v["Email"];
+			}
+			$team_mails = implode(', ', $team_mails);
+			$email->setCC($team_mails);
+		}
+
+		
 		$message = view('area-cliente/mail/to_team_vidros', $formData);
 		
 		$email->setMessage($message);
@@ -751,6 +822,21 @@ class Pages extends BaseController
 		$email->setSubject('PEDIDO DE PET BRASIL ATUARIAL');
 		$email->setFrom('contato@brasilatuarial.com.br', "Site");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
+
+		
+		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='pet.php'");
+		$res = $query->getResultArray();
+		
+		if(count($res) > 0) {
+			$team_mails = [];
+			foreach($res as $i=>$v){
+				$team_mails[] = $v["Email"];
+			}
+			$team_mails = implode(', ', $team_mails);
+			$email->setCC($team_mails);
+		}
+
+
 		$message = view('area-cliente/mail/to_team_pet', $formData);
 		
 		$email->setMessage($message);
