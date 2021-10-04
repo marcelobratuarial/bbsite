@@ -107,7 +107,7 @@
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Seguro Pet</h5>
+                                        <h5 data-zanim='{"delay":0}'>Assistência Pet</h5>
                                     </div>
                                     <div class="overflow-hidden">
                                         <p class="mt-3" data-zanim='{"delay":0.1}'>Os pets fazem parte de muitas famílias e eles também merecem um cuidado especial! Com a Assistência PET da Brasil Benefícios você oferece ao seu associado um combo de serviços veterinários com uma ampla rede de atendimento para cães e gatos.</p>
@@ -144,10 +144,10 @@
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Assistência Odontológica</h5>
+                                        <h5 data-zanim='{"delay":0}'>Plano Odontológic</h5>
                                     </div>
                                     <div class="overflow-hidden">
-                                        <p class="mt-3" data-zanim='{"delay":0.1}'>A saúde começa pela boca! Com a Assistência Odontológica da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
+                                        <p class="mt-3" data-zanim='{"delay":0.1}'>A saúde começa pela boca! Com o Plano Odontológico da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
                                         <p><b>Vantagens:</b></p>
                                         <ul>
                                             <li>Tranquilidade em emergências;</li>
@@ -263,22 +263,22 @@
                                         <br/>
                                         <span class="color-white"> números:</span>
                                     </h2>
-                                    <div class="row mt-4 pr-lg-10">
-                                        <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>2.5m</div>
+                                    <div class="row mt-4">
+                                        <div class="col-md-4 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>5.000</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.1}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
-                                        <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>1.400</div>
+                                        <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.1}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>3.000</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.1}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
                                         </div>
                                     </div>

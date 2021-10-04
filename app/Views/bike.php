@@ -12,9 +12,9 @@
 
                     <div class="col-lg-6 d-flex flex-column">
 
-                        <p class="mt-4">A Assistência Bike Brasil Benefícios é um produto estruturado para atender o assistido no momento do sufoco quando tem algum imprevisto no percurso de sua pedala.</p>
+                        <p class="mt-4">A Assistência Bike Brasil Benefícios é um produto estruturado para atender o assistido no momento do sufoco quando tem algum imprevisto no percurso de sua pedalada.</p>
                         
-                        <p>Além disso a assistência Bike Brasil Benefícios visa dar suporte na montagem, caso nosso cliente opte por troca de Bike, e recebe a mesma desmontada.</p>
+                        <p>Além disso a assistência Bike Brasil Benefícios visa dar suporte na montagem, caso nosso associado opte por troca de Bike, e recebe a mesma desmontada.</p>
 
                         <p>Veja como a Assistência Bike Brasil Benefícios pode ajudar você:</p>
 

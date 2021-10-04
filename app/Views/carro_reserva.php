@@ -16,12 +16,30 @@
 
                     <div class="col-lg-6">
 
-                        <p class="mt-4">A Assistência a Carro Reserva da Brasil Benefícios é um produto que traz conforto e tranquilidade ao titular do contrato que, em caso de sinistro, beneficia-se de um veículo de categoria popular destinado ao uso exclusivamente durante o período em que o seu estiver imobilizado pelo evento acontecido.</p> 
+                        <p class="mt-4">Com o nosso serviço de Carro Reserva você proporciona muito mais segurança e praticidade aos seus associados. O produto é disponível para veículos de passeio e utilitário, e três planos são disponibilizados: 7, 15 ou 30 dias.</p> 
 
-                        <p>Em parceria com a Localiza Hertz, desenvolvemos três planos com diárias de 7, 15 e 30 dias. Nos pacotes estão inclusos quilometragem livre, seguro, gestão de multa e gestão de diárias excedidas.</p>
+                        <p>Trabalhamos com a Localiza Rent a Car, a maior rede brasileira de lojas especializadas em aluguel de carros.</p>
+
+                        <p><b>Vantagens:</b></p>
+
+                        <ul>
+                            <li>Parceiro de confiaça</li>
+                            <li>Mais credibilidade para sua entidade</li>
+                            <li>Comodidade para os seus associados</li>
+                            <li>Veículos de qualidade</li>
+                            <li>Atendimento ágil</li>
+                            <li>Uso personalizado</li>
+                            <li>Conforto ao substituir o veículo sem custos adicionais</li>
+                        </ul>
 
                     </div>
 
+                </div>
+
+                <div class="row mt-5">
+                    <a class="mx-auto" href="Http://www.brasilbeneficios.club" target="_blank">
+                        <button class="btn btn-brushi">Solicite agora</button>
+                    </a>
                 </div>
 
             </div>

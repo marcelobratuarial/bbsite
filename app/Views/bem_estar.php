@@ -33,8 +33,6 @@
                             <li>Help Desk</li>
                         </ul>
 
-                        <img class="my-3 mx-auto" width="20%" src="assets/svg/ike_logo.png" alt="">
-
                     </div>
 
                 </div>

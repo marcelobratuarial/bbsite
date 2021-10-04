@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row mt-6">
                     <div class="col-12">
-                        <h3 class="text-center fs-2 fs-md-3">Mais saúde brasil atuarial</h3>
+                        <h3 class="text-center fs-2 fs-md-3">Mais saúde</h3>
                         <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                     </div>
                 </div>
@@ -12,7 +12,7 @@
 
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-                        <p class="mt-4">Seu associado com a saúde física e mental em dia! Com o produto Mais Saúde o seu cliente tem acesso a consultas por vídeo chamada e acompanhamento via WhatsApp. Colocamos à disposição uma vez ao mês psicólogos, nutricionistas e profissionais da educação física.</p>
+                        <p class="mt-4">Seu associado com a saúde física e mental em dia! Com o produto Mais Saúde o seu associado tem acesso a consultas por vídeo chamada e acompanhamento via WhatsApp. Colocamos à disposição uma vez ao mês psicólogos, nutricionistas e profissionais da educação física.</p>
 
                         <p>Vantagens:</p>
 
@@ -70,7 +70,7 @@
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
 
                         <h5>Desconto em Consultas e Exames</h5>
-                        <p class="mt-4">Com o Desconto em Consultas e Exames o seu cliente poupa dinheiro com o melhor custo-benefício em consultas e exames laboratoriais. Fazemos parte de todo território brasileiro e buscamos clínicas e laboratórios credenciados mais próximos de sua localização.</p>
+                        <p class="mt-4">Com o Desconto em Consultas e Exames o seu cliente poupa dinheiro com o melhor custo-benefício em consultas e exames laboratoriais. Temos rede em todo território brasileiro e buscamos clínicas e laboratórios credenciados mais próximos de sua localização.</p>
 
                         <p>Vantagens:</p>
 

@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row mt-6">
                     <div class="col-12">
-                        <h3 class="text-center fs-2 fs-md-3">Assistência vidros</h3>
+                        <h3 class="text-center fs-2 fs-md-3">Assistência a vidros</h3>
                         <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
                     </div>
                 </div>
@@ -34,6 +34,12 @@
 
                     </div>
 
+                </div>
+
+                <div class="row mt-5">
+                    <a class="mx-auto" href="Http://www.brasilbeneficios.club" target="_blank">
+                        <button class="btn btn-brushi">Solicite agora</button>
+                    </a>
                 </div>
 
             </div>

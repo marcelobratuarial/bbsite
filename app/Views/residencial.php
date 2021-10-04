@@ -19,7 +19,7 @@
 
                     <div class="col-lg-6">
 
-                        <p class="mt-4">O serviço de Assistência Residencial é destinado a atender os imprevistos emergenciais do dia-dia. A central de atendimento se encarregará de enviar ao domicílio do associado, um prestador devidamente capacitado para realizar o serviço emergencial solicitado.</p> 
+                        <p class="mt-4">O serviço de Assistência Residencial é destinado a atender os imprevistos emergenciais do dia-dia. Nossa central de atendimento se encarregará de enviar ao domicílio do associado, um prestador devidamente capacitado para realizar o serviço emergencial solicitado.</p> 
 
                         <p><b>Vantagens</b></p>
 

@@ -119,46 +119,47 @@
     </div>
     <!--/.container-->
 </section>
-<section>
-    <div class="background-holder overlay overlay-elixir" style="background-image:url(<?= base_url("assets/images/background-15.jpg") ?>);"> </div>
-    <!--/.background-holder-->
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="media">
-                    <span class="ion-android-checkmark-circle fs-5 color-warning mr-3" style="transform: translateY(-1rem);"></span>
-                    <div class="media-body">
-                        <h2 class="color-warning fs-3 fs-lg-4">Take the right step,
-                            <br />
-                            <span class="color-white">do the big things.</span>
-                        </h2>
-                        <div class="row mt-4 pr-lg-10">
-                            <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>52k</div>
-                                <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Cases Solved</h6>
-                            </div>
-                            <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>164</div>
-                                <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Trained Experts</h6>
-                            </div>
-                            <div class="w-100 d-flex d-lg-none"></div>
-                            <div class="col-md-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>38</div>
-                                <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Branches</h6>
-                            </div>
-                            <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" data-zanim='{"delay":0.1}'>100%</div>
-                                <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>Satisfied Clients</h6>
+
+<section class="bg-secondary">
+                <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
+                <!--/.background-holder-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="media">
+                                <span class="ion-android-checkmark-circle fs-5 color-warning mr-3" style="transform: translateY(-1rem);"></span>
+                                <div class="media-body">
+                                    <h2 class="color-warning fs-3 fs-lg-4">Conheça nossos 
+                                        <br/>
+                                        <span class="color-white"> números:</span>
+                                    </h2>
+                                    <div class="row mt-4">
+                                        <div class="col-md-4 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1}'>0</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
+                                        </div>
+                                        <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.1}'>0</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
+                                        </div>
+                                        <div class="w-100 d-flex d-lg-none"></div>
+                                        <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.1}'>0</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
+                                        </div>
+                                        <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.1}'>0</div>
+                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--/.row-->
                 </div>
-            </div>
-        </div>
-        <!--/.row-->
-    </div>
-    <!--/.container-->
-</section>
+                <!--/.container-->
+            </section>
 
 
 

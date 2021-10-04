@@ -16,7 +16,6 @@
 
                         <p>Em pareceria com a MBM Seguradora somos estipulantes de apólice coletiva nº <b>18-0993-004332-0001</b> do produto aprovado na SUSEP sobre os seguintes números: PROCESSO SUSEP <b>10.004809/99-87</b> e PROCESSO SUSEP <b>15414.901229/2016-44</b>.</p>
 
-                        <img width="25%" src="assets/svg/mbm_logo.png" alt="">
                     </div>
 
                     <div class="col-lg-6 d-flex justify-content-center">

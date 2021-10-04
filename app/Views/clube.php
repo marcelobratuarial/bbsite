@@ -55,34 +55,76 @@
 
                 </div>
 
-                <div class="row mt-5">
-                    
-                    <p class="text-center">Milhares de parceiros e estabelecimentos com mais de 50.000 produtos exclusivos para você. Economize em compras, divirta-se no cinema e amplie seus conhecimentos e dos seus familiares.</p>
+                <section class="py-6">
+                    <div class="container-fluid">
+                        <div class="row align-items-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                            <div class="col-4 col-md-2 my-3 overflow-hidden">
+                                <img src="assets/svg/casasbahia_logo.png" alt="">
+                            </div>
+                            <div class="col-4 col-md-2 my-3 overflow-hidden">
+                                <img width="80%" src="assets/svg/nike_logo.png" alt="">
+                            </div>
+                            <div class="col-4 col-md-2 my-3 overflow-hidden">
+                                <img src="assets/svg/carrefour_logo.png" alt="">
+                            </div>
+                            <div class="col-4 col-md-2 my-3 overflow-hidden text-center">
+                                <img width="70%" src="assets/svg/natura_logo.png" alt="">
+                            </div>
+                            <div class="col-4 col-md-2 my-3 overflow-hidden">
+                                <img src="assets/svg/magazine_logo.png" alt="">
+                            </div>
+                            <div class="col-4 col-md-2 my-3 overflow-hidden">
+                                <img src="assets/svg/renner_logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                    <div class="col-lg-6 d-flex flex-column align-items-center mt-5">
-                        <div class="d-flex align-items-center">
-                            <img width="10%" src="assets/svg/check.svg" alt="">
+                <div class="row mt-4">
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+
+                        <p class="text-center">Milhares de parceiros e estabelecimentos com mais de 50.000 produtos exclusivos para você. Economize em compras, divirta-se no cinema e amplie seus conhecimentos e dos seus familiares.</p>
+
+                        <div class="d-flex align-items-center mt-5">
+                            <img width="5%" src="assets/svg/check.svg" alt="">
                             <p class="m-0 ml-2"><b>Cashback</b></p>
                         </div>
                         
-                        <div class="d-flex align-items-center">
-                            <img width="10%" src="assets/svg/check.svg" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <img width="5%" src="assets/svg/check.svg" alt="">
                             <p class="m-0 ml-2"><b>Cupom de desconto</b></p>
                         </div>
-                    </div>
 
-                    <div class="col-lg-6 d-flex flex-column align-items-center mt-5">
-                        <div class="d-flex align-items-center">
-                            <img width="10%" src="assets/svg/check.svg" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <img width="5%" src="assets/svg/check.svg" alt="">
                             <p class="m-0 ml-2"><b>Desconto em cinemas</b></p>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <img width="10%" src="assets/svg/check.svg" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <img width="5%" src="assets/svg/check.svg" alt="">
                             <p class="m-0 ml-2"><b>Desconto em redes de ensino</b></p>
                         </div>
+
                     </div>
 
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <img src="assets/svg/woman_buy.svg" alt="">
+                    </div>
                 </div>
+
+                <div class="row mt-5">
+                    
+
+                    
+
+                </div>
+
+                <div class="row mt-5">
+                    <a class="mx-auto" href="https://clubebrasilatuarial.com.br/" target="_blank">
+                        <button class="btn btn-brushi">Acessar agora</button>
+                    </a>
+                </div>
+
             </div>
         </section>  
 </div>

@@ -19,7 +19,7 @@
 
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-                        <p class="mt-4">Sejam bem-vindos ao produto Check Up Médico. Aqui sua Entidade proporciona ao seu associado qualidade de vida, consultas preventivas com clínico geral e ginecologista. Além de uma grande variedade laboratórios credenciados para realização de exames.</p>
+                        <p class="mt-4">Sejam bem-vindos ao produto Check Up Médico. Aqui sua Entidade proporciona ao seu associado qualidade de vida, consultas preventivas com clínico geral e ginecologista. Além de uma grande variedade de laboratórios credenciados para realização de exames.</p>
                         
                         <p><b>Vantagens:</b></p>
 

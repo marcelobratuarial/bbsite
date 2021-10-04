@@ -31,11 +31,11 @@
                             <div class="row mb-3 align-items-center no-gutters">
                                 <div class="col-auto">
                                     <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                        <span class="w-100 fa fa-linkedin color-white"></span>
+                                        <span class="w-100 fa fa-instagram color-white"></span>
                                     </div>
                                 </div>
                                 <div class="col-6 pl-3">
-                                    <h5 class="fs-0 color-white mb-0 d-inline-block">Linkedin</h5>
+                                    <h5 class="fs-0 color-white mb-0 d-inline-block">Instagram</h5>
                                 </div>
                             </div>
                         </a>
@@ -43,11 +43,11 @@
                             <div class="row mb-3 align-items-center no-gutters">
                                 <div class="col-auto">
                                     <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                        <span class="w-100 fa fa-twitter color-white"></span>
+                                        <span class="w-100 fa fa-youtube color-white"></span>
                                     </div>
                                 </div>
                                 <div class="col-6 pl-3">
-                                    <h5 class="fs-0 color-white mb-0 d-inline-block">Twitter</h5>
+                                    <h5 class="fs-0 color-white mb-0 d-inline-block">Youtube</h5>
                                 </div>
                             </div>
                         </a>
@@ -60,18 +60,6 @@
                                 </div>
                                 <div class="col-6 pl-3">
                                     <h5 class="fs-0 color-white mb-0 d-inline-block">Facebook</h5>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="row mb-3 align-items-center no-gutters">
-                                <div class="col-auto">
-                                    <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                        <span class="w-100 fa fa-google-plus color-white"></span>
-                                    </div>
-                                </div>
-                                <div class="col-6 pl-3">
-                                    <h5 class="fs-0 color-white mb-0 d-inline-block">Google+</h5>
                                 </div>
                             </div>
                         </a>

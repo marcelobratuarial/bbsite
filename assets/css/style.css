@@ -16,6 +16,15 @@ body {
   }
 }
 
+.btn-brushi {
+  background-color: #0987FF;
+  color: #fff;
+}
+
+.btn-brushi:hover {
+  background-color: #096cc9;
+  color: #fff;
+}
 
 #videoBG {
   position: fixed;
@@ -8530,6 +8539,22 @@ p {
   position: relative;
   position: -webkit-sticky;
   position: sticky;
+}
+
+@media (max-width: 991.98px) {
+  .colrp {
+    padding-left: 0!important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .colrp2 {
+    padding-right: 0!important;
+  }
+
+  .colrp3 {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 75em) {

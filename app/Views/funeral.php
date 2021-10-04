@@ -12,12 +12,12 @@
 
                     <div class="col-lg-6">
 
-                        <p class="mt-4">Com a Assistência Funeral da Brasil Benefícios a sua entidade oferece mais tranquilidade aos seus associados nos momentos de luto. Contamos com os melhores serviços de funeral, cremação, atendimento social, traslado, entre outros.</p>
+                        <p class="mt-4">Com a Assistência Funeral da Brasil Benefícios sua entidade oferece mais tranquilidade aos seus associados nos momentos de luto. Contamos com os melhores serviços de funeral, cremação, atendimento social, traslado, entre outros.</p>
                         
                         <p><b>Vantagens:</b></p>
 
                         <ul>
-                            <li>Mais segurança para o seu cliente;</li>
+                            <li>Mais segurança para o seu associado;</li>
                             <li>Planos de cobertura capital a partir R$2.000,00 até R$5.000,00;</li>
                             <li>Tranquilidade e conforto em momentos delicados;</li>
                             <li>Atendimento 24 horas;</li>

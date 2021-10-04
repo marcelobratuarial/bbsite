@@ -18,10 +18,10 @@
                                     <div class="row h-full py-8 align-items-center" data-inertia='{"weight":1.5}'>
                                         <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                                             <div class="overflow-hidden">
-                                                <h1 class="fs-4 fs-md-5 zopacity text-white" data-zanim='{"delay":0}'>Seguro para toda família</h1>
+                                                <h1 class="fs-4 fs-md-5 zopacity text-white" data-zanim='{"delay":0}'>Benefícios para toda família</h1>
                                             </div>
                                             <div class="overflow-hidden">
-                                                <p class="text-white mt-4 mb-5 lh-2 fs-1 fs-md-2 zopacity" data-zanim='{"delay":0.1}'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nam atque.</p>
+                                                <p class="text-white mt-4 mb-5 lh-2 fs-1 fs-md-2 zopacity" data-zanim='{"delay":0.1}'>Quanto mais benefícios você oferece melhor é a experiências de seus associados.</p>
                                             </div>
                                             <div class="overflow-hidden">
                                                 <div class="" data-zanim='{"delay":0.2}'>
