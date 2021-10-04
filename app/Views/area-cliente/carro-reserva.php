@@ -106,10 +106,13 @@
             <section>
                 
                 
-                <div class="container solicitacao">
-                    <div class="overlayCustom"></div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-8">
+                <div class="container-fluid solicitacao">
+                    <!-- <div class="overlayCustom"></div> -->
+                    <div class="row">
+                        <div class="d-none d-md-inline-block col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
+                        <img src="<?= base_url("assets/img/homem_sinistro_carro.png")?>" class="homem_sinistro">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center pl-5 pr-5 pb-5 fluxo">
                             <form action="<?= base_url("/area-cliente/carro-reserva/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
                                 <div class="text-left texto">
                                     <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
@@ -342,6 +345,14 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 d-none d-lg-inline-block col-md-3 text-right">
+                            <img src="<?= base_url("assets/img/icon_carro_reserva.png")?>" class="icon_sinistro">
+                            <div class="slogan">
+                                <span style="color:#91D8F7">SIMPLES</span>
+                                <span style="color:#4CAFD9">FÁCIL</span>
+                                <span style="color:#245F96">RÁPIDO</span>
+                            </div>
                         </div>
                     </div>
                 </div>

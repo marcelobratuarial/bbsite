@@ -8,7 +8,7 @@
                         </div>
                         <div class="col-auto ml-md-auto order-md-2 d-none d-sm-block">
                             <span class="fa fa-user color-warning fw-800 icon-position-fix"></span>
-                            <p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">Area do Cliente</p>
+                            <p class="ml-2 mb-0 fs--1 d-inline color-white fw-700"><a class="text-white" href="<?= base_url("area-cliente") ?>">Área do Cliente</a></p>
                         </div>
                         <div class="col-auto">
                             <span class="fa fa-phone color-warning fw-800 icon-position-fix"></span>

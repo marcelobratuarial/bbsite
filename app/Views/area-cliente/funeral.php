@@ -105,12 +105,11 @@
             </section>
             <section>
                 <div class="container-fluid pb-4 position-relative solicitacao">
-                <img src="<?= base_url("assets/img/homem_sinistro_carro.png") ?>" class="homem_sinistro">
                 <div class="row">
-                    <div class="d-none d-md-inline-block col-md-5 col-lg-4">
-                        
+                    <div class="d-none d-md-inline-block col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
+                        <img src="<?= base_url("assets/img/homem_sinistro_carro.png")?>" class="homem_sinistro">
                     </div>
-                    <div class="col-12 col-md-7 col-lg-5 text-center pl-5 pr-5 pb-5 fluxo">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center pl-5 pr-5 pb-5 fluxo">
                         <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
                             <div class="text-left texto">
                                 <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
@@ -257,7 +256,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="d-none d-lg-inline-block col-md-3 text-right">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 d-none d-lg-inline-block col-md-3 text-right">
                         <img src="<?= base_url("assets/img/icon_funeral.png") ?>" class="icon_sinistro">
                         <div class="slogan">
                             <span style="color:#91D8F7">SIMPLES</span>

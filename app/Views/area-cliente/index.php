@@ -85,13 +85,13 @@
                         </li>
                         <li>
                             <img src="<?= base_url("assets/img/funeral.png")?>" alt="">
-                            <a href="">
+                            <a href="<?= base_url("area-cliente/funeral")?>">
                                 Funeral
                             </a>
                         </li>
                         <li>
                             <img src="<?= base_url("assets/img/vidro.png")?>" alt="">
-                            <a href="">
+                            <a href="<?= base_url("area-cliente/vidros")?>">
                                 Vidros
                             </a>
                         </li>
@@ -103,7 +103,7 @@
                         </li>
                         <li>
                             <img src="<?= base_url("assets/img/pet.png")?>" alt="">
-                            <a href="">
+                            <a href="<?= base_url("area-cliente/pet")?>">
                                 PET
                             </a>
                         </li>

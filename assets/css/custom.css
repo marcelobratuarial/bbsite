@@ -42,3 +42,16 @@ animation: lds-hourglass 1.2s infinite;
 #formSuccess .icon-message{
     color: #4d9436;
 }
+
+#area-options li a {
+    color: #fff;
+}
+#area-options li img {
+    width: 70px
+}
+#area-options li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
