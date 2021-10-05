@@ -54,7 +54,7 @@
                 <!--/.container-->
             </section> */ ?>
             <section>
-                <div class="background-holder overlay overlay-elixir" style="background-image:url(<?= base_url("assets/images/background-15.jpg")?>);"> </div>
+                <div class="background-holder overlay overlay-elixir" style="background-image:url(<?= base_url("assets/images/background-16.jpg")?>);"> </div>
                 <!--/.background-holder-->
                 <div class="container">
                     <div class="row">
@@ -76,34 +76,34 @@
                 </div>
                 <!--/.container-->
                 <div class="container mt-8">
-                    <ul id="area-options" class="d-flex justify-content-between">
-                        <li>
-                            <img src="<?= base_url("assets/img/carro-reserva.png")?>" alt="">
+                    <ul id="area-options" class="row d-flex justify-content-center">
+                        <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
                             <a href="<?= base_url("area-cliente/carro-reserva")?>">
-                                Carro Reserva
+                            <img src="<?= base_url("assets/img/carro-reserva.png")?>" alt="">
+                            Carro Reserva
                             </a>
                         </li>
-                        <li>
-                            <img src="<?= base_url("assets/img/funeral.png")?>" alt="">
+                        <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
                             <a href="<?= base_url("area-cliente/funeral")?>">
-                                Funeral
+                            <img src="<?= base_url("assets/img/funeral.png")?>" alt="">
+                            Funeral
                             </a>
                         </li>
-                        <li>
-                            <img src="<?= base_url("assets/img/vidro.png")?>" alt="">
+                        <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
                             <a href="<?= base_url("area-cliente/vidros")?>">
-                                Vidros
+                            <img src="<?= base_url("assets/img/vidro.png")?>" alt="">
+                            Vidros
                             </a>
                         </li>
-                        <li>
-                            <img src="<?= base_url("assets/img/app.png")?>" alt="">
+                        <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
                             <a href="<?= base_url("area-cliente/app")?>">
-                                APP
+                            <img src="<?= base_url("assets/img/app.png")?>" alt="">
+                            APP
                             </a>
                         </li>
-                        <li>
-                            <img src="<?= base_url("assets/img/pet.png")?>" alt="">
+                        <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
                             <a href="<?= base_url("area-cliente/pet")?>">
+                                <img src="<?= base_url("assets/img/pet.png")?>" alt="">
                                 PET
                             </a>
                         </li>

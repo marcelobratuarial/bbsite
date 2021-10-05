@@ -45,13 +45,39 @@ animation: lds-hourglass 1.2s infinite;
 
 #area-options li a {
     color: #fff;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 #area-options li img {
-    width: 70px
+    width: 70px;
+}
+#area-options li:hover a {
+    color: #FDD428;
+    
+    border-color: #FDD428; 
+}
+#area-options li:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;    
 }
 #area-options li {
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#area-options {
+    flex-direction: row;
+    padding: 0;
 }

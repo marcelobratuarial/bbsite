@@ -407,32 +407,32 @@ class Pages extends BaseController
 			$ext = $this->request->getFile("SinistroEmpresa")->getExtension();
 			$newName = $id . "-".$SinistroEmpresa.".".$ext;
 			$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $newName);
-			$this->request->getFile("SinistroEmpresa")->move(WRITEPATH.'uploads', $newName);
+			$this->request->getFile("SinistroEmpresa")->move(WRITEPATH.'uploads/virtual-office/carro-reserva', $newName);
 		}
 		if ($this->request->getFile("BoletimOcorrencia")->getName() != ""){
 			$ext = $this->request->getFile("BoletimOcorrencia")->getExtension();
 			$newName = $id . "-".$BoletimOcorrencia.".".$ext;
 			$email->attach($this->request->getFile("BoletimOcorrencia")->getPathname(), "attachment", $newName);
-			$this->request->getFile("BoletimOcorrencia")->move(WRITEPATH.'uploads', $newName);
+			$this->request->getFile("BoletimOcorrencia")->move(WRITEPATH.'uploads/virtual-office/carro-reserva', $newName);
 		}	
 		if ($this->request->getFile("CRLVVeiculo")->getName() != ""){
 			$ext = $this->request->getFile("CRLVVeiculo")->getExtension();
 			$newName = $id . "-".$CRLVVeiculo.".".$ext;
 			$email->attach($this->request->getFile("CRLVVeiculo")->getPathname(), "attachment", $newName);
-			$this->request->getFile("CRLVVeiculo")->move(WRITEPATH.'uploads', $newName);
+			$this->request->getFile("CRLVVeiculo")->move(WRITEPATH.'uploads/virtual-office/carro-reserva', $newName);
 		}
 		if ($this->request->getFile("CHNCliente")->getName() != ""){
 			$ext = $this->request->getFile("CHNCliente")->getExtension();
 			$newName = $id . "-".$CHNCliente.".".$ext;
 			$email->attach($this->request->getFile("CHNCliente")->getPathname(), "attachment", $newName);
-			$this->request->getFile("CHNCliente")->move(WRITEPATH.'uploads', $newName);
+			$this->request->getFile("CHNCliente")->move(WRITEPATH.'uploads/virtual-office/carro-reserva', $newName);
 			
 		}
 		if ($this->request->getFile("AutorizacaoReparo")->getName() != ""){
 			$ext = $this->request->getFile("AutorizacaoReparo")->getExtension();
 			$newName = $id . "-".$AutorizacaoReparo.".".$ext;
 			$email->attach($this->request->getFile("AutorizacaoReparo")->getPathname(), "attachment", $newName);
-			$this->request->getFile("AutorizacaoReparo")->move(WRITEPATH.'uploads', $newName);
+			$this->request->getFile("AutorizacaoReparo")->move(WRITEPATH.'uploads/virtual-office/carro-reserva', $newName);
 		}
 		// }
 
@@ -492,19 +492,19 @@ class Pages extends BaseController
 		// $AutorizacaoReparo = "";
 		// if ($this->request->getFile("Anexo1")->getName() !== null) {
 		if ($this->request->getFile("Anexo1")->getName() != ""){
-			$anexo1 = $this->request->getFile("Anexo1")->getName();
+			$anexo1 = "AtestadoDeObito"; // $this->request->getFile("Anexo1")->getName();
 		}
 		if ($this->request->getFile("Anexo2")->getName() != ""){
-			$anexo2 = $this->request->getFile("Anexo2")->getName();
+			$anexo2 = "RGeCPFBeneficiario"; //$this->request->getFile("Anexo2")->getName();
 		}
 		if ($this->request->getFile("Anexo3")->getName() != ""){
-			$anexo3 = $this->request->getFile("Anexo3")->getName();
+			$anexo3 = "RGeCPFTitular"; //$this->request->getFile("Anexo3")->getName();
 		}
 		if ($this->request->getFile("Anexo4")->getName() != ""){
-			$anexo4 = $this->request->getFile("Anexo4")->getName();
+			$anexo4 = "ComprovanteBancarioDeposito"; //$this->request->getFile("Anexo4")->getName();
 		}
 		if ($this->request->getFile("Anexo5")->getName() != ""){
-			$anexo5 = $this->request->getFile("Anexo5")->getName();
+			$anexo5 = "NotaFiscal"; //$this->request->getFile("Anexo5")->getName();
 		}
 		// }
 		// print_r($CRLVVeiculo);
@@ -572,20 +572,37 @@ class Pages extends BaseController
 		
 		$email->setMessage($message);
 		
+		if(!isset($id)) { $id = time() ; }
+
 		if ($this->request->getFile("Anexo1")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $anexo1);
+			$ext = $this->request->getFile("Anexo1")->getExtension();
+			$newName = $id . "-".$anexo1.".".$ext;
+			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo1")->move(WRITEPATH.'uploads/virtual-office/funeral', $newName);
 		}
 		if ($this->request->getFile("Anexo2")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $anexo2);
+			$ext = $this->request->getFile("Anexo2")->getExtension();
+			$newName = $id . "-".$anexo2.".".$ext;
+			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo2")->move(WRITEPATH.'uploads/virtual-office/funeral', $newName);
 		}
 		if ($this->request->getFile("Anexo3")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $anexo3);
+			$ext = $this->request->getFile("Anexo3")->getExtension();
+			$newName = $id . "-".$anexo3.".".$ext;
+			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo3")->move(WRITEPATH.'uploads/virtual-office/funeral', $newName);
 		}
 		if ($this->request->getFile("Anexo4")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo4")->getPathname(), "attachment", $anexo4);
+			$ext = $this->request->getFile("Anexo4")->getExtension();
+			$newName = $id . "-".$anexo4.".".$ext;
+			$email->attach($this->request->getFile("Anexo4")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo4")->move(WRITEPATH.'uploads/virtual-office/funeral', $newName);
 		}
 		if ($this->request->getFile("Anexo5")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo5")->getPathname(), "attachment", $anexo5);
+			$ext = $this->request->getFile("Anexo5")->getExtension();
+			$newName = $id . "-".$anexo5.".".$ext;
+			$email->attach($this->request->getFile("Anexo5")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo5")->move(WRITEPATH.'uploads/virtual-office/funeral', $newName);
 		}
 
 
@@ -657,13 +674,13 @@ class Pages extends BaseController
 
 		// if ($this->request->getFile("Anexo1")->getName() !== null) {
 		if ($this->request->getFile("Anexo1")->getName() != ""){
-			$AvisoSinistro = $this->request->getFile("Anexo1")->getName();
+			$AvisoSinistro = "AvisoSinistro"; //$this->request->getFile("Anexo1")->getName();
 		}
 		if ($this->request->getFile("Anexo2")->getName() != ""){
-			$FotosVistoriaPrevia = $this->request->getFile("Anexo2")->getName();
+			$FotosVistoriaPrevia = "FotosVistoriaPrevia"; //$this->request->getFile("Anexo2")->getName();
 		}
 		if ($this->request->getFile("Anexo3")->getName() != ""){
-			$FotosVidroDanificado = $this->request->getFile("Anexo3")->getName();
+			$FotosVidroDanificado = "FotosVidroDanificado"; // $this->request->getFile("Anexo3")->getName();
 		}
 		// }
 		// print_r($CRLVVeiculo);
@@ -745,14 +762,25 @@ class Pages extends BaseController
 		
 		$email->setMessage($message);
 		
+		if(!isset($id)) { $id = time() ; }
+
 		if ($this->request->getFile("Anexo1")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $AvisoSinistro);
+			$ext = $this->request->getFile("Anexo1")->getExtension();
+			$newName = $id . "-".$AvisoSinistro.".".$ext;
+			$email->attach($this->request->getFile("Anexo1")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo1")->move(WRITEPATH.'uploads/virtual-office/vidros', $newName);
 		}
 		if ($this->request->getFile("Anexo2")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $FotosVistoriaPrevia);
+			$ext = $this->request->getFile("Anexo2")->getExtension();
+			$newName = $id . "-".$FotosVistoriaPrevia.".".$ext;
+			$email->attach($this->request->getFile("Anexo2")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo2")->move(WRITEPATH.'uploads/virtual-office/vidros', $newName);
 		}
 		if ($this->request->getFile("Anexo3")->getName() != ""){
-			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $FotosVidroDanificado);
+			$ext = $this->request->getFile("Anexo3")->getExtension();
+			$newName = $id . "-".$FotosVidroDanificado.".".$ext;
+			$email->attach($this->request->getFile("Anexo3")->getPathname(), "attachment", $newName);
+			$this->request->getFile("Anexo3")->move(WRITEPATH.'uploads/virtual-office/vidros', $newName);
 		}
 
 
