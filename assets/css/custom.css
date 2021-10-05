@@ -81,3 +81,53 @@ animation: lds-hourglass 1.2s infinite;
     flex-direction: row;
     padding: 0;
 }
+
+
+
+
+/*-----------------------------------------------
+|   Pre-loader
+-----------------------------------------------*/
+
+    .CustomLoader.active img {
+	    animation: heartbeat 1s infinite alternate
+    }
+
+    @-webkit-keyframes heartbeat {
+        to {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1)
+        }
+    }
+
+    .CustomLoader.active {
+        opacity: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        z-index: 10001 !important;
+        transition: all 1s ease-in;
+    }
+
+    .CustomLoader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        bottom: 0;
+        z-index: 0;
+        background-color: #fff;
+        opacity: 0;
+        /* -webkit-transition: opacity 0.8s cubic-bezier(0.77, 0, 0.18, 1); */
+        /* -o-transition: opacity 0.8s cubic-bezier(0.77, 0, 0.18, 1); */
+        /* transition: opacity 0.8s cubic-bezier(0.77, 0, 0.18, 1); */
+        transition: all 1s ease-out;
+        
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }

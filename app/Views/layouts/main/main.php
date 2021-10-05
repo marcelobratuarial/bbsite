@@ -47,7 +47,9 @@
         <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
     </head>
     <body data-spy="scroll" data-target=".inner-link" data-offset="60">
-
+        <div class="CustomLoader active">
+            <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt="">
+        </div>
     <?= $this->renderSection('header') ?>
     
     <main style="clear: both;">
@@ -88,6 +90,24 @@
         
         <script>
             var base_url = '<?= base_url('/') ?>';
+            $(document).ready(function(){
+                var l = new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        console.log("teste")
+                        $(".CustomLoader").removeClass("active")
+                        resolve("OK")
+                    }, 600);
+                   
+                })
+                l.then(() => {
+                    setTimeout(() => {
+                        $(".CustomLoader").css("display", "none")
+                    }, 1600);
+                }).then(() => {
+                    // $(".CustomLoader").remove()
+                })
+                
+            })
         </script>
     </body>
 </html>
