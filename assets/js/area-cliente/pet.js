@@ -48,7 +48,7 @@ $(document).ready(function() {
             },
             success: function(response) {
                 if (response=="0"){
-                    alert("CNPJ não cadastrado no sistema da Brasil Atuarial. Gentileza entrar em contato através dos números (31) 2510-8536 | (31) 99279-0202 e formalizar sua contratação!");
+                    confError('CPNJ não cadastrado', "CNPJ não cadastrado no sistema da Brasil Atuarial. Gentileza entrar em contato através dos números (31) 2510-8536 | (31) 99279-0202 e formalizar sua contratação!")
                 }else{
                     var vetor = response.split("|");
                     $("#IDEmpresa").val(vetor[0]);
@@ -61,7 +61,7 @@ $(document).ready(function() {
                 }
             },
             error: function() {
-                alert('ajax error');
+                confError();
             }
         });
     });
@@ -111,7 +111,7 @@ $(document).ready(function() {
                     }
                 },
                 error: function() {
-                    alert('ajax error');
+                    confError();
                 }
             });
     }
@@ -416,16 +416,17 @@ $(document).ready(function() {
         
     });
 
-    function confError() {
+    function confError(title = 'Algo aconteceu!', 
+    message = 'Algo aconteceu tentando enviar sua mensagem.') {
         
         var pro = new Promise((resolve, reject) => {
             $("#formLoading").slideUp(100)
             $("#formSuccess").find(".icon-message").addClass("error")
             $("#formSuccess").find(".icon-message span").
             removeClass("icon-Yes").addClass("icon-Danger")
-            $("#formSuccess").find("h4").text("Algo aconteceu!")
-            var m = 'Algo aconteceu tentando enviar sua mensagem.<br>'+
-            'Tente novamente.';
+            $("#formSuccess").find("h4").text(title)
+            var m = message+
+            '<br>Tente novamente.';
             $("#formSuccess").find(".message-response").html(m)
             $("#formSuccess").find(".message-response-try-again-btn").slideDown(100)
             $("#formSuccess").find(".message-response-btn").slideUp(100)

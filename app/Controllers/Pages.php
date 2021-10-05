@@ -51,9 +51,10 @@ class Pages extends BaseController
 		$cnpj = $this->request->getPost("CPFCNPJ");
 
 		$query = $db->query("SELECT * FROM empresas where CPFCNPJ='".$cnpj."'");
-        
-		$res = $query->getResultArray()[0];
-		$responses = $res["IDCodigo"]."|".$res["RazaoSocial"]."|".$res["PessoaContato"]."|".$res["Telefone"]."|".$res["Email"]."|".$res["Refaturado"];
+        if($query->getNumRows() > 0) {
+			$res = $query->getResultArray()[0];
+			$responses = $res["IDCodigo"]."|".$res["RazaoSocial"]."|".$res["PessoaContato"]."|".$res["Telefone"]."|".$res["Email"]."|".$res["Refaturado"];
+		} else {$responses = 0; }
 		
 		echo $responses;
 	}

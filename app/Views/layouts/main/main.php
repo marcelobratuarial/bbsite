@@ -40,6 +40,7 @@
         <link href="<?= base_url("assets/lib/flexslider/flexslider.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
         <!-- Main stylesheet and color file-->
+        <link href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
         <?= $this->renderSection('cCss') ?>
