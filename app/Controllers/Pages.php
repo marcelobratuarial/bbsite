@@ -311,11 +311,11 @@ class Pages extends BaseController
 		$AutorizacaoReparo = "";
 		if ($this->request->getFile("SinistroEmpresa")->getName() !== null) {
 			if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
-				$SinistroEmpresa = $this->request->getFile("SinistroEmpresa")->getName();
-				$BoletimOcorrencia = $this->request->getFile("BoletimOcorrencia")->getName();
-				$CRLVVeiculo = $this->request->getFile("CRLVVeiculo")->getName();
-				$CHNCliente = $this->request->getFile("CHNCliente")->getName();
-				$AutorizacaoReparo = $this->request->getFile("AutorizacaoReparo")->getName();
+				$SinistroEmpresa = "SinistroEmpresa";// $this->request->getFile("SinistroEmpresa")->getName();
+				$BoletimOcorrencia = "BoletimOcorrencia"; //$this->request->getFile("BoletimOcorrencia")->getName();
+				$CRLVVeiculo = "CRLVVeiculo"; // $this->request->getFile("CRLVVeiculo")->getName();
+				$CHNCliente = "CHNCliente"; // $this->request->getFile("CHNCliente")->getName();
+				$AutorizacaoReparo = "AutorizacaoReparo"; //$this->request->getFile("AutorizacaoReparo")->getName();
 			}
 		}
 		// print_r($CRLVVeiculo);
@@ -400,15 +400,41 @@ class Pages extends BaseController
 		
 		$email->setMessage($message);
 		
-		if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
-			if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
-				$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $SinistroEmpresa);
-				$email->attach($this->request->getFile("BoletimOcorrencia")->getPathname(), "attachment", $BoletimOcorrencia);
-				$email->attach($this->request->getFile("CRLVVeiculo")->getPathname(), "attachment", $CRLVVeiculo);
-				$email->attach($this->request->getFile("CHNCliente")->getPathname(), "attachment", $CHNCliente);
-				$email->attach($this->request->getFile("AutorizacaoReparo")->getPathname(), "attachment", $AutorizacaoReparo);
-			}
+		if(!isset($id)) { $id = time() ; }
+		
+		// if ($this->request->getFile("SinistroEmpresa")->getName() !== null) {
+		if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
+			$ext = $this->request->getFile("SinistroEmpresa")->getExtension();
+			$newName = $id . "-".$SinistroEmpresa.".".$ext;
+			$email->attach($this->request->getFile("SinistroEmpresa")->getPathname(), "attachment", $newName);
+			$this->request->getFile("SinistroEmpresa")->move(WRITEPATH.'uploads', $newName);
 		}
+		if ($this->request->getFile("BoletimOcorrencia")->getName() != ""){
+			$ext = $this->request->getFile("BoletimOcorrencia")->getExtension();
+			$newName = $id . "-".$BoletimOcorrencia.".".$ext;
+			$email->attach($this->request->getFile("BoletimOcorrencia")->getPathname(), "attachment", $newName);
+			$this->request->getFile("BoletimOcorrencia")->move(WRITEPATH.'uploads', $newName);
+		}	
+		if ($this->request->getFile("CRLVVeiculo")->getName() != ""){
+			$ext = $this->request->getFile("CRLVVeiculo")->getExtension();
+			$newName = $id . "-".$CRLVVeiculo.".".$ext;
+			$email->attach($this->request->getFile("CRLVVeiculo")->getPathname(), "attachment", $newName);
+			$this->request->getFile("CRLVVeiculo")->move(WRITEPATH.'uploads', $newName);
+		}
+		if ($this->request->getFile("CHNCliente")->getName() != ""){
+			$ext = $this->request->getFile("CHNCliente")->getExtension();
+			$newName = $id . "-".$CHNCliente.".".$ext;
+			$email->attach($this->request->getFile("CHNCliente")->getPathname(), "attachment", $newName);
+			$this->request->getFile("CHNCliente")->move(WRITEPATH.'uploads', $newName);
+			
+		}
+		if ($this->request->getFile("AutorizacaoReparo")->getName() != ""){
+			$ext = $this->request->getFile("AutorizacaoReparo")->getExtension();
+			$newName = $id . "-".$AutorizacaoReparo.".".$ext;
+			$email->attach($this->request->getFile("AutorizacaoReparo")->getPathname(), "attachment", $newName);
+			$this->request->getFile("AutorizacaoReparo")->move(WRITEPATH.'uploads', $newName);
+		}
+		// }
 
 		try {
 			$s = $email->send();
