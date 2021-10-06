@@ -9,8 +9,11 @@
 
 
     <div class="container mt-8">
-        <div class="row mb-7 d-flex align-items-center justify-content-center ac-title">
-            <h2>CARRO RESERVA</h2>
+        <div class="row mb-6 mt-6">
+            <div class="col-12">
+                <h3 class="text-center fs-2 fs-md-3">Carro Reserva</h3>
+                <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
+            </div>
         </div>
         <div class="row">
             <div class="col-md-6 d-flex align-items-end">
