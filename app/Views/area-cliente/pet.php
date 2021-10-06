@@ -95,6 +95,191 @@
             </section> */ ?>
             
 
+            <div class="container mt-8">
+                <div class="row mb-7 d-flex align-items-center justify-content-center ac-title">
+                    <h2>PET</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-end">
+                        <img style="margin-top: -100px;" src="<?= base_url("/assets/svg/solicitacao_hero.svg")?>" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <section id="formLoading">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div >
+                                    <div class="lds-hourglass"></div>
+                                </div>
+                                <span style="font-weight: 600">Aguarde...</span>
+                            </div>
+                        </section>
+                        <section style="padding: 0">
+                            
+                            <div class="container-fluid solicitacao">
+                                <!-- <div class="overlayCustom"></div> -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pl-5 pr-5 pb-5 fluxo">
+                                        
+                                    <form action="<?= base_url("/area-cliente/pet/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
+                                        <div class="text-left texto">
+                                            <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
+                                            <div class="text-center mt-5 mb-3">
+                                                <div class="titulo">
+                                                    Dados <br>Pessoais
+                                                </div>
+                                                <div class="linhaoculta"></div>
+                                                <div class="titulo">
+                                                    Dados <br>Localização
+                                                </div>
+                                                <div class="linhaoculta"></div>
+                                                <div class="titulo" style="vertical-align:top">
+                                                    Dados <br>Contratação
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="etapa ativo" id="etapa1">
+                                                    <img src="<?= base_url("assets/img/icon_client.png")?>">
+                                                </div>
+                                                <div class="linhainativa"></div>
+                                                <div class="etapa inativo" id="etapa2">
+                                                    <img src="<?= base_url("assets/img/solicitacao.png")?>" style="filter: contrast(0.5);">
+                                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa1">VOLTAR</div>
+                                                </div>
+                                                <div class="linhainativa"></div>
+                                                <div class="etapa inativo" id="etapa3">
+                                                    <img src="<?= base_url("assets/img/icon_plano.png")?>" style="filter: contrast(0.5);">
+                                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa2">VOLTAR</div>
+                                                </div>
+                                                <div></div>
+                                            </div>
+                                            <div class="text-center d-none">
+                                                <h1 class="titulostep">Dados da Associação</h1>
+                                            </div>
+                                            <div class="row dadosDaAssociacao mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label>Nome</label><br>
+                                                    <input type="text" name="Nome" id="Nome" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>CPF</label><br>
+                                                    <input type="text" name="cpf" id="cpf" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>Data de Nascimento</label><br>
+                                                    <input type="text" name="DataNascimento" id="DataNascimento" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>E-mail</label><br>
+                                                    <input type="text" name="Email" id="Email" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>Celular</label><br>
+                                                    <input type="text" name="Celular" id="Celular" class="campo telefone" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <input type="button" name="AvancarEtapa2" id="AvancarEtapa2" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
+                                                </div>
+                                            </div>
+                                            <div class="row dadosDoCliente mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label>CEP</label><br>
+                                                    <input type="text" name="cep" id="cep" class="campo cep" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Logradouro</label><br>
+                                                    <input type="text" name="rua" id="rua" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Bairro</label><br>
+                                                    <input type="text" name="bairro" id="bairro" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Estado</label><br>
+                                                    <input type="text" name="estado" id="estado" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Cidade</label><br>
+                                                    <input type="text" name="cidade" id="cidade" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Nº</label><br>
+                                                    <input type="text" name="Numero" id="Numero" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo carregaCampos completarcep">
+                                                    <label>Complemento</label><br>
+                                                    <input type="text" name="Complemento" id="Complemento" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo ocultarSeCPF completarcep">
+                                                    <input type="button" name="AvancarEtapa3" id="AvancarEtapa3" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
+                                                </div>
+                                            </div>
+                                            <div class="row dadosAnexos mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label class="m-0">Plano</label><br>
+                                                    <select name="plano" id="plano" class="campo">
+                                                        <option></option>
+                                                        <option>Essencial</option>
+                                                        <option>Plus</option>
+                                                        <option>Master</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo" id="infoPlano">
+                                                    <label id="nomePlano"></label><br>
+                                                    <input type="text" name="valorPlano" id="valorPlano" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo mt-4" id="botaoContratar">
+                                                    <input type="submit" name="EnviarDados" id="EnviarDados" class="campo botaoAvancar" value="CONTRATAR AGORA">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="formSuccess">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="icon-message">
+                                    <span class="icon-Danger fs-8 fw-600"></span>
+                                </div>
+                                <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
+                                <div class="text-center">
+                                    <div class="message-response">Sua solicitação foi realizada com sucesso.<br>
+                                    A sua solicitação foi enviada com sucesso!
+                                    </div>
+                                    <hr>
+                                    <p class="message-response-try-again-btn">
+                                        <a href="#" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                            OK
+                                        </a>
+                                    </p>
+                                    <p class="message-response-btn">
+                                        <a href="<?= base_url("area-cliente/pet")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                            PET
+                                        </a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php /*
             <section id="formLoading">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div >
@@ -263,7 +448,7 @@
                     
                 </div>
             </section>
-
+*/ ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('footer') ?>

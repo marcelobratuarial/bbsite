@@ -89,7 +89,7 @@ $(document).ready(function() {
             },
             success: function(response) {
                 if (response=="0"){
-                    confError('CPNJ não cadastrado', "CNPJ não cadastrado no sistema da Brasil Atuarial. Gentileza entrar em contato através dos números (31) 2510-8536 | (31) 99279-0202 e formalizar sua contratação!")
+                    confError('CNPJ não cadastrado', "CNPJ não cadastrado no sistema da Brasil Atuarial. Gentileza entrar em contato através dos números (31) 2510-8536 | (31) 99279-0202 e formalizar sua contratação!")
                 }else{
                     var vetor = response.split("|");
                     $("#IDEmpresa").val(vetor[0]);

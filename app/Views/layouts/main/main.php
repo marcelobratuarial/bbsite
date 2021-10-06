@@ -50,14 +50,14 @@
         <div class="CustomLoader active">
             <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt="">
         </div>
-    <?= $this->renderSection('header') ?>
-    
-    <main style="clear: both;">
-        <?= $this->renderSection('content') ?>
-    
+        <?= $this->renderSection('header') ?>
         
+        <main style="clear: both;">
+            <?= $this->renderSection('content') ?>
         
-    </main>
+            
+            
+        </main>
 
     
     <?= $this->renderSection('footer') ?>

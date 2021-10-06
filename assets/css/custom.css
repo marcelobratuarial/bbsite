@@ -131,3 +131,16 @@ animation: lds-hourglass 1.2s infinite;
         -ms-flex-pack: center;
         justify-content: center;
       }
+      .ac-title h2 {
+          position: relative;
+      }
+      .ac-title h2::before {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #FCB420;
+        height: 3px;
+        width: 100%;
+        z-index: -1;
+      }

@@ -7,6 +7,75 @@
 
 <?= $this->section('content') ?>
 
+
+<div class="container area_listbg mt-6">
+
+    <div class="row mt-8">
+        <div class="col-md-6">
+            <h1>Bem vindo(a) à area do cliente!</h1>
+
+            <p class="h5 text-secondary my-4">Selecione uma categoria:</p>
+
+            <ul class="area_list d-flex">
+                <li class="alist_box">
+                    <a href="<?= base_url("area-cliente/app")?>">
+                        <i class="fa fa-medkit" aria-hidden="true"></i>
+                    </a>
+                    <span>App</span>
+                </li>
+                <li class="alist_box" style="padding-top: 20px;">
+                    <a href="<?= base_url("area-cliente/carro-reserva")?>">
+                        <i class="fa fa-car" aria-hidden="true"></i>
+                    </a>
+                    <span>Carro<br>Reserva</span>
+                </li>
+                <li class="alist_box">
+                    <a href="<?= base_url("area-cliente/funeral")?>">
+                        <i class="fa fa-pagelines" aria-hidden="true"></i>
+                    </a>
+                    <span>Funeral</span>
+                </li>
+                <li class="alist_box">
+                    <a href="<?= base_url("area-cliente/vidros")?>">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                    </a>
+                    <span>Vidros</span>
+                </li>
+                <li class="alist_box">
+                    <a href="<?= base_url("area-cliente/pet")?>">
+                        <i class="fa fa-paw" aria-hidden="true"></i>  
+                    </a>
+                    <span>Pet</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="assets/svg/area_cliente_hero.svg" alt="">
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <?php /*
             <section class="background-11">
                 <div class="container">
@@ -53,9 +122,10 @@
                 </div>
                 <!--/.container-->
             </section> */ ?>
+            <!--
             <section>
                 <div class="background-holder overlay overlay-elixir" style="background-image:url(<?= base_url("assets/images/background-16.jpg")?>);"> </div>
-                <!--/.background-holder-->
+
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -71,10 +141,10 @@
                             </div>
                         </div>
                     </div>
-                    <!--/.row-->
+
                     
                 </div>
-                <!--/.container-->
+
                 <div class="container mt-8">
                     <ul id="area-options" class="row d-flex justify-content-center">
                         <li class="col-xs-12 col-sm-12 col-md-3 col-lg-auto col-xl-auto">
@@ -111,7 +181,7 @@
                 </div>
             </section>
            
-    
+-->
 
 <?= $this->endSection() ?>
 

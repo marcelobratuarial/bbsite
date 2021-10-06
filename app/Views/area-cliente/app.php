@@ -94,7 +94,331 @@
                 <!--/.container-->
             </section> */ ?>
             
+            <div class="container mt-8">
+                <div class="row mb-7 d-flex align-items-center justify-content-center ac-title">
+                    <h2>APP</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-end">
+                        <img style="margin-top: -100px;" src="<?= base_url("/assets/svg/solicitacao_hero.svg")?>" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <section id="formLoading">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div >
+                                    <div class="lds-hourglass"></div>
+                                </div>
+                                <span style="font-weight: 600">Aguarde...</span>
+                            </div>
+                        </section>
+                        <section style="padding: 0">
+                            
+                            <div class="container-fluid solicitacao">
+                                <!-- <div class="overlayCustom"></div> -->
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pl-5 pr-5 pb-5 fluxo">
+                                        
+                                    <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
+                                        <div class="text-left texto">
+                                            <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
+                                            <div class="text-center mt-5 mb-3">
+                                                <div class="titulo">
+                                                    Dados da Empresa
+                                                </div>
+                                                <div class="linhaoculta"></div>
+                                                <div class="titulo">
+                                                    Dados do Cliente
+                                                </div>
+                                                <div class="linhaoculta"></div>
+                                                <div class="titulo">
+                                                    Dados da Solicitação
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="etapa ativo" id="etapa1">
+                                                    <img src="<?= base_url("assets/img/icon_business.png")?>">
+                                                </div>
+                                                <div class="linhainativa"></div>
+                                                <div class="etapa inativo" id="etapa2">
+                                                    <img src="<?= base_url("assets/img/icon_client.png")?>" style="filter: contrast(0.5);">
+                                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa1">VOLTAR</div>
+                                                </div>
+                                                <div class="linhainativa"></div>
+                                                <div class="etapa inativo" id="etapa3">
+                                                    <img src="<?= base_url("assets/img/solicitacao.png")?>" style="filter: contrast(0.5);">
+                                                    <div style="cursor: pointer;position: absolute;margin-top: 49px;margin-left: -35px;font-weight: bold;font-size: 13px;font-family: Calibri;display: none;" id="voltaretapa2">VOLTAR</div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center d-none">
+                                                <h1 class="titulostep">Dados da Associação</h1>
+                                            </div>
+                                            <div class="row dadosDaAssociacao mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label>CNPJ</label><br>
+                                                    <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" class="campo cnpj" autocomplete="off">
+                                                    <input type="hidden" name="IDEmpresa" id="IDEmpresa">
+                                                    <input type="hidden" name="NomeEmpresa" id="NomeEmpresa">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>Solicitante</label><br>
+                                                    <input type="text" name="SolicitanteEmpresa" id="SolicitanteEmpresa" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>Telefone</label><br>
+                                                    <input type="text" name="TelefoneEmpresa" id="TelefoneEmpresa" class="campo telefone" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <label>E-mail</label><br>
+                                                    <input type="text" name="EmailEmpresa" id="EmailEmpresa" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo campoEmpresa">
+                                                    <input type="button" name="AvancarEtapa2" id="AvancarEtapa2" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
+                                                </div>
+                                            </div>
+                                            <div class="row dadosDoCliente mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label>Nome</label><br>
+                                                    <input type="text" name="Nome" id="Nome" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo ocultarSeCPF">
+                                                    <label>Celular</label><br>
+                                                    <input type="text" name="TelefoneComercial" id="TelefoneComercial" class="campo telefone" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Identidade</label><br>
+                                                    <input type="text" name="RG" id="RG" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>CPF</label><br>
+                                                    <input type="text" name="CPF" id="CPF" class="campo cpf" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo ocultarSeCPF">
+                                                    <label>E-mail</label><br>
+                                                    <input type="text" name="Email" id="Email" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>CEP</label><br>
+                                                    <input type="text" name="CEP" id="CEP" class="campo cep" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Endereço</label><br>
+                                                    <input type="text" name="Logradouro" id="Logradouro" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Bairro</label><br>
+                                                    <input type="text" name="Bairro" id="Bairro" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Cidade</label><br>
+                                                    <input type="text" name="Cidade" id="Cidade" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Estado</label><br>
+                                                    <select name="UF" id="UF" class="campo" autocomplete="off">
+                                                        <option></option>
+                                                        <option value="AC">AC</option>
+                                                        <option value="AL">AL</option>
+                                                        <option value="AM">AM</option>
+                                                        <option value="AP">AP</option>
+                                                        <option value="BA">BA</option>
+                                                        <option value="CE">CE</option>
+                                                        <option value="DF">DF</option>
+                                                        <option value="ES">ES</option>
+                                                        <option value="GO">GO</option>
+                                                        <option value="MA">MA</option>
+                                                        <option value="MG">MG</option>
+                                                        <option value="MS">MS</option>
+                                                        <option value="MT">MT</option>
+                                                        <option value="PA">PA</option>
+                                                        <option value="PB">PB</option>
+                                                        <option value="PE">PE</option>
+                                                        <option value="PI">PI</option>
+                                                        <option value="PR">PR</option>
+                                                        <option value="RJ">RJ</option>
+                                                        <option value="RN">RN</option>
+                                                        <option value="RS">RS</option>
+                                                        <option value="RO">RO</option>
+                                                        <option value="RR">RR</option>
+                                                        <option value="SC">SC</option>
+                                                        <option value="SE">SE</option>
+                                                        <option value="SP">SP</option>
+                                                        <option value="TO">TO</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Numero</label><br>
+                                                    <input type="text" name="Numero" id="Numero" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo dadoscep">
+                                                    <label>Complemento</label><br>
+                                                    <input type="text" name="Complemento" id="Complemento" class="campo" autocomplete="off">
+                                                </div>
+                                                <div class="col-12 text-center divcampo ocultarSeCPF dadoscep">
+                                                    <label>Possui segundo condutor?</label><br>
+                                                    <input type="radio" name="possuicondutorsecundario" class="segundoCondutor" value="sim"> Sim
+                                                    <input type="radio" name="possuicondutorsecundario" class="segundoCondutor" value="nao"> Não
+                                                </div>
+                                                <div class="col-12 text-center divcampo" id="colunacondutorsecundario">
+                                                    <label>Nome Condutor Secundário</label><br>
+                                                    <input type="text" name="Nome2" id="Nome2" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>CPF Condutor Secundário</label><br>
+                                                    <input type="text" name="CPF2" id="CPF2" class="campo cpf">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Telefone Condutor Secundário</label><br>
+                                                    <input type="text" name="Telefone2" id="Telefone2" class="campo telefone">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>E-mail Condutor Secundário</label><br>
+                                                    <input type="text" name="Email2" id="Email2" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo ocultarSeCPF" id="colunaAvancarEtapa3">
+                                                    <input type="button" name="AvancarEtapa3" id="AvancarEtapa3" class="campo botaoAvancar" value="PRÓXIMA ETAPA">
+                                                </div>
+                                            </div>
+                                            <div class="row dadosSolicitacao mt-5" style="height:100%">
+                                                <div class="col-12 text-center">
+                                                    <label>Placa</label><br>
+                                                    <input type="text" class="campo" required name="Placa">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Montadora</label><br>
+                                                    <select name="Montadora" id="Montadora" required class="campo">
+                                                        <option></option>
+                                                        <?php foreach($montadoras as $m) : ?>
+                                                            <option value="<?= $m["cod"]."-".$m["montadora"] ?>">
+                                                                <?= $m["montadora"] ?>
+                                                            </option>
+                                                        <?php endforeach ?>
+                                                        <?php
+                                                            // $query = "SELECT * FROM montadora";
+                                                            // $sql = mysqli_query($db, $query);
+                                                            // while ($linha=mysqli_fetch_array($sql)){
+                                                            //     echo "<option value='".$linha["cod"]."-".utf8_encode($linha["montadora"])."'>";
+                                                            //     echo utf8_encode($linha["montadora"]);
+                                                            //     echo "</option>";
+                                                            // }
+                                                        ?>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Modelo</label><br>
+                                                    <select class="campo" required name="Modelo" id="Modelo">
+                                                        <option></option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Categoria:</label><br>
+                                                    <select name="Categoria" required="" id="Categoria" class="campo">
+                                                        <option></option>
+                                                        <option>Automóvel</option>
+                                                        <option>Caminhão</option>
+                                                        <option>Ônibus</option>
+                                                        <option>Micro-ônibus/Van</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Ano/Modelo:</label><br>
+                                                    <input type="text" name="Ano" required="" id="Ano" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Chassi:</label><br>
+                                                    <input type="text" name="Chassi" required="" id="Chassi" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Renavan:</label><br>
+                                                    <input type="text" name="Renavam" required="" id="Renavam" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Lotação Máxima:</label><br>
+                                                    <input type="text" name="LotacaoMaxima" required="" id="LotacaoMaxima" class="campo">
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Utilização:</label><br>
+                                                    <select class="campo" required name="Utilizacao" id="Utilizacao">
+                                                        <option></option>
+                                                        <option value="Motorista de Aplicativo">Motorista de Aplicativo</option>
+                                                        <option value="Passeio">Passeio</option>
+                                                        <option value="Taxi">Taxi</option>
+                                                        <option value="Transporte de passageiros">Transporte de passageiros</option>
+                                                        <option value="Locação">Locação</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Cobertura</label><span style="background-color: #0e385f;color: white;display: inline;padding: 16px;padding-top: 10px;padding-bottom: 10px;border-radius: 50%;font-size: 12px;margin-left: 20px;" data-html="true" data-toggle="tooltip" title="" data-original-title="DMH (Despesas Médico-Hospitalares e Odontológicas)">?</span><br>
+                                                    <select class="campo" required name="Cobertura" id="Cobertura">
+                                                        <option></option>
+                                                        <option value="Morte Acidental (MA)">Morte Acidental (MA)</option>
+                                                        <option value="Invalidez Permanente por Acidente (IPA)">Invalidez Permanente por Acidente (IPA)</option>
+                                                        <option value="MA e IPA">MA e IPA</option>
+                                                        <option value="MA e DMH">MA e DMH</option>
+                                                        <option value="IPA e DMH">IPA e DMH</option>
+                                                        <option value="MA, IPA e DMH">MA, IPA e DMH</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label>Capital Segurado</label><br>
+                                                    <select class="campo" required name="CapitalSegurado" id="CapitalSegurado">
+                                                        <option></option>
+                                                        <option value="R$ 10.000,00">R$ 10.000,00</option>
+                                                        <option value="R$ 20.000,00">R$ 20.000,00</option>
+                                                        <option value="R$ 30.000,00">R$ 30.000,00</option>
+                                                        <option value="R$ 40.000,00">R$ 40.000,00</option>
+                                                        <option value="R$ 50.000,00">R$ 50.000,00</option>
+                                                        <option value="R$ 60.000,00">R$ 60.000,00</option>
+                                                        <option value="R$ 70.000,00">R$ 70.000,00</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 text-center divcampo">
+                                                    <label id="legendaCapital"></label>
+                                                </div>
+                                                <div class="col-12 text-center divcampo mt-4" id="submetersolicitacao">
+                                                    <input type="checkbox" id="RegulamentoLido" name="RegulamentoLido" style="font-size:14px; font-family:Verdana"> Li e concordo com as 
+                                                    <span style="cursor:pointer;color:#063960;text-decoration:underline;font-size: 14px;display: inline-block;" id="condicoes-gerais">Condições Gerais</span>
+                                                    <br />
+                                                    <input type="submit" name="inscricao" disabled id="inscricao" class="campo botaoAvancar" value="SOLICITAR CONTRATAÇÃO">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="formSuccess">
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="icon-message">
+                                    <span class="icon-Danger fs-8 fw-600"></span>
+                                </div>
+                                <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
+                                <div class="text-center">
+                                    <div class="message-response">Sua solicitação foi realizada com sucesso.<br>
+                                    A sua solicitação foi enviada com sucesso!
+                                    </div>
+                                    <hr>
+                                    <p class="message-response-try-again-btn">
+                                        <a href="#" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                            OK
+                                        </a>
+                                    </p>
+                                    <p class="message-response-btn">
+                                        <a href="<?= base_url("area-cliente/app")?>" class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700">
+                                            APP
+                                        </a>
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </section>
 
+                    </div>
+                </div>
+            </div>
+
+
+            <?php /*
             <section id="formLoading">
                 <div class="d-flex flex-column justify-content-center align-items-center">
                     <div >
@@ -104,13 +428,13 @@
                 </div>
             </section>
             <section>
-                <div class="container-fluid pb-4 position-relative solicitacao">
+                <div class="container pb-4 position-relative solicitacao">
                     <!--  -->
                     <div class="row">
-                        <div class="d-none d-md-inline-block col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
-                        <img src="<?= base_url("assets/img/homem_sinistro_carro.png")?>" class="homem_sinistro">
+                        <div class="d-none d-md-inline-block col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            <img style="margin-top: -100px;" src="<?= base_url("/assets/svg/solicitacao_hero.svg")?>" alt="">
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 text-center pl-5 pr-5 pb-5 fluxo">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center pl-5 pr-5 pb-5 fluxo">
                             <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
                                 <div class="text-left texto">
                                     <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
@@ -377,14 +701,14 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 d-none d-lg-inline-block col-md-3 text-right">
+                        <!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4 d-none d-lg-inline-block col-md-3 text-right">
                             <img src="<?= base_url("assets/img/icon_app.png")?>" class="icon_sinistro">
                             <div class="slogan">
                                 <span style="color:#91D8F7">SIMPLES</span>
                                 <span style="color:#4CAFD9">FÁCIL</span>
                                 <span style="color:#245F96">RÁPIDO</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="container-fluid pl-0 pr-0 position-relative" id="divSolicitacao">
@@ -414,7 +738,7 @@
                     
                 </div>
             </section>
-
+            */ ?>
 <?= $this->endSection() ?>
 
 <?= $this->section('footer') ?>
