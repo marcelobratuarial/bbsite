@@ -325,7 +325,7 @@
                                                             <option></option>
                                                             <option>Simples</option>
                                                             <option>Degrade</option>
-                                                            <option>Fume</option>
+                                                            <?php /*<option>Fume</option> */?>
                                                         </select>
                                                     </div>
                                                     <div class="col-12 text-center divcampo">

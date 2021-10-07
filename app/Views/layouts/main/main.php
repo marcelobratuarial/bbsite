@@ -48,7 +48,12 @@
     </head>
     <body data-spy="scroll" data-target=".inner-link" data-offset="60">
         <div class="CustomLoader active">
-            <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt="">
+            <!-- <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt=""> -->
+            <video id="Loader" width="100" height="100" muted="muted" loop="loop" autoplay="autoplay">
+                <source src="<?= base_url('assets/videos/logoanimada.webm') ?>" type="video/webm" />
+            <!-- <source src="movie.ogg" type="video/ogg" /> -->
+            Your browser does not support the video tag.
+            </video>
         </div>
         <?= $this->renderSection('header') ?>
         
@@ -89,6 +94,7 @@
         <?= $this->renderSection('cScripts') ?>
         
         <script>
+            // $("#Loader").play();
             var base_url = '<?= base_url('/') ?>';
             $(document).ready(function(){
                 var l = new Promise((resolve, reject) => {
