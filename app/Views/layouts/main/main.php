@@ -49,8 +49,8 @@
     <body data-spy="scroll" data-target=".inner-link" data-offset="60">
         <div class="CustomLoader active">
             <!-- <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt=""> -->
-            <video id="Loader" width="100" height="100" muted="muted" loop="loop" autoplay="autoplay">
-                <source src="<?= base_url('assets/videos/logoanimada01.mp4') ?>" type="video/mp4" />
+            <video id="Loader" muted="muted" autoplay="autoplay">
+                <source src="<?= base_url('assets/videos/logoanimada02.mp4') ?>" type="video/mp4" />
             <!-- <source src="movie.ogg" type="video/ogg" /> -->
             Your browser does not support the video tag.
             </video>
@@ -95,6 +95,25 @@
         
         <script>
             // $("#Loader").play();
+            document.getElementsByTagName('video')[0].onended = function () {
+                setTimeout(() => {
+                    this.load();
+                    this.play();
+                }, 600);
+                // console.log("teste")
+            };
+            // $("#Loader")[0].on('ended', function () {
+            //     $(this).load();
+            //     console.log($(this))
+            //     console.log("end")
+            //     $(this).play();
+            // });
+            // $("#Loader")(0).on('ended', function () {
+            //     $(this).load();
+            //     console.log($(this))
+            //     console.log("end")
+            //     $(this).play();
+            // });
             var base_url = '<?= base_url('/') ?>';
             $(document).ready(function(){
                 var l = new Promise((resolve, reject) => {
