@@ -50,7 +50,7 @@
         <div class="CustomLoader active">
             <!-- <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt=""> -->
             <video id="Loader" width="100" height="100" muted="muted" loop="loop" autoplay="autoplay">
-                <source src="<?= base_url('assets/videos/logoanimada.webm') ?>" type="video/webm" />
+                <source src="<?= base_url('assets/videos/logoanimada01.mp4') ?>" type="video/mp4" />
             <!-- <source src="movie.ogg" type="video/ogg" /> -->
             Your browser does not support the video tag.
             </video>
