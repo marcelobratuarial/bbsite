@@ -118,7 +118,7 @@
             $(document).ready(function(){
                 var l = new Promise((resolve, reject) => {
                     setTimeout(() => {
-                        console.log("teste")
+                        // console.log("teste")
                         $(".CustomLoader").removeClass("active")
                         resolve("OK")
                     }, 600);

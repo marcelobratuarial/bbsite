@@ -1,4 +1,6 @@
-<?php $uri_link = current_url(true);$link = explode("/", $uri_link);$paginaAtual=$link[3];?>
+<?php 
+$paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
+?>
 
             <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo '.znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
                 <div class="container">
