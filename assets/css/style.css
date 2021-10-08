@@ -8585,12 +8585,50 @@ p {
   align-items: center;
   text-align: center;
 }
+.alist_boxfot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+}
+.numbersbg {
+  background-image: url(../images/numbers_hero.svg);
+  background-size: cover;
+}
+.mx-3_5 {
+  margin-left: 1.4rem !important;
+  margin-right: 1.5rem !important;
+}
 .alist_box span {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 15px;
   margin-top: 10px;
   color: #2a3855;
+}
+
+.alist_boxfot span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.area_listfot li a {
+  position: relative; 
+  display: block;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 48px;
+  background: #2a3855;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  transition: .5s;
 }
 
 .area_list li a {

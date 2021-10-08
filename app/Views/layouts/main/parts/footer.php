@@ -18,7 +18,7 @@
                                 <a class="color-white" href="<?= base_url('faq') ?>">Perguntas Frequentes</a>
                             </li>
                             <li class="mb-3">
-                                <a class="color-white" href="#">Portal de Benefícios</a>
+                                <a class="color-white" href="<?= base_url('beneficios') ?>">Portal de Benefícios</a>
                             </li>
                             <li class="mb-3">
                                 <a class="color-white" href="#">Termos de Uso</a>

@@ -1,6 +1,6 @@
 <!--? Count Down Start -->
-<div class="count-down-area pt-90 pb-60 section-bg zin" data-background="<?= base_url("assets/img/gallery/section_bg01.png") ?>">
-    <div class="container bg-secondary">
+<div class="count-down-area pt-90 pb-60 section-bg zin">
+    <div class="container numbersbg">
         <div class="row justify-content-center">
             <div class="col-lg-12 col-md-12">
                 <div class="count-down-wrapper" >

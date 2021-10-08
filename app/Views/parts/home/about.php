@@ -250,7 +250,7 @@
                 <!--/.container-->
             </section>
 
-            <section class="bg-secondary">
+            <section class="numbersbg">
                 <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
                 <!--/.background-holder-->
                 <div class="container">
