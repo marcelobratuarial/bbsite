@@ -11,30 +11,51 @@ $('body').imagesLoaded({ background: ".background-holder" }, function(){
         $('#preloader').remove();
     }, 800);
 });
+var onnn = false
+$(document).on("scroll", function() {
+    var top_of_element = $(".nossos-numeros").offset().top;
+    var bottom_of_element = $(".nossos-numeros").offset().top + $(".nossos-numeros").outerHeight();
+    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    var top_of_screen = $(window).scrollTop();
+    
+    if (!onnn && (bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+        onnn = true
+        // console.warn("Sim")
+        // Counter
+        const counters = document.querySelectorAll('.value');
+        const speed = 2500;
 
-
-// Counter
-const counters = document.querySelectorAll('.value');
-const speed = 200;
-
-counters.forEach( counter => {
-   const animate = () => {
-      const value = +counter.getAttribute('akhi');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        }else{
-          counter.innerText = value;
+        counters.forEach( counter => {
+        const animate = () => {
+            const value = parseInt(counter.getAttribute('akhi'));
+            const data = parseInt(formatarValor(counter.innerText, true));
+            const time = value / speed;
+            if(data < value) {
+                counter.innerText = formatarValor(Math.ceil(data + time));
+                setTimeout(animate, 1);
+                }else{
+                counter.innerText = formatarValor(value);
+                }
+            
         }
-     
-   }
-   
-   animate();
-});
+        
+        animate();
+        });
+    } else {
+        onnn = false
+        // console.warn("NAO")
+    }
+})
 
+function formatarValor(valor, undo = false) {
+    var r
+    if(undo) {
+        r = valor.toString().replace(/[^\d]+/g,'')
+    } else {
+        r = valor.toLocaleString('pt-BR');
+    } 
+    return r
+}
 
 
 

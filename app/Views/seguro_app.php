@@ -11,8 +11,11 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6 d-flex flex-column">
+                    <div class="col-lg-6 d-flex flex-column align-items-center justify-content-around">
                         <img src="assets/svg/app_hero.svg" alt="">
+                        <a style="width: 260px" class="btn btn-primary mt-3 fs-1" href="<?= base_url("/area-cliente/app") ?>">Solicite agora
+                            <span class="fa fa-chevron-right ml-2"></span>
+                        </a>
                     </div>
 
                     <div class="col-lg-6 d-flex flex-column justify-content-center">

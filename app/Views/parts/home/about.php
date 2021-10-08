@@ -144,7 +144,7 @@
                             <div class="d-flex align-items-center h-100">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
-                                        <h5 data-zanim='{"delay":0}'>Plano Odontológic</h5>
+                                        <h5 data-zanim='{"delay":0}'>Plano Odontológico</h5>
                                     </div>
                                     <div class="overflow-hidden">
                                         <p class="mt-3" data-zanim='{"delay":0.1}'>A saúde começa pela boca! Com o Plano Odontológico da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
@@ -208,7 +208,7 @@
                             <h4 class="color-white mb-0">Conquistar um novo associado é muito bom,<br> fidelizá-lo é muito melhor!</h4>
                         </div>
                         <div class="col-md-auto mt-md-0 mt-4">
-                            <a class="btn btn-white btn-capsule" href="contact.html">Nos contate</a>
+                            <a class="btn btn-white btn-capsule fs-2" href="http://brasilbeneficios.club" target="_blank">Nos contrate</a>
                         </div>
                     </div>
                     <!--/.row-->
@@ -221,7 +221,7 @@
                 <div class="container">
                     <div class="row mb-6">
                         <div class="col">
-                            <h3 class="text-center fs-2 fs-lg-3">Titulo</h3>
+                            <h3 class="text-center fs-2 fs-lg-3">Liderança</h3>
                             <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll"> </div>
                     </div>
                     <div class="row">
@@ -258,27 +258,27 @@
                         <div class="col-12">
                             <div class="media">
                                 <span class="ion-android-checkmark-circle fs-5 color-warning mr-3" style="transform: translateY(-1rem);"></span>
-                                <div class="media-body">
+                                <div class="media-body nossos-numeros">
                                     <h2 class="color-warning fs-3 fs-lg-4">Conheça nossos 
-                                        <br/>
+                                    <br/>
                                         <span class="color-white"> números:</span>
                                     </h2>
                                     <div class="row mt-4">
                                         <div class="col-md-4 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1}'>0</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1, "duration": 0.5}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.1}'>0</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.3, "duration": 0.5}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
                                         <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.1}'>0</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.5, "duration": 0.5}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.1}'>0</div>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.7, "duration": 0.5}'>0</div>
                                             <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
                                         </div>
                                     </div>

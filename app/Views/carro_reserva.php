@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="row mt-5">
-                    <a class="mx-auto" href="Http://www.brasilbeneficios.club" target="_blank">
+                    <a class="mx-auto" href="<?= base_url("area-cliente/carro-reserva")?>">
                         <button class="btn btn-brushi">Solicite agora</button>
                     </a>
                 </div>

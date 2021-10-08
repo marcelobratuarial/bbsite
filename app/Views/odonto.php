@@ -19,7 +19,7 @@
 
                     <div class="col-lg-6 d-flex flex-column">
 
-                        <p class="mt-4">A saúde começa pela boca! Com a Assistência Odontológica da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
+                        <p class="mt-4">A saúde começa pela boca! Com o Plano Odontológico da Brasil Benefícios sua entidade fornece serviços como extração dentária, drenagem de abscesso, coroa provisória, restauração e tratamento de urgência de doenças periodontais em fase aguda com dor, entre outros serviços para seus associados.</p>
                         
                         <p><b>Vantagens:</b></p>
 
