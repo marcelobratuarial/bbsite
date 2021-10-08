@@ -1,14 +1,10 @@
-[
-    {
-        "text": "Home",
-        "route": "/"
-    },      
+[     
     {
         "text": "Sobre",
         "route": "/sobre"
     },
     {
-        "text": "Clube de Descontos",
+        "text": "Clube",
         "route": "/clube"
     },
     {

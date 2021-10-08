@@ -7,40 +7,35 @@
 
 <?= $this->section('content') ?>
 
-<div class="container-fluid">
+<div class="container-fluid mt-7">
 
     <div class="row">
-        <div class="colrp3 col-lg-5 d-flex align-items-center pr-0">
+        <div class="colrp3 col-lg-6 d-flex align-items-center justify-content-center pr-0">
 
-            <div class="px-5 py-4 background-white radius-secondary">
-                <h5 class="mb-3">Endereço</h5>Rua nome da rua,
-                <br>1200,
-                <br>BH, MG 
+            <div class="mt-3 mr-4 background-white radius-secondary">
+                <h5 class="mb-3">Endereço</h5>Av. Sebastião de Brito,<br> 804/13, BH, MG 
             </div>
 
-            <div class="px-5 py-4 background-white radius-secondary">
+            <div class=" background-white radius-secondary">
                 <h5>Redes sociais</h5>
-                <a class="d-inline-block mt-2" href="#">
-                    <span class="fa fa-youtube-square fs-2 mx-2 color-primary"></span>
-                </a>
                 <a class="d-inline-block mt-2" href="#">
                     <span class="fa fa-facebook-square fs-2 mx-2 color-primary"></span>
                 </a>
                 <a class="d-inline-block mt-2" href="#">
-                    <span class="fa fa-instagram-square fs-2 ml-2 color-primary"></span>
+                    <span class="fa fa-instagram fs-2 ml-2 color-primary"></span>
                 </a>
             </div>
 
         </div>
-        <div class="colrp col-lg-7 pr-0" style="padding-left: 98px;">
-            <img src="assets/svg/brasilcontact_hero.jpg" alt="">
+        <div class="colrp col-lg-6 pr-0 d-flex justify-content-center">
+            <img width="60%" src="assets/images/landing/contact_hero.svg" alt="">
         </div>
     </div>
 
     <div class="row">
-        <div class="colrp2 col-lg-6 d-flex pl-0">
+        <div class="colrp2 col-lg-6 d-flex justify-content-center pl-0">
 
-            <img src="assets/svg/brasilcontact_hero2.jpg" alt="">
+            <img width="80%" src="assets/images/landing/contact_hero2.svg" alt="">
 
         </div>
         <div class="col-lg-6 d-flex flex-column align-items-center py-5">

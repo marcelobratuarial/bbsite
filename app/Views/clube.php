@@ -1,132 +1,192 @@
-<div class="pt-0">
-    <section class="background-11">
-            <div class="container">
-                <div class="row mt-6">
-                    <div class="col-12">
-                        <h3 class="text-center fs-2 fs-md-3">Clube de benefícios</h3>
-                        <p class="text-center w-50 mx-auto">Milhares de parceiros e estabelecimentos com mais de 50.000 produtos exclusivos para você.</p>
-                        <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll" />
-                    </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <img src="assets/svg/benefits_hero.svg" alt="">
-                    </div>
-
-                    <div class="col-lg-6 d-flex align-items-center">
-                        
-                        <div class="d-flex align-items-center justify-content-between">
-
-                            <div>
-                                <div class="d-flex flex-column align-items-center text-center">
-                                    <img width="20%" src="assets/svg/ecommerce.svg" alt="">
-                                    <p class="mb-1 mt-3"><b>Lojas online</b></p>
-                                    <p class="mt-0">Faça compras sem sair de casa</p>
-                                </div>
-
-                                <div class="mt-3 d-flex flex-column align-items-center text-center">
-                                    <img width="20%" src="assets/svg/shoppingkart.svg" alt="">
-                                    <p class="mb-1 mt-3"><b>Melhores marcas</b></p>
-                                    <p class="mt-0">Marcas referência de mercado</p>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="d-flex flex-column align-items-center text-center">
-                                    <img width="20%" src="assets/svg/shop.svg" alt="">
-                                    <p class="mb-1 mt-3"><b>Lojas físicas</b></p>
-                                    <p class="mt-0">Localize as lojas mais próximas</p>
-                                </div>
-
-                                <div class="mt-3 d-flex flex-column align-items-center text-center">
-                                    <img width="20%" src="assets/svg/porcentagem.svg" alt="">
-                                    <p class="mb-1 mt-3"><b>Descontos exclusivos</b></p>
-                                    <p class="mt-0">Percentuais baixos e viáveis</p>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                <section class="py-6">
-                    <div class="container-fluid">
-                        <div class="row align-items-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                            <div class="col-4 col-md-2 my-3 overflow-hidden">
-                                <img src="assets/svg/casasbahia_logo.png" alt="">
-                            </div>
-                            <div class="col-4 col-md-2 my-3 overflow-hidden">
-                                <img width="80%" src="assets/svg/nike_logo.png" alt="">
-                            </div>
-                            <div class="col-4 col-md-2 my-3 overflow-hidden">
-                                <img src="assets/svg/carrefour_logo.png" alt="">
-                            </div>
-                            <div class="col-4 col-md-2 my-3 overflow-hidden text-center">
-                                <img width="70%" src="assets/svg/natura_logo.png" alt="">
-                            </div>
-                            <div class="col-4 col-md-2 my-3 overflow-hidden">
-                                <img src="assets/svg/magazine_logo.png" alt="">
-                            </div>
-                            <div class="col-4 col-md-2 my-3 overflow-hidden">
-                                <img src="assets/svg/renner_logo.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="row mt-4">
-
-                    <div class="col-lg-6 d-flex flex-column justify-content-center">
-
-                        <p class="text-center">Milhares de parceiros e estabelecimentos com mais de 50.000 produtos exclusivos para você. Economize em compras, divirta-se no cinema e amplie seus conhecimentos e dos seus familiares.</p>
-
-                        <div class="d-flex align-items-center mt-5">
-                            <img width="5%" src="assets/svg/check.svg" alt="">
-                            <p class="m-0 ml-2"><b>Cashback</b></p>
-                        </div>
-                        
-                        <div class="d-flex align-items-center mt-3">
-                            <img width="5%" src="assets/svg/check.svg" alt="">
-                            <p class="m-0 ml-2"><b>Cupom de desconto</b></p>
-                        </div>
-
-                        <div class="d-flex align-items-center mt-3">
-                            <img width="5%" src="assets/svg/check.svg" alt="">
-                            <p class="m-0 ml-2"><b>Desconto em cinemas</b></p>
-                        </div>
-                        <div class="d-flex align-items-center mt-3">
-                            <img width="5%" src="assets/svg/check.svg" alt="">
-                            <p class="m-0 ml-2"><b>Desconto em redes de ensino</b></p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6 d-flex justify-content-center">
-                        <img src="assets/svg/woman_buy.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    
-
-                    
-
-                </div>
-
-                <div class="row mt-5">
-                    <a class="mx-auto" href="https://clubebrasilatuarial.com.br/" target="_blank">
-                        <button class="btn btn-brushi">Acessar agora</button>
-                    </a>
-                </div>
-
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h3 class="fs-2 fs-md-3">Monte seu clube de vantagens em poucos minutos</h3>
+                <p class="my-4">Junte-se a mais de 15 milhões de pessoas e fidelize seus colaboradores, clientes e associados com a maior plataforma de vantagens do Brasil.</p>
+                <a href="https://clubebrasilatuarial.com.br/" target="_blank">
+                    <button class="btn btn-brushi">Acessar agora</button>
+                </a>
             </div>
-        </section>  
-</div>
+            <div class="col-lg-6">
+                <img src="<?= base_url("assets/images/landing/hero_img.png")?>" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 3.5rem 0!important;">
+    <div class="container">
+        <h3 class=" text-center fs-2 fs-md-3">Ofereça as melhores marcas</h3>
+        <p class="my-2 text-center">As marcas referência nos seus setores com tudo pronto para você inserir no seu clube de vantagens</p>
+        <div class="row mt-3">
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/cinemark_logo.svg") ?>" alt="">
+          </div>
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/dominos_logo.svg") ?>" alt="">
+          </div>
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/estacio_logo.svg") ?>" alt="">
+          </div>
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/magalu_logo.svg") ?>" alt="">
+          </div>
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/marisa_logo.svg") ?>" alt="">
+          </div>
+          <div class="cliente_logo col-sm-12 col-md-2 col-lg-2 text-center">
+            <img class="logos" src="<?= base_url("assets/images/landing/netshoes_logo.svg") ?>" alt="">
+          </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="heroC col-lg-6">
+                <img class="hero w-75" src="<?= base_url("assets/images/landing/hero2_bg.png")?>" alt="">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h3 class="fs-2 fs-md-3">Descubra informações valiosas</h3>
+                <p class="my-4">Hábitos de consumo e utilização das vantagens em tempo real. Com isso, você pode aumentar as vantagens que realmente interessam às pessoas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 3.5rem 0!important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h3 class="fs-2 fs-md-3">Customize a plataforma do seu jeito</h3>
+                <p class="my-4">Personalize cores, logos, imagens e texto. Somos invisíveis para que as pessoas tenham todas as vantagens oferecidas com a sua marca.</p>
+            </div>
+            <div class="heroC col-lg-6">
+                <img class="hero" src="<?= base_url("assets/images/landing/about-left-image.png")?>" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="heroC col-lg-6">
+                <img class="hero" width="90%" src="<?= base_url("assets/images/landing/hero3_bg.png")?>" alt="">
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h3 class="fs-2 fs-md-3">Faça uma integração completa com o seu produto</h3>
+                <p class="my-4">Quer oferecer uma experiência totalmente integrada ao seu produto? Através da nossa API, você utiliza o nosso motor de vantagens do jeito que quiser e imaginar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding: 3.5rem 0!important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h3 class="fs-2 fs-md-3">Ofereça vantagens exclusivas</h3>
+                <p class="my-4">Se você tem parceiros exclusivos, não se preocupe. Você consegue gerenciar todas essas parcerias em nossa plataforma oferecendo a melhor experiência para as pessoas resgatarem as vantagens.</p>
+            </div>
+            <div class="heroC col-lg-6">
+                <img class="hero" src="<?= base_url("assets/images/landing/hero4_bg.png")?>" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row d-flex flex-column">
+            <h3 class=" text-center fs-2 fs-md-3">Ofereça vantagens como você quiser</h3>
+            <p class="my-2 text-center">Temos diversas possibilidades para o seu negócio</p>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-services">
+                <div class="item">
+                    <h4>Descontos</h4>
+                    <div class="icon"><img src="<?= base_url("assets/images/landing/descontos.svg")?>" alt=""></div>
+                    <p>Descontos incríveis nas melhores marcas do Brasil</p>
+                </div>
+                <div class="item">
+                    <h4>Cashback</h4>
+                    <div class="icon"><img src="<?= base_url("assets/images/landing/cashback.svg")?>" alt=""></div>
+                    <p>Dinheiro de volta direto na conta-corrente</p>
+                </div>
+                <div class="item">
+                    <h4>Vida</h4>
+                    <div class="icon"><img src="<?= base_url("assets/images/landing/vida.svg")?>" alt=""></div>
+                    <p>Medicamentos com até 40% de deconto nas principais farmácias do país</p>
+                </div>
+                <div class="item">
+                    <h4>Cards</h4>
+                    <div class="icon"><img src="<?= base_url("assets/images/landing/cards.svg")?>" alt=""></div>
+                    <p>Compra de gift card com cashback exclusivo</p>
+                </div>
+                <div class="item">
+                    <h4>Store</h4>
+                    <div class="icon"><img src="<?= base_url("assets/images/landing/store.svg")?>" alt=""></div>
+                    <p>Vitrine de produtos com preços exclusivos para todos os perfis de consumidores</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="fs-2 fs-md-3">Sua empresa ainda não<Br> possui um clube de benefícios?</h3>
+                <div class="info d-flex flex-column">
+                    <span class="d-flex mt-3"><i class="fa fa-phone"></i> <a href="#">31 9 1234 1234<br>31 1234 1234</a></span>
+                    <span class="d-flex mt-3"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">contato@brasilbeneficios.com<br>atendimento@brasilbeneficios.com</a></span>
+                </div>
+                <img class="my-4" width="30%" src="<?= base_url("assets/images/landing/bb_logo.svg")?>" alt="">
+                <ul class="d-flex list-unstyled">
+                    <li><a class="socialmedia" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="socialmedia" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="socialmedia" href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-end">
+                <form id="contact" action="" method="post">
+                    <div class="row">
+                    <div class="col-lg-12">
+                        <fieldset>
+                        <input type="name" name="nome" id="name" placeholder="Nome" autocomplete="on" required>
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Seu Email" required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                        <input type="number" name="telefone" id="telefone" placeholder="Telefone" required="">
+                        </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    </div>
+                    <div class="col-lg-12">
+                        <fieldset>
+                        <button type="submit" id="form-submit" class="main-button">Enviar</button>
+                        </fieldset>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 

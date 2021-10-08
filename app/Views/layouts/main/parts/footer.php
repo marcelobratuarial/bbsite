@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="p-5 p-lg-6 radius-secondary">
-                   <img width="30%" src="../../assets/svg/branca_vertical.png" alt="">
+                   <img width="30%" src="<?= base_url("assets/images/landing/logo_branca_mini.svg")?>" alt="">
                    <h5 class="text-white mt-4">Conquistar um novo associado é muito bom, fidelizá-lo é muito melhor!</h5>
                 </div>
             </div>
