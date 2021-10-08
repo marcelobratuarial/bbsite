@@ -4,6 +4,8 @@
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
 
+
+
 /*
  *---------------------------------------------------------------
  * BOOTSTRAP THE APPLICATION
