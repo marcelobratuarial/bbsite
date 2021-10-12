@@ -13,7 +13,7 @@
         <div class="colrp3 col-lg-6 d-flex align-items-center justify-content-center pr-0">
 
             <div class="mt-3 mr-4 background-white radius-secondary">
-                <h5 class="mb-3">Endereço</h5>Av. Sebastião de Brito,<br> 804/13, BH, MG 
+                <h5 class="mb-3">Endereço</h5>Av. Sebastião de Brito,<br> 805, Dona Clara, BH 
             </div>
 
             <div class=" background-white radius-secondary">
@@ -39,7 +39,7 @@
 
         </div>
         <div class="col-lg-6 d-flex flex-column align-items-center py-5">
-            <h5>Nos envia sua dúvida</h5>
+            <h5>Nos envie sua dúvida</h5>
                     <form class="zform mt-3">
                         <div class="row">
                             <div class="col-12">

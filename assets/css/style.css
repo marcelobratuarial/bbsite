@@ -15,6 +15,12 @@ body {
     display: none;
   }
 
+  #responsiv_hero {
+    background-image: url(../images/resp/respon_hero.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
   .slider_hero {
     background-color: rgb(87, 87, 134);
   }
@@ -8649,6 +8655,10 @@ p {
   max-width: 100px;
 }
 
+.area_list {
+  margin-top: 20px!important;
+}
+
 @media (max-width: 992px) {
   .logos{
     margin-top: 30px!important;
@@ -8661,6 +8671,25 @@ p {
     display: flex;
     justify-content: center;
   }
+  .responsiv_nav {
+    background-color: #2A3855!important;
+  }
+  .linewr {
+    display: block!important;
+  }
+  .wracard {
+    margin-left: -10%!important;
+  }
+  .item h4 {
+    font-size: 16px;
+  }
+  .area_cliente_title {
+    font-size: 32px;
+  }
+  .arealistrow div {
+    margin-top: 30px;
+  }
+
 }
 
 .item {

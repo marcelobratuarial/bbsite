@@ -10,7 +10,7 @@
                     <div class="row mt-md-5">
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex justify-content-center align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                                <img src="assets/images/shiled.png" alt="">
+                                <img src="assets/images/shield.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Soluções para Carro, Casa, Vida e Saúde</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Solution for every business related problems, readily
@@ -232,15 +232,15 @@
                             <div class="overflow-hidden">
                                 <div class="px-4 px-sm-0" data-zanim='{"delay":0}'>
                                     <h5 class="fs-0 fs-lg-1">
-                                        <span class="ion-chatbubble-working fs-2 mr-2 icon-position-fix fw-800"></span>Item titulo</h5>
-                                    <p class="mt-3 px-lg-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, architecto adipisci. Magni iure reprehenderit eveniet quos deleniti possimus saepe blanditiis? Velit repellat reiciendis vero mollitia voluptas, consequuntur deserunt quae voluptate!</p>
+                                        <span class="fa fa-dot-circle-o mr-3" aria-hidden="true"></span>Foco no Cliente</h5>
+                                    <p class="mt-3 px-lg-3">Com foco total no atendimento de excelência a nossos clientes, orientamos nossas atividades diárias no fortalecimento do uso de tecnologia na entrega de nossos serviços objetivando facilitar a vida das pessoas.</p>
                                 </div>
                             </div>
                             <div class="overflow-hidden">
                                 <div class="px-4 px-sm-0 mt-5" data-zanim='{"delay":0.1}'>
                                     <h5 class="fs-0 fs-lg-1">
-                                        <span class="ion-android-color-palette fs-2 mr-2 icon-position-fix fw-800"></span>Item titulo</h5>
-                                    <p class="mt-3 px-lg-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quibusdam sapiente optio consequuntur ut veritatis, provident delectus aliquid. Corporis nobis harum eveniet. Temporibus eum sit illo fuga voluptates enim molestiae?</p>
+                                        <span class="fa fa-cubes mr-3" aria-hidden="true"></span>Liderança e Inovação</h5>
+                                    <p class="mt-3 px-lg-3">Com um time multidisciplinar, temos como objetivo alcançar a liderança nacional no fornecimento de benefícios inovando constantemente nossas soluções em serviços para carro, casa, vida e saúde.</p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@
                 <!--/.container-->
             </section>
 
-            <section class="numbersbg">
+            <section class="backgroundd">
                 <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
                 <!--/.background-holder-->
                 <div class="container">

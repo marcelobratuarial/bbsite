@@ -18,11 +18,11 @@
                 <div class="background-white px-3 mt-6 px-0 py-5 px-lg-5 radius-secondary">
                     <!-- <h5>Earning the right</h5> -->
                     <div id="accordion">
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md" data-toggle="collapse" data-target="#quem-e" aria-expanded="true" aria-controls="quem-e">
-                                        QUEM É A BRASIL BENEFÍCIOS?
+                                        QUEM É A<br class="linewr d-none"> BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -34,11 +34,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#finalidades" aria-expanded="false" aria-controls="finalidades">
-                                    QUAIS AS FINALIDADES DA BRASIL BENEFÍCIOS?
+                                    QUAIS AS FINALIDADES<Br class="linewr d-none"> DA BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -48,11 +48,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#linha-de-servicos" aria-expanded="false" aria-controls="linha-de-servicos">
-                                    QUAIS AS LINHAS DE SERVIÇOS QUE A BRASIL BENEFÍCIOS OFERECE?
+                                    QUAIS AS LINHAS DE SERVIÇOS<Br class="linewr d-none"> QUE A BRASIL BENEFÍCIOS OFERECE?
                                     </button>
                                 </h5>
                             </div>
@@ -65,11 +65,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#porque-contratar" aria-expanded="false" aria-controls="porque-contratar">
-                                    PORQUE CONTRATAR A BRASIL BENEFÍCIOS?
+                                    PORQUE CONTRATAR A<Br class="linewr d-none"> BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -81,11 +81,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#como-contratar" aria-expanded="false" aria-controls="como-contratar">
-                                    COMO CONTRATAR A BRASIL BENEFÍCIOS?
+                                    COMO CONTRATAR A<Br class="linewr d-none"> BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -96,11 +96,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card wracard">
                             <div class="card-header" id="headingSix">
                                 <h5 class="mb-0">
                                     <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#acionar-servicos" aria-expanded="false" aria-controls="acionar-servicos">
-                                    COMO ACIONAR OS SERVIÇOS DA BRASIL BENEFÍCIOS?
+                                    COMO ACIONAR OS SERVIÇOS<Br class="linewr d-none"> DA BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -120,46 +120,6 @@
     <!--/.container-->
 </section>
 
-<section class="bg-secondary">
-                <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
-                <!--/.background-holder-->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="media">
-                                <span class="ion-android-checkmark-circle fs-5 color-warning mr-3" style="transform: translateY(-1rem);"></span>
-                                <div class="media-body">
-                                    <h2 class="color-warning fs-3 fs-lg-4">Conheça nossos 
-                                        <br/>
-                                        <span class="color-white"> números:</span>
-                                    </h2>
-                                    <div class="row mt-4">
-                                        <div class="col-md-4 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
-                                        </div>
-                                        <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.1}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
-                                        </div>
-                                        <div class="w-100 d-flex d-lg-none"></div>
-                                        <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.1}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
-                                        </div>
-                                        <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.1}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.row-->
-                </div>
-                <!--/.container-->
-            </section>
 
 
 

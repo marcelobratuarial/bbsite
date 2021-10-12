@@ -3,7 +3,7 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
 ?>
 
             <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo '.znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
-                <div class="container">
+                <div class="responsiv_nav container">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand overflow-hidden pr-3" href="index.php">
                             <img src="<?php if($paginaAtual==''){echo 'assets/images/landing/bb_logo_branca.svg';} else {echo 'assets/images/landing/bb_logo.svg';}?>" alt="" style="height:35px;"/>

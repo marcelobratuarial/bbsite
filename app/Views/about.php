@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="background-white px-3 mt-6 px-0 py-5 px-lg-5 radius-secondary">
-                                <h5>Os melhores serviços em assistência, seguro e benefícios do Brasil</h5>
+                                <h5>Os melhores serviços em assistências, seguros e benefícios do Brasil</h5>
                                 <p class="mt-3">Empresa especializada em oferecer serviços assistenciais e programa de benefícios para pessoas, empresas e Entidades de Autogestão no Brasil. Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores. "Não se preocupe, seu problema está em nossas mãos."</p>
                                 <ul style="color:#6a6a6a;">
                                     <li>Honestidade: Agimos com coerência e verdade</li>

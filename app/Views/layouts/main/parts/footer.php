@@ -12,7 +12,7 @@
                     <div class="col-6 col-lg-4 color-white ml-lg-auto">
                         <ul class="list-unstyled">
                             <li class="mb-3">
-                                <a class="color-white" href="#">Fale Conosco</a>
+                                <a class="color-white" href="<?= base_url('contato') ?>">Fale Conosco</a>
                             </li>
                             <li class="mb-3">
                                 <a class="color-white" href="<?= base_url('faq') ?>">Perguntas Frequentes</a>
@@ -85,7 +85,7 @@
                 <p class="color-white lh-6 mb-0 fw-600">&copy; Copyright 2021</p>
             </div>
             <div class="col-sm-3 text-sm-right mt-3 mt-sm-0 text-white">
-                <a class="color-white" href="https://agenciabrasildigital.com.br" target="_blank">  Brasil Benefícios</a>
+                <a class="color-white" href="<?= base_url("")?>">  Brasil Benefícios</a>
             </div>
         </div>
         <!--/.row-->

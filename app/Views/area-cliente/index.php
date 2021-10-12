@@ -12,41 +12,52 @@
 
     <div class="row mt-8">
         <div class="col-md-6">
-            <h1>Bem vindo(a) à area do cliente!</h1>
+            <h1 class="area_cliente_title">Bem vindo(a) à area do cliente!</h1>
 
             <p class="h5 text-secondary my-4">Selecione uma categoria:</p>
 
-            <ul class="area_list d-flex">
-                <li class="alist_box">
-                    <a href="<?= base_url("area-cliente/app")?>">
-                        <i class="fa fa-medkit" aria-hidden="true"></i>
-                    </a>
-                    <span>App</span>
-                </li>
-                <li class="alist_box" style="padding-top: 20px;">
-                    <a href="<?= base_url("area-cliente/carro-reserva")?>">
-                        <i class="fa fa-car" aria-hidden="true"></i>
-                    </a>
-                    <span>Carro<br>Reserva</span>
-                </li>
-                <li class="alist_box">
-                    <a href="<?= base_url("area-cliente/funeral")?>">
-                        <i class="fa fa-pagelines" aria-hidden="true"></i>
-                    </a>
-                    <span>Funeral</span>
-                </li>
-                <li class="alist_box">
-                    <a href="<?= base_url("area-cliente/vidros")?>">
-                        <i class="fa fa-clone" aria-hidden="true"></i>
-                    </a>
-                    <span>Vidros</span>
-                </li>
-                <li class="alist_box">
-                    <a href="<?= base_url("area-cliente/pet")?>">
-                        <i class="fa fa-paw" aria-hidden="true"></i>  
-                    </a>
-                    <span>Pet</span>
-                </li>
+            <ul class="row area_list arealistrow d-flex">
+                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                    <li>
+                        <a href="<?= base_url("area-cliente/app")?>">
+                            <i class="fa fa-medkit" aria-hidden="true"></i>
+                        </a>
+                        <span>App</span>
+                    </li>
+                </div>
+                
+                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                    <li class="" style="padding-top: 20px;">
+                        <a href="<?= base_url("area-cliente/carro-reserva")?>">
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                        </a>
+                        <span>Carro<br>Reserva</span>
+                    </li>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                    <li class="">
+                        <a href="<?= base_url("area-cliente/funeral")?>">
+                            <i class="fa fa-pagelines" aria-hidden="true"></i>
+                        </a>
+                        <span>Funeral</span>
+                    </li>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                    <li class="">
+                        <a href="<?= base_url("area-cliente/vidros")?>">
+                            <i class="fa fa-clone" aria-hidden="true"></i>
+                        </a>
+                        <span>Vidros</span>
+                    </li>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                    <li class="">
+                        <a href="<?= base_url("area-cliente/pet")?>">
+                            <i class="fa fa-paw" aria-hidden="true"></i>  
+                        </a>
+                        <span>Pet</span>
+                    </li>
+                </div>
             </ul>
         </div>
         <div class="col-md-6">

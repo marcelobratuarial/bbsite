@@ -7,7 +7,7 @@
 
                 <ul class="slides">
                     <li data-zanim-timeline="{}">
-                        <section class="py-0" style="background-color: black; opacity: 0.7;">
+                        <section id="responsiv_hero" class="py-0" style="background-color: black; opacity: 0.7;">
                             <div>
                                 <!--
                                 <div class="background-holder elixir-zanimm-scale" style="background-image:url(<?= base_url("assets/images/g.webp") ?>); opacity: 0.6;">
@@ -25,7 +25,7 @@
                                             </div>
                                             <div class="overflow-hidden">
                                                 <div class="" data-zanim='{"delay":0.2}'>
-                                                    <a class="btn btn-primary mr-3 mt-3" href="<?= base_url(route_to("ab")) ?>">Saiba mais
+                                                    <a class="btn btn-primary mr-3 mt-3" href="<?= base_url("/beneficios") ?>">Saiba mais
                                                         <span class="fa fa-chevron-right ml-2"></span>
                                                     </a>
                                                     <a class="btn btn-warning mt-3" href="http://brasilbeneficios.club" target="_blank">Nos contrate
