@@ -5,7 +5,7 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
             <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo '.znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
                 <div class="responsiv_nav container">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand overflow-hidden pr-3" href="index.php">
+                        <a class="navbar-brand overflow-hidden pr-3" href="<?= base_url() ?>">
                             <img src="<?php if($paginaAtual==''){echo 'assets/images/landing/bb_logo_branca.svg';} else {echo 'assets/images/landing/bb_logo.svg';}?>" alt="" style="height:35px;"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

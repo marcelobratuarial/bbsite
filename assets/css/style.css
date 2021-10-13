@@ -8672,6 +8672,9 @@ p {
     justify-content: center;
   }
   .responsiv_nav {
+    background-color: unset !important;
+  }
+  .responsiv_nav.sticky {
     background-color: #2A3855!important;
   }
   .linewr {

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center">
                 <h3 class="fs-2 fs-md-3">Monte seu clube de vantagens em poucos minutos</h3>
-                <p class="my-4">Junte-se a mais de 15 milhões de pessoas e fidelize seus colaboradores, clientes e associados com a maior plataforma de vantagens do Brasil.</p>
+                <p class="my-4">Junte-se a mais de 03 milhões de pessoas e fidelize seus colaboradores, clientes e associados com a maior plataforma de vantagens do Brasil.</p>
                 <a href="https://clubebrasilatuarial.com.br/" target="_blank">
                     <button class="btn btn-brushi">Acessar agora</button>
                 </a>
