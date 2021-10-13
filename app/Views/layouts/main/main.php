@@ -49,7 +49,7 @@
     <body data-spy="scroll" data-target=".inner-link" data-offset="60">
         <div class="CustomLoader active">
             <!-- <img src="<?= base_url('assets/images/loader/loading.png') ?>" alt=""> -->
-            <video id="Loader" muted="muted" autoplay="autoplay">
+            <video id="Loader" muted="muted" autoplay="autoplay" playsinline>
                 <source src="<?= base_url('assets/videos/logoanimada03.mp4') ?>" type="video/mp4" />
             <!-- <source src="movie.ogg" type="video/ogg" /> -->
             Your browser does not support the video tag.
