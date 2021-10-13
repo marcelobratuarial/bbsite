@@ -146,8 +146,8 @@ animation: lds-hourglass 1.2s infinite;
       }
 
       video{
-            -webkit-filter: brightness(130%); 
-            filter: brightness(130%); 
+            -webkit-filter: brightness(137%); 
+            filter: brightness(137%); 
     }
     #Loader {
         width: 150px;

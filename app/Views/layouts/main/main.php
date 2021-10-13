@@ -119,14 +119,14 @@
                 var l = new Promise((resolve, reject) => {
                     setTimeout(() => {
                         // console.log("teste")
-                        // $(".CustomLoader").removeClass("active")
+                        $(".CustomLoader").removeClass("active")
                         resolve("OK")
                     }, 600);
                    
                 })
                 l.then(() => {
                     setTimeout(() => {
-                        // $(".CustomLoader").css("display", "none")
+                        $(".CustomLoader").css("display", "none")
                     }, 1600);
                 }).then(() => {
                     // $(".CustomLoader").remove()
