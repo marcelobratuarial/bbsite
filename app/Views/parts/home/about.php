@@ -250,8 +250,9 @@
                 <!--/.container-->
             </section>
 
-            <section class="backgroundd">
-                <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div>
+            <section class="background-white">
+                <!-- <div class="background-holder overlay overlay-elixir" style="background-image:url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);"> </div> -->
+                <div class="background-holder overlay overlay-elixir"> </div>
                 <!--/.background-holder-->
                 <div class="container">
                     <div class="row">
@@ -261,25 +262,25 @@
                                 <div class="media-body nossos-numeros">
                                     <h2 class="color-warning fs-3 fs-lg-4">Conheça nossos 
                                     <br/>
-                                        <span class="color-white"> números:</span>
+                                        <span class="color-primary"> números:</span>
                                     </h2>
                                     <div class="row mt-4">
                                         <div class="col-md-4 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1, "duration": 0.5}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-primary mt-lg-5 mt-3" akhi="2500000" data-zanim='{"delay":0.1, "duration": 0.5}'>0</div>
+                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'> de usuários no Clube de Descontos</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.3, "duration": 0.5}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-primary mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.3, "duration": 0.5}'>0</div>
+                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
                                         <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.5, "duration": 0.5}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-primary mt-lg-5 mt-3" akhi="1400" data-zanim='{"delay":0.5, "duration": 0.5}'>0</div>
+                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'> novos segurados de vida todo mês</h6>
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-white mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.7, "duration": 0.5}'>0</div>
-                                            <h6 class="fs-0 color-white" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
+                                            <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-primary mt-lg-5 mt-3" akhi="3000" data-zanim='{"delay":0.7, "duration": 0.5}'>0</div>
+                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'>atendimentos de assistência residencial todo mês</h6>
                                         </div>
                                     </div>
                                 </div>
