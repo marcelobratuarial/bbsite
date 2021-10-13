@@ -8671,6 +8671,19 @@ p {
     display: flex;
     justify-content: center;
   }
+
+  .homebart.show > ul > li > a {
+      color: #2A3855 !important;
+  }
+  .hamburger.is-active .hamburger-box .hamburger-inner {
+    background-color: transparent !important;
+  } 
+  .hamburger .hamburger-box .hamburger-inner,
+  .hamburger .hamburger-box .hamburger-inner::after, 
+  .hamburger .hamburger-box .hamburger-inner::before {
+
+    background-color: #2A3855 !important;
+  }
   .responsiv_nav {
     background-color: unset !important;
   }
