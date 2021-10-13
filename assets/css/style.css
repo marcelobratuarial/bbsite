@@ -8672,6 +8672,21 @@ p {
     justify-content: center;
   }
 
+  
+  .is-homepage .homebart.show > ul > li > a {
+    color: #fff !important;
+  }
+  .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
+    background-color: transparent !important;
+  } 
+  .is-homepage .hamburger .hamburger-box .hamburger-inner,
+  .is-homepage .hamburger .hamburger-box .hamburger-inner::after, 
+  .is-homepage .hamburger .hamburger-box .hamburger-inner::before {
+
+    background-color: #fff !important;
+  }
+
+
   .homebart.show > ul > li > a {
       color: #2A3855 !important;
   }
@@ -8687,9 +8702,9 @@ p {
   .responsiv_nav {
     background-color: unset !important;
   }
-  .responsiv_nav.sticky {
+  /* .responsiv_nav.sticky {
     background-color: #2A3855!important;
-  }
+  } */
   .linewr {
     display: block!important;
   }

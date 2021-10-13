@@ -25,18 +25,18 @@ $(document).on("scroll", function() {
     // if (!onnn && (bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
     // }
     if($(".main-ref-anchor").length > 0) {
-    var scrollTop     = $(window).scrollTop(),
-        elementOffset = $('.main-ref-anchor').offset().top,
-        distance      = (elementOffset - scrollTop);
+        var scrollTop     = $(window).scrollTop(),
+            elementOffset = $('.main-ref-anchor').offset().top,
+            distance      = (elementOffset - scrollTop);
         console.log(distance)
         if(distance < 20) {
             $("#znav-container")
             .addClass("sticky-top")
-            .addClass("znav-white")
+            .addClass("background-primary")
         } else {
             $("#znav-container")
             .removeClass("sticky-top")
-            .removeClass("znav-white")
+            .removeClass("background-primary")
         }
     }
     if($(".nossos-numeros").length > 0) {

@@ -2,7 +2,7 @@
 $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
 ?>
 
-            <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo 'znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
+            <div class="<?php if($paginaAtual==''){echo 'znav-glass is-homepage';} else {echo 'znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
                 <div class="responsiv_nav container">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand overflow-hidden pr-3" href="<?= base_url() ?>">
