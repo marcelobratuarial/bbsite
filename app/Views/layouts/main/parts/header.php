@@ -2,11 +2,11 @@
 $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
 ?>
 
-            <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo '.znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
+            <div class="<?php if($paginaAtual==''){echo 'znav-glass';} else {echo 'znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
                 <div class="responsiv_nav container">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand overflow-hidden pr-3" href="<?= base_url() ?>">
-                            <img src="<?php if($paginaAtual==''){echo 'assets/images/landing/bb_logo_branca.svg';} else {echo 'assets/images/landing/bb_logo.svg';}?>" alt="" style="height:35px;"/>
+                            <img src="<?php if($paginaAtual==''){echo base_url('assets/images/landing/bb_logo_branca.svg');} else {echo base_url('assets/images/landing/bb_logo.svg');}?>" alt="" style="height:35px;"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <div class="hamburger hamburger--emphatic">
@@ -61,7 +61,7 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
                                 <li>
                                     <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Solicitar Proposta</a>
                                 </li>
-                                <li class="ml-2">
+                                <li class="ml-lg-2 ml-xl-2 ml-md-2">
                                     <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="<?= base_url("area-cliente") ?>">Area do cliente</a>
                                 </li>
                             </ul>

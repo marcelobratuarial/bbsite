@@ -2,7 +2,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-10 col-md-6">
-                            <h3 class="color-primary fs-2 fs-lg-3">NÓS SOMOS UMA EMPRESA DE GESTÃO DE BENEFÍCIOS</h3>
+                            <h3 class="color-primary fs-2 fs-lg-3 main-ref-anchor">NÓS SOMOS UMA EMPRESA DE GESTÃO DE BENEFÍCIOS</h3>
                             <p class="px-lg-4 mt-3">Com nossas linhas de serviços, personalizamos o seu programa com os benefícios que se encaixam a necessidade de seus associados.</p>
                             <hr class="short" data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}' data-zanim-trigger="scroll"
                             /> </div>

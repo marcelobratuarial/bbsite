@@ -13,6 +13,32 @@ $('body').imagesLoaded({ background: ".background-holder" }, function(){
 });
 var onnn = false
 $(document).on("scroll", function() {
+    // var top_of_element = $(".main-ref-anchor ").offset().top;
+    // var bottom_of_element = $(".main-ref-anchor ").offset().top + $(".main-ref-anchor ").outerHeight();
+    // var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+    // var top_of_screen = $(window).scrollTop();
+    // console.log("top_of_element", top_of_element)
+    // console.log($(".main-ref-anchor ").outerHeight())
+    // console.log("bottom_of_element", bottom_of_element)
+    // console.log("bottom_of_screen", bottom_of_screen)
+    // console.log("top_of_screen", top_of_screen)
+    // if (!onnn && (bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+    // }
+    if($(".main-ref-anchor").length > 0) {
+    var scrollTop     = $(window).scrollTop(),
+        elementOffset = $('.main-ref-anchor').offset().top,
+        distance      = (elementOffset - scrollTop);
+        console.log(distance)
+        if(distance < 20) {
+            $("#znav-container")
+            .addClass("sticky-top")
+            .addClass("znav-white")
+        } else {
+            $("#znav-container")
+            .removeClass("sticky-top")
+            .removeClass("znav-white")
+        }
+    }
     if($(".nossos-numeros").length > 0) {
         var top_of_element = $(".nossos-numeros").offset().top;
         var bottom_of_element = $(".nossos-numeros").offset().top + $(".nossos-numeros").outerHeight();

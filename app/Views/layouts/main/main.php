@@ -87,7 +87,7 @@
         <script src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
         <script src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
         <script src="<?= base_url("assets/js/core.js") ?>"></script>
-        <script src="<?= base_url("assets/js/main.js") ?>"></script>
+        <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
         <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
         <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
