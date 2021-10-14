@@ -101,20 +101,34 @@ $(document).on("scroll", function() {
             distance      = (elementOffset - scrollTop);
         console.log(distance)
         if(distance < 40) {
+            console.log("o")
             $("#znav-container")
             .addClass("sticky-top")
-            .addClass("background-white")
+            // .addClass("background-white")
             .addClass("color-primary")
+            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+               
         } else {
+            console.log("i")
+            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+               
             if(distance > 40 && $(".homebart").hasClass("show")) {
-                $("#znav-container")
-                .addClass("sticky-top")
-                .addClass("background-white")
-                .addClass("color-primary")
-            } else {
+                console.log("e")
+                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+               
+            
                 $("#znav-container")
                 .removeClass("sticky-top")
-                .removeClass("background-white")
+                // .addClass("background-white")
+                .addClass("color-primary")
+            } else {
+                console.log("a")
+                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+               
+            
+                $("#znav-container")
+                .removeClass("sticky-top")
+                // .removeClass("background-white")
                 .removeClass("color-primary")
             }
             

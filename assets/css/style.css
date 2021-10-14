@@ -8699,7 +8699,8 @@ p {
     transition: all 0.3s ease
   }
   .is-homepage.sticky-top {
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.7) !important;
   }
   .is-homepage .homebart.show > ul > li > a {
     color: #2a3855 !important;
