@@ -8,7 +8,7 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
                         <a class="navbar-brand overflow-hidden pr-3" href="<?= base_url() ?>">
                             <img src="<?php if($paginaAtual==''){echo base_url('assets/images/landing/bb_logo_branca.svg');} else {echo base_url('assets/images/landing/bb_logo.svg');}?>" alt="" style="height:35px;"/>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler toggle-home-menu" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <div class="hamburger hamburger--emphatic">
                                 <div class="hamburger-box">
                                     <div class="hamburger-inner"></div>

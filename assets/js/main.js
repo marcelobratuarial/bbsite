@@ -11,6 +11,21 @@ $('body').imagesLoaded({ background: ".background-holder" }, function(){
         $('#preloader').remove();
     }, 800);
 });
+
+
+$(document).ready(function() {
+    console.log("READY")
+    $(".toggle-home-menu").on("click", function() {
+        console.log("CLICK")
+        var scrollTop     = $(window).scrollTop(),
+            elementOffset = $('.main-ref-anchor').offset().top,
+            distance      = (elementOffset - scrollTop);
+            console.log(distance)
+            if(distance > 750) {
+                $('.is-homepage').toggleClass("background-primary")
+            }
+    })
+})
 var onnn = false
 $(document).on("scroll", function() {
     // var top_of_element = $(".main-ref-anchor ").offset().top;
@@ -29,14 +44,21 @@ $(document).on("scroll", function() {
             elementOffset = $('.main-ref-anchor').offset().top,
             distance      = (elementOffset - scrollTop);
         console.log(distance)
-        if(distance < 20) {
+        if(distance < 40) {
             $("#znav-container")
             .addClass("sticky-top")
             .addClass("background-primary")
         } else {
-            $("#znav-container")
-            .removeClass("sticky-top")
-            .removeClass("background-primary")
+            if(distance > 40 && $(".homebart").hasClass("show")) {
+                $("#znav-container")
+                .addClass("sticky-top")
+                .addClass("background-primary")
+            } else {
+                $("#znav-container")
+                .removeClass("sticky-top")
+                .removeClass("background-primary")
+            }
+            
         }
     }
     if($(".nossos-numeros").length > 0) {

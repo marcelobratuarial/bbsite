@@ -8671,10 +8671,16 @@ p {
     display: flex;
     justify-content: center;
   }
-
-  
+  .is-homepage {
+    
+    transition: all 1s ease
+  }
+  .is-homepage.sticky-top {
+    transition: all 1s ease
+  }
   .is-homepage .homebart.show > ul > li > a {
     color: #fff !important;
+    transition: all 1s ease-in-out
   }
   .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
     background-color: transparent !important;
@@ -8883,6 +8889,7 @@ p {
   position: relative;
   position: -webkit-sticky;
   position: sticky;
+  
 }
 
 @media (max-width: 991.98px) {
