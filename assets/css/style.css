@@ -8659,6 +8659,16 @@ p {
   margin-top: 20px!important;
 }
 
+.faq-card-header {
+  padding: 10px
+}
+.faq-button {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  /* word-break: ; */
+  padding: 0.8rem 1rem !important;
+  white-space: unset !important;
+}
 @media (max-width: 992px) {
   .logos{
     margin-top: 30px!important;

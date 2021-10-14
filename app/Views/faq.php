@@ -19,10 +19,10 @@
                     <!-- <h5>Earning the right</h5> -->
                     <div id="accordion">
                         <div class="card wracard">
-                            <div class="card-header" id="headingOne">
+                            <div class="card-header faq-card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md" data-toggle="collapse" data-target="#quem-e" aria-expanded="true" aria-controls="quem-e">
-                                        QUEM É A<br class="linewr d-none"> BRASIL BENEFÍCIOS?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md" data-toggle="collapse" data-target="#quem-e" aria-expanded="true" aria-controls="quem-e">
+                                        QUEM É A BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -35,10 +35,10 @@
                             </div>
                         </div>
                         <div class="card wracard">
-                            <div class="card-header" id="headingTwo">
+                            <div class="card-header faq-card-header" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#finalidades" aria-expanded="false" aria-controls="finalidades">
-                                    QUAIS AS FINALIDADES<Br class="linewr d-none"> DA BRASIL BENEFÍCIOS?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#finalidades" aria-expanded="false" aria-controls="finalidades">
+                                    QUAIS AS FINALIDADES DA BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -49,10 +49,10 @@
                             </div>
                         </div>
                         <div class="card wracard">
-                            <div class="card-header" id="headingThree">
+                            <div class="card-header faq-card-header" id="headingThree">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#linha-de-servicos" aria-expanded="false" aria-controls="linha-de-servicos">
-                                    QUAIS AS LINHAS DE SERVIÇOS<Br class="linewr d-none"> QUE A BRASIL BENEFÍCIOS OFERECE?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#linha-de-servicos" aria-expanded="false" aria-controls="linha-de-servicos">
+                                    QUAIS AS LINHAS DE SERVIÇOS QUE A BRASIL BENEFÍCIOS OFERECE?
                                     </button>
                                 </h5>
                             </div>
@@ -66,10 +66,10 @@
                             </div>
                         </div>
                         <div class="card wracard">
-                            <div class="card-header" id="headingFour">
+                            <div class="card-header faq-card-header" id="headingFour">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#porque-contratar" aria-expanded="false" aria-controls="porque-contratar">
-                                    PORQUE CONTRATAR A<Br class="linewr d-none"> BRASIL BENEFÍCIOS?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#porque-contratar" aria-expanded="false" aria-controls="porque-contratar">
+                                    PORQUE CONTRATAR A BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -82,10 +82,10 @@
                             </div>
                         </div>
                         <div class="card wracard">
-                            <div class="card-header" id="headingFive">
+                            <div class="card-header faq-card-header" id="headingFive">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#como-contratar" aria-expanded="false" aria-controls="como-contratar">
-                                    COMO CONTRATAR A<Br class="linewr d-none"> BRASIL BENEFÍCIOS?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#como-contratar" aria-expanded="false" aria-controls="como-contratar">
+                                    COMO CONTRATAR A BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
@@ -97,10 +97,10 @@
                             </div>
                         </div>
                         <div class="card wracard">
-                            <div class="card-header" id="headingSix">
+                            <div class="card-header faq-card-header" id="headingSix">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#acionar-servicos" aria-expanded="false" aria-controls="acionar-servicos">
-                                    COMO ACIONAR OS SERVIÇOS<Br class="linewr d-none"> DA BRASIL BENEFÍCIOS?
+                                    <button class="faq-button btn btn-outline-primary btn-capsule btn-md collapsed" data-toggle="collapse" data-target="#acionar-servicos" aria-expanded="false" aria-controls="acionar-servicos">
+                                    COMO ACIONAR OS SERVIÇOS DA BRASIL BENEFÍCIOS?
                                     </button>
                                 </h5>
                             </div>
