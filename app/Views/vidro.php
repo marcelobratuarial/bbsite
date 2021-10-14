@@ -37,8 +37,8 @@
                 </div>
 
                 <div class="row mt-5">
-                    <a class="mx-auto" href="<?= base_url("/area-cliente/vidros")?>">
-                        <button class="btn btn-brushi">Solicite agora</button>
+                    <a style="width: 260px" class="mx-auto btn btn-primary mt-3 fs-1" href="<?= base_url("/area-cliente/vidros") ?>">Solicite agora
+                        <span class="fa fa-chevron-right ml-2"></span>
                     </a>
                 </div>
 
