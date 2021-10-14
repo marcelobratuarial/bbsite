@@ -21,9 +21,40 @@ $(document).ready(function() {
             elementOffset = $('.main-ref-anchor').offset().top,
             distance      = (elementOffset - scrollTop);
             console.log(distance)
-            if(distance > 750) {
-                $('.is-homepage').toggleClass("background-primary")
-            }
+            // if(distance > 750) {
+            //     $('.is-homepage').toggleClass("background-primary")
+            // }
+            
+            var l = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // console.log("teste")
+                    console.log($(".homebart").hasClass("show"))
+                    resolve("OK")
+                }, 500);
+               
+            })
+            l.then(() => {
+                if($(".homebart").hasClass("show")) {
+                    console.log("IF")
+                    $("#znav-container")
+                    .addClass("sticky-top")
+                    .addClass("background-primary")
+                } else {
+                    console.log("ELSE")
+                    if(distance < 20) {
+                        $("#znav-container")
+                        .addClass("background-primary")
+                    } else {
+                        $("#znav-container")
+                        // .removeClass("sticky-top")
+                        .removeClass("background-primary")
+                    }
+                    
+                }
+            }).then(() => {
+                // $(".CustomLoader").remove()
+            })
+            
     })
 })
 var onnn = false
