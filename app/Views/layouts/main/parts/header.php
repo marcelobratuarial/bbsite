@@ -2,7 +2,7 @@
 $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
 ?>
 
-            <div class="<?php if($paginaAtual==''){echo 'znav-glass is-homepage';} else {echo 'znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
+            <div class="<?php if($paginaAtual==''){echo 'znav-glass znav-white is-homepage';} else {echo 'znav-white sticky-top';} ?> znav-container navbar-elixir" style="margin-top: -2px;" id="znav-container">
                 <div class="responsiv_nav container">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand overflow-hidden pr-3" href="<?= base_url() ?>">
@@ -63,10 +63,10 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
                             </ul>
                             <ul class="navbar-nav ml-lg-auto">
                                 <li>
-                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Solicitar Proposta</a>
+                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-primary';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Solicitar Proposta</a>
                                 </li>
                                 <li class="ml-lg-2 ml-xl-2 ml-md-2">
-                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="<?= base_url("area-cliente") ?>">Area do cliente</a>
+                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-primary';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="<?= base_url("area-cliente") ?>">Area do cliente</a>
                                 </li>
                             </ul>
                         </div>

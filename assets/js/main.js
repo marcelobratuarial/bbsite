@@ -27,18 +27,22 @@ $(document).ready(function() {
                 console.log("IF")
                 if(distance > 750) {
                     console.log(">>>")
+                    
                     $("#znav-container")
-                        .removeClass("background-primary")
+                        .removeClass("background-white")
                 } else {
                     console.log("<<<")
                     $("#znav-container")
-                        .addClass("background-primary")
+                        .addClass("background-white")
                 }
+                console.log(base_url)
+                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
             } else {
+                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
                 console.log("ELSE")
                 $(".homebart").slideDown(300).addClass("show")
                 $("#znav-container")
-                        .addClass("background-primary")
+                        .addClass("background-white")
             }
             // console.log(distance)
             // if(distance > 750) {
@@ -99,16 +103,19 @@ $(document).on("scroll", function() {
         if(distance < 40) {
             $("#znav-container")
             .addClass("sticky-top")
-            .addClass("background-primary")
+            .addClass("background-white")
+            .addClass("color-primary")
         } else {
             if(distance > 40 && $(".homebart").hasClass("show")) {
                 $("#znav-container")
                 .addClass("sticky-top")
-                .addClass("background-primary")
+                .addClass("background-white")
+                .addClass("color-primary")
             } else {
                 $("#znav-container")
                 .removeClass("sticky-top")
-                .removeClass("background-primary")
+                .removeClass("background-white")
+                .removeClass("color-primary")
             }
             
         }

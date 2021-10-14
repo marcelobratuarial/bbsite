@@ -2433,7 +2433,7 @@ ul.bullet-none {
 }
 
 .btn-outline-white {
-  color: white;
+  color: #2a3855;
   background-image: none;
   background-color: transparent;
   border-color: white;
@@ -8702,7 +8702,7 @@ p {
     transition: all 0.3s ease
   }
   .is-homepage .homebart.show > ul > li > a {
-    color: #fff !important;
+    color: #2a3855 !important;
     transition: all 0.3 ease-in-out
   }
   .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
@@ -8712,7 +8712,7 @@ p {
   .is-homepage .hamburger .hamburger-box .hamburger-inner::after, 
   .is-homepage .hamburger .hamburger-box .hamburger-inner::before {
 
-    background-color: #fff !important;
+    background-color: #2a3855 !important;
   }
 
 
