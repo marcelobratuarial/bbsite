@@ -8672,10 +8672,10 @@ p {
 
 .is-homepage {
     
-  transition: all 1s ease
+  transition: all 0.3s ease
 }
 .is-homepage.sticky-top {
-  transition: all 1s ease
+  transition: all 0.3s ease
 }
 @media (max-width: 800px) {
   .linhainativa {
@@ -8696,14 +8696,14 @@ p {
   }
   .is-homepage {
     
-    transition: all 1s ease
+    transition: all 0.3s ease
   }
   .is-homepage.sticky-top {
-    transition: all 1s ease
+    transition: all 0.3s ease
   }
   .is-homepage .homebart.show > ul > li > a {
     color: #fff !important;
-    transition: all 1s ease-in-out
+    transition: all 0.3 ease-in-out
   }
   .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
     background-color: transparent !important;

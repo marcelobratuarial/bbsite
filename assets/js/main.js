@@ -16,44 +16,65 @@ $('body').imagesLoaded({ background: ".background-holder" }, function(){
 $(document).ready(function() {
     console.log("READY")
     $(".toggle-home-menu").on("click", function() {
-        console.log("CLICK")
+        
+        // $(".homebart").slideDown("show")
         var scrollTop     = $(window).scrollTop(),
             elementOffset = $('.main-ref-anchor').offset().top,
             distance      = (elementOffset - scrollTop);
-            console.log(distance)
+
+            if($(".homebart").hasClass("show")) {
+                $(".homebart").slideUp(300).removeClass("show")
+                console.log("IF")
+                if(distance > 750) {
+                    console.log(">>>")
+                    $("#znav-container")
+                        .removeClass("background-primary")
+                } else {
+                    console.log("<<<")
+                    $("#znav-container")
+                        .addClass("background-primary")
+                }
+            } else {
+                console.log("ELSE")
+                $(".homebart").slideDown(300).addClass("show")
+                $("#znav-container")
+                        .addClass("background-primary")
+            }
+            // console.log(distance)
             // if(distance > 750) {
-            //     $('.is-homepage').toggleClass("background-primary")
+            //     $("#znav-container")
+            //     .addClass("background-primary")
+            // } else {
+            //     $("#znav-container")
+            //         .removeClass("background-primary")
             // }
             
-            var l = new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    // console.log("teste")
-                    console.log($(".homebart").hasClass("show"))
-                    resolve("OK")
-                }, 500);
-               
-            })
-            l.then(() => {
-                if($(".homebart").hasClass("show")) {
-                    console.log("IF")
-                    $("#znav-container")
-                    .addClass("sticky-top")
-                    .addClass("background-primary")
-                } else {
-                    console.log("ELSE")
-                    if(distance < 20) {
-                        $("#znav-container")
-                        .addClass("background-primary")
-                    } else {
-                        $("#znav-container")
-                        // .removeClass("sticky-top")
-                        .removeClass("background-primary")
-                    }
+            // var l = new Promise((resolve, reject) => {
+            //     var id = setInterval(
+            //         function(){
+            //             if ($(".homebart").hasClass("show")) {
+            //                 clearInterval(id);
+            //                 resolve("OK")
+            //             } 
                     
-                }
-            }).then(() => {
-                // $(".CustomLoader").remove()
-            })
+            //     }, 10);
+                
+            // })
+            // l.then(() => {
+            //     if($(".homebart").hasClass("show")) {
+            //         console.log("IF")
+            //         $("#znav-container")
+            //         .addClass("background-primary")
+            //     } else {
+            //         console.log("else2")
+            //         $("#znav-container")
+            //             .removeClass("sticky-top")
+            //             .removeClass("background-primary")
+                    
+            //     }
+            // }).then(() => {
+            //     // $(".CustomLoader").remove()
+            // })
             
     })
 })
