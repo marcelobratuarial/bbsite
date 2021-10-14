@@ -8669,6 +8669,14 @@ p {
   padding: 0.8rem 1rem !important;
   white-space: unset !important;
 }
+
+.is-homepage {
+    
+  transition: all 1s ease
+}
+.is-homepage.sticky-top {
+  transition: all 1s ease
+}
 @media (max-width: 800px) {
   .linhainativa {
     width: 10px !important
