@@ -123,7 +123,7 @@
                             <div class="container-fluid solicitacao">
                                 <!-- <div class="overlayCustom"></div> -->
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pl-5 pr-5 pb-5 fluxo">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pb-5 fluxo">
                                         
                                         <form action="<?= base_url("/area-cliente/funeral/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
                                             <div class="text-left texto">

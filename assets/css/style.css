@@ -8669,6 +8669,11 @@ p {
   padding: 0.8rem 1rem !important;
   white-space: unset !important;
 }
+@media (max-width: 800px) {
+  .linhainativa {
+    width: 10px !important
+  }
+}
 @media (max-width: 992px) {
   .logos{
     margin-top: 30px!important;

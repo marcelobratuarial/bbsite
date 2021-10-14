@@ -17,7 +17,7 @@
             <p class="h5 text-secondary my-4">Selecione uma categoria:</p>
 
             <ul class="row area_list arealistrow d-flex">
-                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
                     <li>
                         <a href="<?= base_url("area-cliente/app")?>">
                             <i class="fa fa-medkit" aria-hidden="true"></i>
@@ -26,7 +26,7 @@
                     </li>
                 </div>
                 
-                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
                     <li class="" style="padding-top: 20px;">
                         <a href="<?= base_url("area-cliente/carro-reserva")?>">
                             <i class="fa fa-car" aria-hidden="true"></i>
@@ -34,7 +34,7 @@
                         <span>Carro<br>Reserva</span>
                     </li>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
                     <li class="">
                         <a href="<?= base_url("area-cliente/funeral")?>">
                             <i class="fa fa-pagelines" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
                         <span>Funeral</span>
                     </li>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
                     <li class="">
                         <a href="<?= base_url("area-cliente/vidros")?>">
                             <i class="fa fa-clone" aria-hidden="true"></i>
@@ -50,7 +50,7 @@
                         <span>Vidros</span>
                     </li>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-2 alist_box">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
                     <li class="">
                         <a href="<?= base_url("area-cliente/pet")?>">
                             <i class="fa fa-paw" aria-hidden="true"></i>  
