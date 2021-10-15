@@ -8553,20 +8553,23 @@ p {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.homebart > ul > li > a {
-  color: #fff!important;
+.is-homepage.sticky-top .homebart > ul > li > a {
+  color: #2A3855 !important;
+}
+.is-homepage.pos-absolute .homebart > ul > li > a {
+  color: #fff !important;
 }
 .homebarw > ul > li > a {
   color: #2A3855!important;
 }
 .homebart > ul > li > .dropdown {
-  background-color: transparent!important;
+  /* background-color: transparent! important; */
 }
 .homebart > ul > li > .dropdown >  ul > .dropdown {
   background-color: red!important;
 }
 .homebart > ul >li.has-dropdown > ul.dropdown > li > ul.dropdown {
-  background-color: transparent!important;
+  /* background-color: transparent!important; */
 }
 .homebarw > ul >li.has-dropdown > ul.dropdown > li > ul.dropdown > li > a {
   color: #2A3855!important;
@@ -8682,6 +8685,28 @@ p {
     width: 10px !important
   }
 }
+.is-homepage.sticky-top {
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.92) !important;
+}
+
+@media (max-width: 768px) {
+  .is-homepage.pos-absolute .hamburger .hamburger-box .hamburger-inner,
+  .is-homepage.pos-absolute .hamburger.is-active .hamburger-box .hamburger-inner::after, 
+  .is-homepage.pos-absolute .hamburger.is-active .hamburger-box .hamburger-inner::before {
+
+    background-color: #000 !important;
+  }
+  .is-homepage.pos-absolute .hamburger .hamburger-box .hamburger-inner,
+  .is-homepage.pos-absolute .hamburger .hamburger-box .hamburger-inner::after, 
+  .is-homepage.pos-absolute .hamburger .hamburger-box .hamburger-inner::before {
+
+    background-color: #fff !important;
+  }
+  .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
+    background-color: transparent !important;
+  } 
+}
 @media (max-width: 992px) {
   .logos{
     margin-top: 30px!important;
@@ -8713,15 +8738,14 @@ p {
     color: #2a3955 !important;
     transition: all 0.3 ease-in-out
   }
-  .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {
-    background-color: transparent !important;
-  } 
-  .is-homepage .hamburger .hamburger-box .hamburger-inner,
+  
+  
+  /* .is-homepage .hamburger .hamburger-box .hamburger-inner,
   .is-homepage .hamburger .hamburger-box .hamburger-inner::after, 
   .is-homepage .hamburger .hamburger-box .hamburger-inner::before {
 
     background-color: #2a3855 !important;
-  }
+  } */
 
 
   .homebart.show > ul > li > a {
