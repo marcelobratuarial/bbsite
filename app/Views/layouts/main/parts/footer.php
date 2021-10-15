@@ -94,7 +94,7 @@
             </div>
             <div class="col-sm-6 mt-3 mt-sm-0">
                 <!-- <p class="color-white lh-6 mb-0 fw-600">&copy; Copyright 2021</p> -->
-                <span class="fs-1 color-white mr-3">Siga-nos: </span>
+                <span class="fs-lg-1 fs-md-1 fs-xl-1 fs-0 color-white mr-3">Siga-nos: </span>
                 <a href="#">
                     <span class="fs-1 mr-2 fa fa-facebook color-white"></span>
                     
