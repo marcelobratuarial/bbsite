@@ -28,7 +28,7 @@ $(document).ready(function() {
                 if(distance > 750) {
                     console.log(">>>")
                     
-                    $("#znav-container")
+                    $("#znav-container").removeClass("sticky-top").addClass("pos-absolute")
                         .removeClass("background-white")
                 } else {
                     console.log("<<<")
