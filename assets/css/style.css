@@ -4686,7 +4686,7 @@ hr.short {
 }
 
 .pos-absolute {
-  position: absolute;
+  position: absolute !important;
 }
 
 .pos-fixed {
@@ -8698,12 +8698,19 @@ p {
     
     transition: all 0.3s ease
   }
+  .is-homepage.pos-absolute {
+    left: 0;
+    right: 0;
+  }
   .is-homepage.sticky-top {
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+  }
+  .is-homepage .homebart.show > ul > li ul li a {
+      color: rgba(42, 56, 85, 1) !important;
   }
   .is-homepage .homebart.show > ul > li > a {
-    color: #2a3855 !important;
+    color: #2a3955 !important;
     transition: all 0.3 ease-in-out
   }
   .is-homepage .hamburger.is-active .hamburger-box .hamburger-inner {

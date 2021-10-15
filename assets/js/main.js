@@ -103,14 +103,14 @@ $(document).on("scroll", function() {
         if(distance < 40) {
             console.log("o")
             $("#znav-container")
-            .addClass("sticky-top")
+            .addClass("sticky-top").removeClass("pos-absolute")
             // .addClass("background-white")
             .addClass("color-primary")
             $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
                
         } else {
             console.log("i")
-            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
                
             if(distance > 40 && $(".homebart").hasClass("show")) {
                 console.log("e")
@@ -118,7 +118,7 @@ $(document).on("scroll", function() {
                
             
                 $("#znav-container")
-                .removeClass("sticky-top")
+                
                 // .addClass("background-white")
                 .addClass("color-primary")
             } else {
@@ -127,8 +127,8 @@ $(document).on("scroll", function() {
                
             
                 $("#znav-container")
-                .removeClass("sticky-top")
-                // .removeClass("background-white")
+                .removeClass("sticky-top").addClass("pos-absolute")
+                .removeClass("background-white")
                 .removeClass("color-primary")
             }
             
