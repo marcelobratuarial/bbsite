@@ -14,67 +14,70 @@
                 </div>
             </div> -->
         <div class="row justify-content-between">
-            <div class="col-lg-6">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="p-5 p-lg-6 radius-secondary">
                    <img width="30%" src="<?= base_url("assets/images/landing/logo_branca_mini.svg")?>" alt="">
                    <h5 class="text-white mt-4">Conquistar um novo associado é muito bom, fidelizá-lo é muito melhor!</h5>
                 </div>
             </div>
             
-            <div class="col-lg-4  mt-5 ">
-                <h4 class="color-white">Fale com a gente!</h4>
-                <a href="#">
-                    <div class="row mb-3 align-items-center no-gutters">
-                        <div class="col-auto">
-                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                <span class="w-100 fa fa-whatsapp color-white"></span>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  mt-5 footer-contactus">
+                <div class="">
+                    <h4 class="color-white">Fale com a gente!</h4>
+                    <a href="#">
+                        <div class="row mb-3 align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                    <span class="w-100 fa fa-whatsapp color-white"></span>
+                                </div>
+                            </div>
+                            <div class="col-auto pl-3 color-white">
+                                <label>Central de Relacionamento</label><br>
+                                <span>(31) 2510-8536</span>
                             </div>
                         </div>
-                        <div class="col-auto pl-3 color-white">
-                            <label>Central de Relacionamento</label><br>
-                            <span>(31) 2510-8536</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="row mb-3 align-items-center no-gutters">
-                        <div class="col-auto">
-                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                <span class="w-100 fa fa-whatsapp color-white"></span>
+                    </a>
+                    <a href="#">
+                        <div class="row mb-3 align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                    <span class="w-100 fa fa-whatsapp color-white"></span>
+                                </div>
+                            </div>
+                            <div class="col-auto pl-3 color-white">
+                                <label>Central de Benefícios</label><br>
+                                <span>(31) 9 9279-0202</span>
                             </div>
                         </div>
-                        <div class="col-auto pl-3 color-white">
-                            <label>Central de Benefícios</label><br>
-                            <span>(31) 9 9279-0202</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="row mb-3 align-items-center no-gutters">
-                        <div class="col-auto">
-                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                <span class="w-100 fa fa-whatsapp color-white"></span>
+                    </a>
+                    <a href="#">
+                        <div class="row mb-3 align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                    <span class="w-100 fa fa-whatsapp color-white"></span>
+                                </div>
+                            </div>
+                            <div class="col-auto pl-3 color-white">
+                                <label>Suporte Financeiro</label><br>
+                                <span>(31) 9 7337-0767</span>
                             </div>
                         </div>
-                        <div class="col-auto pl-3 color-white">
-                            <label>Suporte Financeiro</label><br>
-                            <span>(31) 9 7337-0767</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="row mb-3 align-items-center no-gutters">
-                        <div class="col-auto">
-                            <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
-                                <span class="w-100 fa fa-headphones color-white"></span>
+                    </a>
+                    <a href="#">
+                        <div class="row mb-3 align-items-center no-gutters">
+                            <div class="col-auto">
+                                <div class="background-primary text-center d-flex align-items-center radius-primary" style="height: 40px; width: 40px;">
+                                    <span class="w-100 fa fa-headphones color-white"></span>
+                                </div>
+                            </div>
+                            <div class="col-auto pl-3 color-white">
+                            <label>Assistência 24 Horas</label><br>
+                            <span>0800 600 28 51</span>
                             </div>
                         </div>
-                        <div class="col-auto pl-3 color-white">
-                        <label>Assistência 24 Horas</label><br>
-                        <span>0800 600 28 51</span>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
+                
             </div>
         </div>
         <!--/.row-->

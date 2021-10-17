@@ -146,7 +146,7 @@
                 <h3 class="fs-2 fs-md-3">Sua entidade ainda não<Br> possui um clube de benefícios?</h3>
                 <div class="info d-flex flex-column">
                     <span class="d-flex mt-3"><i class="fa fa-phone"></i> <a href="#">31 2510 8536<br>31 9 9279 0202</a></span>
-                    <span class="d-flex mt-3"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">contato@brasilbeneficios.club<br>atendimento@brasilbeneficios.com</a></span>
+                    <span class="d-flex mt-3 align-items-center"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">contato@brasilbeneficios.club</a></span>
                 </div>
                 <img class="my-4" width="30%" src="<?= base_url("assets/images/landing/bb_logo.svg")?>" alt="">
                 <ul class="d-flex list-unstyled">
