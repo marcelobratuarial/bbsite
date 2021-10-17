@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var Gvetor
     var inputs = $(':input').keypress(function(e){ 
         if (e.which == 13) {
            e.preventDefault();
@@ -98,11 +99,13 @@ $(document).ready(function() {
                     $("#TelefoneEmpresa").val(vetor[3]);
                     $("#EmailEmpresa").val(vetor[4]);
                     $("#TipoSolicitacao").val(vetor[5]);
+                    Gvetor = vetor[5]
                     if (vetor[5]=="1"){
                         $("#AvancarEtapa4").attr("id","Enviar");
                         $("#Enviar").attr("type", "submit");
-                        $("#Enviar").val("SOLICITAR CARRO RESERVA");
+                        $("#Enviar").val("SOLICITAR");
                         $("#etapa4").remove();
+                        // $("#Enviar").removeClass("botaoAvancar");
                         $(".tituloanexos").remove();
                         $("#Enviar").click(function(){
                             $(".loader").removeClass("d-none");;
@@ -363,6 +366,7 @@ $(document).ready(function() {
     });
 
     $("#AvancarEtapa2").click(function(){
+        console.log(Gvetor)
         $("#etapa1").removeClass("ativo");
         $("#etapa2").removeClass("inativo").addClass("ativo");
         $("#etapa2 img").removeAttr("style");
@@ -376,6 +380,7 @@ $(document).ready(function() {
     });
 
     $("#AvancarEtapa3").click(function(){
+        console.log(Gvetor)
         $("#etapa2").removeClass("ativo");
         $("#etapa3").removeClass("inativo").addClass("ativo");
         $("#etapa3 img").removeAttr("style");
@@ -387,14 +392,23 @@ $(document).ready(function() {
     });
 
     $("#AvancarEtapa4").click(function(){
-        $("#etapa3").removeClass("ativo");
-        $("#etapa4").removeClass("inativo").addClass("ativo");
-        $("#etapa4 img").removeAttr("style");
-        $("#etapa3").next().removeClass("linhainativa").addClass("linha");
-        $(".dadosSolicitacao").slideUp();
-        $(".dadosAnexos").slideDown();
-        $("#voltaretapa3").css("display","inline-block");
-        $("#voltaretapa2").css("display","none");
+        console.log(typeof Gvetor)
+        console.log(Gvetor)
+        if (Gvetor==1){
+            console.error(Gvetor)
+            
+        } else {
+            console.error(Gvetor)
+            $("#etapa3").removeClass("ativo");
+            $("#etapa4").removeClass("inativo").addClass("ativo");
+            $("#etapa4 img").removeAttr("style");
+            $("#etapa3").next().removeClass("linhainativa").addClass("linha");
+            $(".dadosSolicitacao").slideUp();
+            $(".dadosAnexos").slideDown();
+            $("#voltaretapa3").css("display","inline-block");
+            $("#voltaretapa2").css("display","none");
+        }
+        
     });
 
     $(".botaoUpload").click(function(){

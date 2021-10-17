@@ -34,21 +34,21 @@
 }
 .linha{
     display:inline-block;
-    width: 30px;
+    width: 10px;
     border-top: solid 2px #70cdf5;
     margin: 0;
     margin-left: -5px;
 }
 .linhainativa{
     display:inline-block;
-    width: 30px;
+    width: 10px;
     border-top: solid 2px #383838;
     margin: 0;
     margin-left: -5px;
 }
 .linhaoculta{
     display:inline-block;
-    width: 38px;
+    width: 18px;
     margin: 0;
     margin-left: -5px;
 }
