@@ -45,7 +45,24 @@
         <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
         <?= $this->renderSection('cCss') ?>
         <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
+        
 
+
+    
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="917706978842477" />
+        
+        <meta property="og:url" content="//brasilbeneficios.club" />
+        <meta property="og:site_name" content="Clube Brasil Benefícios" />
+        <meta property="og:title" content="Clube Brasil Benefícios" />
+        <meta property="og:description" content="Clube de Benefícios" />
+        
+        <meta property="og:image" content="http://brasilbeneficios.club/assets/img/logo/og-bb.png" />
+        <meta property="og:image:secure_url" content="https://brasilbeneficios.club/assets/img/logo/og-bb.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="257" />
+        <meta property="og:image:height" content="257" />
+        <meta property="og:image:alt" content="Brasil Benefícios Logo" />
         <style>
             video {
                 -webkit-filter: brightness(132%); 
