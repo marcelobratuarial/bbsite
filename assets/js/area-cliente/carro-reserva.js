@@ -394,7 +394,7 @@ $(document).ready(function() {
     $("#AvancarEtapa4").click(function(){
         console.log(typeof Gvetor)
         console.log(Gvetor)
-        if (Gvetor==1){
+        if (Gvetor!=1){
             console.error(Gvetor)
             
         } else {

@@ -121,7 +121,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pb-5 fluxo">
                                         
-                                    <form action="<?= base_url("/area-cliente/app/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
+                                    <form action="#" method="post" enctype="multipart/form-data" class="form-sinistro">
                                         <div class="text-left texto">
                                             <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
                                             <div class="text-center mt-5 mb-3">
@@ -381,7 +381,7 @@
                                                     <input type="checkbox" id="RegulamentoLido" name="RegulamentoLido" style="font-size:14px; font-family:Verdana"> Li e concordo com as 
                                                     <span style="cursor:pointer;color:#063960;text-decoration:underline;font-size: 14px;display: inline-block;" id="condicoes-gerais">Condições Gerais</span>
                                                     <br />
-                                                    <input type="submit" name="inscricao" disabled id="inscricao" class="campo botaoAvancar" value="SOLICITAR CONTRATAÇÃO">
+                                                    <input type="button" name="inscricao" disabled id="inscricao" class="campo botaoAvancar" value="SOLICITAR CONTRATAÇÃO">
                                                 </div>
                                             </div>
                                         </div>

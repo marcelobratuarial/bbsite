@@ -18,11 +18,11 @@
 
             <ul class="row area_list arealistrow d-flex">
                 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 alist_box">
-                    <li>
+                    <li style="padding-top: 20px;">
                         <a href="<?= base_url("area-cliente/app")?>">
                             <i class="fa fa-medkit" aria-hidden="true"></i>
                         </a>
-                        <span>App</span>
+                        <span>Seguro App </span>
                     </li>
                 </div>
                 

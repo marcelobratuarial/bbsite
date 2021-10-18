@@ -122,7 +122,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center pb-5 fluxo">
                                         
-                                    <form action="<?= base_url("/area-cliente/pet/send")?>" method="post" enctype="multipart/form-data" class="form-sinistro">
+                                    <form action="#" method="post" enctype="multipart/form-data" class="form-sinistro">
                                         <div class="text-left texto">
                                             <h1 class="text-center pt-5">Veja como é fácil fazer a sua solicitação!</h1>
                                             <div class="text-center mt-5 mb-3">
@@ -231,7 +231,7 @@
                                                     <input type="text" name="valorPlano" id="valorPlano" class="campo" autocomplete="off">
                                                 </div>
                                                 <div class="col-12 text-center divcampo mt-4" id="botaoContratar">
-                                                    <input type="submit" name="EnviarDados" id="EnviarDados" class="campo botaoAvancar" value="CONTRATAR AGORA">
+                                                    <input type="button" name="EnviarDados" id="EnviarDados" class="campo botaoAvancar" value="CONTRATAR AGORA">
                                                 </div>
                                             </div>
                                         </div>

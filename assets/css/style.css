@@ -8707,9 +8707,29 @@ p {
     background-color: transparent !important;
   } 
 }
+@media (max-width: 1440px) {
+  .footer-contactus > div {
+    width: 254px;
+  }
+  .footer-contactus {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-contactus > div {
+    width: 252px;
+  }
+  .footer-contactus {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
 @media (max-width: 992px) {
   .footer-contactus > div {
-    width: 40vw;
+    width: 252px;
   }
   .footer-contactus {
     align-items: center;

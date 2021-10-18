@@ -1,11 +1,18 @@
 $(document).ready(function() {
-    var inputs = $(':input').keypress(function(e){ 
+    var Gvetor
+    var inputs = $('input').keypress(function(e){
+        console.log(e.which) 
         if (e.which == 13) {
+           $(this).blur()
+           console.log("entrou")
            e.preventDefault();
            var nextInput = inputs.get(inputs.index(this) + 1);
+           console.log(inputs)
            if (nextInput) {
               nextInput.focus();
            }
+        } else {
+            console.log("n entrou")
         }
     });
     
@@ -41,6 +48,7 @@ $(document).ready(function() {
                     $("#TelefoneEmpresa").val(vetor[3]);
                     $("#EmailEmpresa").val(vetor[4]);
                     $("#TipoSolicitacao").val(vetor[5]);
+                    Gvetor = vetor[5]
                     if (vetor[5]=="1"){
                         $("#AvancarEtapa4").attr("id","Enviar");
                         $("#Enviar").attr("type", "submit");
@@ -337,14 +345,22 @@ $(document).ready(function() {
     });
 
     $("#AvancarEtapa4").click(function(){
-        $("#etapa3").removeClass("ativo");
-        $("#etapa4").removeClass("inativo").addClass("ativo");
-        $("#etapa4 img").removeAttr("style");
-        $("#etapa3").next().removeClass("linhainativa").addClass("linha");
-        $(".dadosSolicitacao").slideUp();
-        $(".dadosAnexos").slideDown();
-        $("#voltaretapa3").css("display","inline-block");
-        $("#voltaretapa2").css("display","none");
+        console.log(typeof Gvetor)
+        console.log(Gvetor)
+        if (Gvetor==1){
+            console.error(Gvetor)
+            
+        } else {
+            console.error(Gvetor)
+            $("#etapa3").removeClass("ativo");
+            $("#etapa4").removeClass("inativo").addClass("ativo");
+            $("#etapa4 img").removeAttr("style");
+            $("#etapa3").next().removeClass("linhainativa").addClass("linha");
+            $(".dadosSolicitacao").slideUp();
+            $(".dadosAnexos").slideDown();
+            $("#voltaretapa3").css("display","inline-block");
+            $("#voltaretapa2").css("display","none");
+        }
     });
 
     $(".botaoUpload").click(function(){
