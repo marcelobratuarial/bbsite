@@ -1045,7 +1045,7 @@ class Pages extends BaseController
 	public function index()
 	{
 		// print_r($this->main_menu);exit;
-
+		/*
 		$postsModel = model('App\Models\PostsModel');
 
 		$db = db_connect();
@@ -1099,11 +1099,11 @@ class Pages extends BaseController
 			// print_r($pCategs); 
 			// echo "</pre>";
 			
-		}
+		} */
 		// echo "<pre>";
 		// print_r($posts);
 		// echo "</pre>";
-		return view('home', ['main_menu' => $this->main_menu, "lastPosts" => $posts]);
+		return view('home', ['main_menu' => $this->main_menu]);
 	}
 
 	public function about()
