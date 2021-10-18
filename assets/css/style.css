@@ -8707,6 +8707,16 @@ p {
     background-color: transparent !important;
   } 
 }
+@media (min-width: 1441px) {
+  .footer-contactus > div {
+    width: 254px;
+  }
+  .footer-contactus {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
 @media (max-width: 1440px) {
   .footer-contactus > div {
     width: 254px;
