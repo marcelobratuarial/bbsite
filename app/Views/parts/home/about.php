@@ -298,25 +298,33 @@
                             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                        <p class="lead fw-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse quae atque consectetur inventore vero enim ut, ex at numquam similique nulla deserunt dolores eaque deleniti, accusantium ullam? Deserunt, aliquid?</p>
-                                        <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
-                                        <p class="mb-0 color-7">CEO,</p>
+                                    <p class="lead fw-400">
+                                        Conquistar o sucesso profissional não é coisa que se consegue da noite para o dia. É preciso persistir e saber superar momentos difíceis, contornar obstáculos e principalmente nunca desistir! </p>
+                                        <p class="lead fw-400">
+                                        A equipe Brasil Benefícios, agradecemos pela inovação e dedicação em nossa parceria. Que continue sempre trazendo novidades para nosso portifólio.</p>
+                                        <p class="lead fw-400">Sucesso!!!</p>
+                                        <h6 class="fs-0 mb-1 mt-4">Fabrício Costa</h6>
+                                        <p class="mb-0 color-7">CEO, AWA</p>
                                     </div>
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                        <p class="lead fw-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem esse amet minima quas quisquam praesentium adipisci voluptates aut temporibus. Adipisci beatae quaerat libero asperiores ut quasi cupiditate dolore aliquam ex!</p>
-                                        <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
-                                        <p class="mb-0 color-7">Managing Director,</p>
+                                        <p class="lead fw-400">
+                                        Queremos agradecer em nome de toda Equipe da Connect Clube de Benefícios a oportunidade de negócios que a  Brasil Benefícios enfatizou nossas relações comerciais angariando e ampliando a visão em todos os conceitos desenvolvidos. Antes da participação éramos uma empresa em fase de construção, mas, agora somos uma empresa diferenciada porque os planos de negócios fizeram que nossa visão fossem além de nossas expectativas.
+</p><p class="lead fw-400">
+Muito obrigado de coração por ter a Brasil Benefícios cuidando de nós com tanta atenção, empenho, agilidade e clareza!
+                                        </p>
+                                        <h6 class="fs-0 mb-1 mt-4">Jânio Gomes</h6>
+                                        <p class="mb-0 color-7">CEO, Connect</p>
                                     </div>
                                 </div>
-                                <div class="row px-lg-8">
+                                <!-- <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
                                         <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Member" style="width: auto;" />
                                     </div>
@@ -325,7 +333,7 @@
                                         <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
                                         <p class="mb-0 color-7">Chairman,</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
