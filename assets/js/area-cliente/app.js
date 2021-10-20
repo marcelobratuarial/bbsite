@@ -424,9 +424,9 @@ $(document).ready(function() {
     $("#RegulamentoLido").on("change", function(){
         if (document.getElementById('RegulamentoLido').checked)
         {
-            $("#inscricao").removeAttr("disabled");
+            $("#inscricao").removeAttr("disabled").attr("type", "submit");
         }else{
-            $("#inscricao").attr("disabled","disabled");
+            $("#inscricao").attr("disabled","disabled").attr("type", "button");
         }
     });
     
