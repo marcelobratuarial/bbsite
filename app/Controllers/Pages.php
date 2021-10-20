@@ -792,7 +792,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO AVISO DE SINISTRO VIDRO');
-				$email->setFrom('contato@brasilatuarial.com.br', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Site");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_vidros', $formData);
 				
