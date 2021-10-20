@@ -52,7 +52,7 @@
                             <div class="pos-relative mt-4 py-5 py-md-11">
                                 <div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
                                 <!--/.background-holder-->
-                                <a class="video-modal" href="https://www.youtube.com/watch?v=HHSQUEvSRAY" data-start="6" data-end="168">
+                                <a class="video-modal" href="https://www.youtube.com/watch?v=HHSQUEvSRAY" data-start="0" data-end="200">
                                     <div class="btn-elixir-play" style="transform: scale(0.8);" data-zanim-trigger="scroll" data-zanim='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'>
                                         <span class="ion-play fs-2"></span>
                                     </div>
