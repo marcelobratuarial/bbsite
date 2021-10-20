@@ -114,6 +114,7 @@
         <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
         <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+        <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
         <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
         <?= $this->renderSection('cScripts') ?>
         

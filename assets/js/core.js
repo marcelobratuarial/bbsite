@@ -551,6 +551,7 @@ $(document).ready(function(){
                     start = $this.data('start'),
                     end = $this.data('end');
                 console.log(ytId);
+                console.log(ytId[3].split('?v=')[1]);
 
                 if(ytId[2] == 'www.youtube.com'){
                     $videoModalIframeWrapper.html('<iframe id="videoModalIframe" src="//www.youtube.com/embed/'+ytId[3].split('?v=')[1]+'?rel=0&amp;autoplay=1&amp;enablejsapi=0&amp;start='+start+'&ampend='+end+'" allowfullscreen="" frameborder="0" class="embed-responsive-item hide"></iframe>');

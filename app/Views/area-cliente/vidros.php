@@ -214,7 +214,7 @@
                                                 <div class="row dadosSolicitacao mt-5" style="height:100%">
                                                     <div class="col-12 text-center">
                                                         <label>Placa:</label><br>
-                                                        <input type="text" name="Placa" required="" id="Placa" class="campo ">
+                                                        <input type="text" name="Placa" required="" id="Placa" class="campo placa">
                                                     </div>
                                                     <div class="col-12 text-center divcampo">
                                                         <label>Chassi:</label><br>
@@ -748,4 +748,5 @@
 <?= $this->section('cScripts') ?>
 <!-- Carro Reserva Scripts -->
 <script type="text/javascript" src="<?= base_url("assets/js/area-cliente/vidros.js") ."?".time() ?>"></script>
+<script type="text/javascript" src="<?= base_url("assets/js/area-cliente/commons.js") ."?".time() ?>"></script>
 <?= $this->endSection() ?>

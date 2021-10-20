@@ -52,7 +52,7 @@
                             <div class="pos-relative mt-4 py-5 py-md-11">
                                 <div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
                                 <!--/.background-holder-->
-                                <a class="video-modal" href="https://www.youtube.com/watch?v=zlRl8sJU_4I&ab_channel=RcaTheme" data-start="6" data-end="168">
+                                <a class="video-modal" href="https://www.youtube.com/watch?v=HHSQUEvSRAY" data-start="6" data-end="168">
                                     <div class="btn-elixir-play" style="transform: scale(0.8);" data-zanim-trigger="scroll" data-zanim='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'>
                                         <span class="ion-play fs-2"></span>
                                     </div>
@@ -300,24 +300,24 @@
                                     <div class="col-4 col-md-3 mx-auto">
                                         <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
-                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                    <p class="lead fw-400">
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                    <p class="fw-400">
                                         Conquistar o sucesso profissional não é coisa que se consegue da noite para o dia. É preciso persistir e saber superar momentos difíceis, contornar obstáculos e principalmente nunca desistir! </p>
-                                        <p class="lead fw-400">
+                                        <p class="fw-400">
                                         A equipe Brasil Benefícios, agradecemos pela inovação e dedicação em nossa parceria. Que continue sempre trazendo novidades para nosso portifólio.</p>
-                                        <p class="lead fw-400">Sucesso!!!</p>
+                                        <p class="fw-400">Sucesso!!!</p>
                                         <h6 class="fs-0 mb-1 mt-4">Fabrício Costa</h6>
-                                        <p class="mb-0 color-7">CEO, AWA</p>
+                                        <p class="mb-0 color-7">CEO da AWA Benefícios Mútuos</p>
                                     </div>
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
                                         <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
-                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                        <p class="lead fw-400">
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                        <p class="fw-400">
                                         Queremos agradecer em nome de toda Equipe da Connect Clube de Benefícios a oportunidade de negócios que a  Brasil Benefícios enfatizou nossas relações comerciais angariando e ampliando a visão em todos os conceitos desenvolvidos. Antes da participação éramos uma empresa em fase de construção, mas, agora somos uma empresa diferenciada porque os planos de negócios fizeram que nossa visão fossem além de nossas expectativas.
-</p><p class="lead fw-400">
+</p><p class="fw-400">
 Muito obrigado de coração por ter a Brasil Benefícios cuidando de nós com tanta atenção, empenho, agilidade e clareza!
                                         </p>
                                         <h6 class="fs-0 mb-1 mt-4">Jânio Gomes</h6>
