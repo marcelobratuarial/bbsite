@@ -63,7 +63,7 @@ $paginaAtual= (uri_string() === "/" || uri_string() === "") ? '' : uri_string();
                             </ul>
                             <ul class="navbar-nav ml-lg-auto">
                                 <li>
-                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="Http://www.brasilbeneficios.club" target="_blank">Solicitar Proposta</a>
+                                    <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="https://brasilbeneficios.club/" target="_blank">Solicitar Proposta</a>
                                 </li>
                                 <li class="ml-lg-2 ml-xl-2">
                                     <a class="navbt btn <?php if($paginaAtual==''){echo 'btn-outline-white';}else{echo 'btn-outline-primary';} ?> btn-capsule btn-sm border-2x fw-700" href="<?= base_url("area-cliente") ?>">Area do cliente</a>
