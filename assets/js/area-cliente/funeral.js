@@ -309,7 +309,7 @@ $(document).ready(function() {
         $("#voltaretapa1").css("display","none");
     });
 
-    $("#tipo")
+    // $("#tipo")
 
     $(".botaoUpload").click(function(){
         $(this).parent().prev().click();
@@ -329,6 +329,12 @@ $(document).ready(function() {
         $("#EnviarDados").attr("disabled", false);
         $("#EnviarDados").removeClass("disabled");
     })
+
+    $("#EnviarDados").on("click", function(){
+        $(".form-sinistro").submit()
+        
+    })
+
     $(".form-sinistro").on("submit", function(e) {
         e.preventDefault();
         console.warn("send")
