@@ -427,9 +427,9 @@ $(document).ready(function() {
         $("#EnviarDados").removeClass("disabled");
     })
     $("#EnviarDados").on("click", function(){
-        if(Gvetor == 0) {
+        
             $(".form-sinistro").submit()
-        }
+        
     
     })
     $(".form-sinistro").on("submit", function(e) {

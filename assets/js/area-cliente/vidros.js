@@ -368,7 +368,7 @@ $(document).ready(function() {
     });
 
 
-
+    
 
 
     $("#formSuccess .message-response-try-again-btn").on("click", function() {
@@ -379,6 +379,10 @@ $(document).ready(function() {
         
         $("#EnviarDados").attr("disabled", false);
         $("#EnviarDados").removeClass("disabled");
+    })
+
+    $("#EnviarDados").on("click", function(){
+        $(".form-sinistro").submit()
     })
     $(".form-sinistro").on("submit", function(e) {
         e.preventDefault();
