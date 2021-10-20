@@ -49,14 +49,16 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-11 col-md-12">
-                            <div class="pos-relative mt-4 py-5 py-md-11">
-                                <div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
+                            <!-- <div class="pos-relative mt-4 py-5 py-md-11"> -->
+                            <div class="pos-relative mt-2 py-2 py-md-2">
+                                <iframe width="900" height="506" src="https://www.youtube.com/embed/HHSQUEvSRAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <?php /*<div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
                                 <!--/.background-holder-->
                                 <a class="video-modal" href="https://www.youtube.com/watch?v=HHSQUEvSRAY" data-start="0" data-end="200">
                                     <div class="btn-elixir-play" style="transform: scale(0.8);" data-zanim-trigger="scroll" data-zanim='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'>
                                         <span class="ion-play fs-2"></span>
                                     </div>
-                                </a>
+                                </a> */ ?>
                             </div>
                         </div>
                     </div>
