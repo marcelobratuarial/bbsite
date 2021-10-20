@@ -107,7 +107,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Assistência Pet</h5>
@@ -144,7 +144,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Plano Odontológico</h5>
@@ -171,7 +171,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Seguro de Vida</h5>
