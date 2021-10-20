@@ -30,7 +30,7 @@
         <link href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
         <link href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
