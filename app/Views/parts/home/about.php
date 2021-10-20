@@ -228,7 +228,7 @@
                         <div class="col-lg-6 pr-0 pr-lg-3">
                             <img class="radius-secondary" src="<?= base_url("assets/images/n.webp") ?>" alt="" />
                         </div>
-                        <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0 text-justify" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
                                 <div class="px-4 px-sm-0" data-zanim='{"delay":0}'>
                                     <h5 class="fs-0 fs-lg-1">
