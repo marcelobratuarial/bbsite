@@ -28,7 +28,7 @@
                                                     <a class="btn btn-primary mr-3 mt-3" href="<?= base_url("/beneficios") ?>">Saiba mais
                                                         <span class="fa fa-chevron-right ml-2"></span>
                                                     </a>
-                                                    <a class="btn btn-warning mt-3" href="http://brasilbeneficios.club" target="_blank">Nos contrate
+                                                    <a class="btn btn-warning mt-3" href="https://brasilbeneficios.club/proposta" target="_blank">Nos contrate
                                                         <span class="fa fa-chevron-right ml-2"></span>
                                                     </a>
                                                 </div>

@@ -208,7 +208,7 @@
                             <h4 class="color-white mb-0">Conquistar um novo associado é muito bom,<br> fidelizá-lo é muito melhor!</h4>
                         </div>
                         <div class="col-md-auto mt-md-0 mt-4">
-                            <a class="btn btn-white btn-capsule fs-2" href="http://brasilbeneficios.club" target="_blank">Nos contrate</a>
+                            <a class="btn btn-white btn-capsule fs-2" href="https://brasilbeneficios.club/proposta" target="_blank">Nos contrate</a>
                         </div>
                     </div>
                     <!--/.row-->
