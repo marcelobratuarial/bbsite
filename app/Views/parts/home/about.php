@@ -49,14 +49,17 @@
                 <div class="container">
                     <div class="row align-items-center justify-content-center text-center">
                         <div class="col-11 col-md-12">
-                            <div class="pos-relative mt-4 py-5 py-md-11">
-                                <div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
+                            <!-- <div class="pos-relative mt-4 py-5 py-md-11"> -->
+                            <div class="pos-relative mt-2 py-2 py-md-2">
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/637175893?h=85d85d87f6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Conhe&amp;ccedil;a a Brasil Benef&amp;iacute;cios"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                <!-- <iframe width="900" height="506" src="https://www.youtube.com/embed/HHSQUEvSRAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                <?php /*<div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
                                 <!--/.background-holder-->
-                                <a class="video-modal" href="https://www.youtube.com/watch?v=zlRl8sJU_4I&ab_channel=RcaTheme" data-start="6" data-end="168">
+                                <a class="video-modal" href="https://www.youtube.com/watch?v=HHSQUEvSRAY" data-start="0" data-end="200">
                                     <div class="btn-elixir-play" style="transform: scale(0.8);" data-zanim-trigger="scroll" data-zanim='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'>
                                         <span class="ion-play fs-2"></span>
                                     </div>
-                                </a>
+                                </a> */ ?>
                             </div>
                         </div>
                     </div>
@@ -104,7 +107,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Assistência Pet</h5>
@@ -141,7 +144,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Plano Odontológico</h5>
@@ -168,7 +171,7 @@
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
-                            <div class="d-flex align-items-center h-100">
+                            <div class="d-flex align-items-center h-100 text-justify">
                                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                     <div class="overflow-hidden">
                                         <h5 data-zanim='{"delay":0}'>Seguro de Vida</h5>
@@ -228,7 +231,7 @@
                         <div class="col-lg-6 pr-0 pr-lg-3">
                             <img class="radius-secondary" src="<?= base_url("assets/images/n.webp") ?>" alt="" />
                         </div>
-                        <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                        <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0 text-justify" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
                                 <div class="px-4 px-sm-0" data-zanim='{"delay":0}'>
                                     <h5 class="fs-0 fs-lg-1">
@@ -271,7 +274,7 @@
                                         </div>
                                         <div class="col col-lg-3 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                                             <div class="value fs-3 fs-lg-4 mb-0 lh-2 fw-700 color-primary mt-lg-5 mt-3" akhi="5000" data-zanim='{"delay":0.3, "duration": 0.5}'>0</div>
-                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todos os mês</h6>
+                                            <h6 class="fs-0 color-primary" data-zanim='{"delay":0.2}'>diárias de carro reserva liberadas todo o mês</h6>
                                         </div>
                                         <div class="w-100 d-flex d-lg-none"></div>
                                         <div class="col-md-2 overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
@@ -298,25 +301,33 @@
                             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
-                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                        <p class="lead fw-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse quae atque consectetur inventore vero enim ut, ex at numquam similique nulla deserunt dolores eaque deleniti, accusantium ullam? Deserunt, aliquid?</p>
-                                        <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
-                                        <p class="mb-0 color-7">CEO,</p>
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                    <p class="fw-400">
+                                        Conquistar o sucesso profissional não é coisa que se consegue da noite para o dia. É preciso persistir e saber superar momentos difíceis, contornar obstáculos e principalmente nunca desistir! </p>
+                                        <p class="fw-400">
+                                        A equipe Brasil Benefícios, agradecemos pela inovação e dedicação em nossa parceria. Que continue sempre trazendo novidades para nosso portifólio.</p>
+                                        <p class="fw-400">Sucesso!!!</p>
+                                        <h6 class="fs-0 mb-1 mt-4">Fabrício Costa</h6>
+                                        <p class="mb-0 color-7">CEO da AWA Benefícios Mútuos</p>
                                     </div>
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
-                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
-                                        <p class="lead fw-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem esse amet minima quas quisquam praesentium adipisci voluptates aut temporibus. Adipisci beatae quaerat libero asperiores ut quasi cupiditate dolore aliquam ex!</p>
-                                        <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
-                                        <p class="mb-0 color-7">Managing Director,</p>
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                        <p class="fw-400">
+                                        Queremos agradecer em nome de toda Equipe da Connect Clube de Benefícios a oportunidade de negócios que a  Brasil Benefícios enfatizou nossas relações comerciais angariando e ampliando a visão em todos os conceitos desenvolvidos. Antes da participação éramos uma empresa em fase de construção, mas, agora somos uma empresa diferenciada porque os planos de negócios fizeram que nossa visão fossem além de nossas expectativas.
+</p><p class="fw-400">
+Muito obrigado de coração por ter a Brasil Benefícios cuidando de nós com tanta atenção, empenho, agilidade e clareza!
+                                        </p>
+                                        <h6 class="fs-0 mb-1 mt-4">Jânio Gomes</h6>
+                                        <p class="mb-0 color-7">CEO, Connect</p>
                                     </div>
                                 </div>
-                                <div class="row px-lg-8">
+                                <!-- <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
                                         <img class="radius-secondary mx-auto" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Member" style="width: auto;" />
                                     </div>
@@ -325,7 +336,7 @@
                                         <h6 class="fs-0 mb-1 mt-4">Nome sobrenome</h6>
                                         <p class="mb-0 color-7">Chairman,</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

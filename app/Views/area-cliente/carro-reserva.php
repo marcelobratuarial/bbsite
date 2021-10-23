@@ -155,7 +155,7 @@
                                         <div class="row dadosSolicitacao mt-5" style="height:100%">
                                             <div class="col-12 text-center">
                                                 <label>Placa:</label><br>
-                                                <input type="text" name="Placa" required="" id="Placa" class="campo">
+                                                <input type="text" name="Placa" required="" id="Placa" class="campo placa">
                                                 <input type="hidden" name="TipoSolicitacao" id="TipoSolicitacao" class="campo" value="">
                                             </div>
                                             <div class="col-12 text-center divcampo">
@@ -596,4 +596,5 @@
 <?= $this->section('cScripts') ?>
 <!-- Carro Reserva Scripts -->
 <script src="<?= base_url("assets/js/area-cliente/carro-reserva.js") ?>"></script>
+<script type="text/javascript" src="<?= base_url("assets/js/area-cliente/commons.js") ."?".time() ?>"></script>
 <?= $this->endSection() ?>

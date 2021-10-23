@@ -22,7 +22,7 @@
                         <a href="<?= base_url("area-cliente/app")?>">
                             <i class="fa fa-medkit" aria-hidden="true"></i>
                         </a>
-                        <span>Seguro App </span>
+                        <span>Seguro<br>App </span>
                     </li>
                 </div>
                 

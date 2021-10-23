@@ -106,7 +106,7 @@
                     <span class="fs-1 mr-2 fa fa-youtube color-white"></span>
                     
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/beneficiosbrasilatuarial/">
                     <span class="fs-1 mr-2 fa fa-instagram color-white"></span>
                     
                 </a>

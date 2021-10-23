@@ -348,19 +348,19 @@ $(document).ready(function() {
     */
     $(".cnpj").mask("99.999.999/9999-99");
 
-    $(".telefone").mask("(99) 99999-9999");
+    // $(".telefone").mask("(99) 99999-9999");
 
-    $('.telefone').focusout(function() {
-        var phone, element;
-        element = $(this);
-        element.unmask();
-        phone = element.val().replace(/\D/g, '');
-        if (phone.length > 10) {
-            element.mask("(99) 99999-999?9");
-        } else {
-            element.mask("(99) 9999-9999?9");
-        }
-    }).trigger('focusout');
+    // $('.telefone').focusout(function() {
+    //     var phone, element;
+    //     element = $(this);
+    //     element.unmask();
+    //     phone = element.val().replace(/\D/g, '');
+    //     if (phone.length > 10) {
+    //         element.mask("(99) 99999-999?9");
+    //     } else {
+    //         element.mask("(99) 9999-9999?9");
+    //     }
+    // }).trigger('focusout');
 
     $(".campo").keyup(function(){
         if ($(this).val().split("_").join("").split(".").join("").split("/").join("").split("-").join("").split("(").join("").split(")").join("").split(" ").join("")!="" && $(this).attr("name") != "CNPJEmpresa" && $(this).attr("name") != "CEP"){
@@ -424,9 +424,9 @@ $(document).ready(function() {
     $("#RegulamentoLido").on("change", function(){
         if (document.getElementById('RegulamentoLido').checked)
         {
-            $("#inscricao").removeAttr("disabled");
+            $("#inscricao").removeAttr("disabled").attr("type", "submit");
         }else{
-            $("#inscricao").attr("disabled","disabled");
+            $("#inscricao").attr("disabled","disabled").attr("type", "button");
         }
     });
     

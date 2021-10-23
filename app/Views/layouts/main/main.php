@@ -30,7 +30,7 @@
         <link href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
         <link href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
         <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
@@ -45,7 +45,24 @@
         <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
         <?= $this->renderSection('cCss') ?>
         <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
+        
 
+
+    
+        <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="917706978842477" />
+        
+        <meta property="og:url" content="//brasilbeneficios.club" />
+        <meta property="og:site_name" content="Clube Brasil Benefícios" />
+        <meta property="og:title" content="Clube Brasil Benefícios" />
+        <meta property="og:description" content="Clube de Benefícios" />
+        
+        <meta property="og:image" content="http://brasilbeneficios.club/assets/img/logo/og-bb.png" />
+        <meta property="og:image:secure_url" content="https://brasilbeneficios.club/assets/img/logo/og-bb.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="257" />
+        <meta property="og:image:height" content="257" />
+        <meta property="og:image:alt" content="Brasil Benefícios Logo" />
         <style>
             video {
                 -webkit-filter: brightness(132%); 
@@ -97,6 +114,7 @@
         <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
         <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+        <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
         <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
         <?= $this->renderSection('cScripts') ?>
         

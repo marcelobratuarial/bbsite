@@ -273,20 +273,29 @@ $(document).ready(function() {
 
     $(".cnpj").mask("99.999.999/9999-99");
 
-    $(".telefone").mask("(99) 99999-9999");
+    // $(".telefone").mask("(99) 99999-9999");
 
-    $('.telefone').focusout(function() {
-        var phone, element;
-        element = $(this);
-        element.unmask();
-        phone = element.val().replace(/\D/g, '');
-        if (phone.length > 10) {
-            element.mask("(99) 99999-999?9");
-        } else {
-            element.mask("(99) 9999-9999?9");
+    // $('.telefone').focusout(function() {
+    //     var phone, element;
+    //     element = $(this);
+    //     element.unmask();
+    //     phone = element.val().replace(/\D/g, '');
+    //     if (phone.length > 10) {
+    //         element.mask("(99) 99999-999?9");
+    //     } else {
+    //         element.mask("(99) 9999-9999?9");
+    //     }
+    // }).trigger('focusout');
+    var behavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+    options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(behavior.apply({}, arguments), options);
         }
-    }).trigger('focusout');
+    };
 
+    $('.telefone').mask(behavior, options);
     $(".campo").keyup(function(){
         if ($(this).val().split("_").join("").split(".").join("").split("/").join("").split("-").join("").split("(").join("").split(")").join("").split(" ").join("")!="" && $(this).attr("name") != "CNPJEmpresa" && $(this).attr("name") != "CEP"){
             $(this).parent().next().slideDown();
@@ -350,6 +359,14 @@ $(document).ready(function() {
         $("#EnviarDados").attr("disabled", false);
         $("#EnviarDados").removeClass("disabled");
     })
+
+    
+    $("#EnviarDados").on("click", function(){
+        $(".form-sinistro").submit()
+        
+    })
+
+
     $(".form-sinistro").on("submit", function(e) {
         e.preventDefault();
         console.warn("send")
