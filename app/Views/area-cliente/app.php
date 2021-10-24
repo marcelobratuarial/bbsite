@@ -379,7 +379,7 @@
                                                 </div>
                                                 <div class="col-12 text-center divcampo mt-4" id="submetersolicitacao">
                                                     <input type="checkbox" id="RegulamentoLido" name="RegulamentoLido" style="font-size:14px; font-family:Verdana"> Li e concordo com as 
-                                                    <span style="cursor:pointer;color:#063960;text-decoration:underline;font-size: 14px;display: inline-block;" id="condicoes-gerais">Condições Gerais</span>
+                                                    <span style="cursor:pointer;color:#063960;text-decoration:underline;font-size: 14px;display: inline-block;"  data-toggle="modal" data-target="#condicoesModal" id="condicoes-gerais">Condições Gerais</span>
                                                     <br />
                                                     <input type="button" name="inscricao" disabled id="inscricao" class="campo botaoAvancar" value="SOLICITAR CONTRATAÇÃO">
                                                 </div>
@@ -397,8 +397,8 @@
                                 </div>
                                 <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
                                 <div class="text-center">
-                                    <div class="message-response">Sua solicitação foi realizada com sucesso.<br>
-                                    A sua solicitação foi enviada com sucesso!
+                                    <div class="message-response">A sua solicitação foi enviada com sucesso!<br>
+                                    Em breve enviaremos boleto e proposta para efetivação da contratação do Seguro APP.
                                     </div>
                                     <hr>
                                     <p class="message-response-try-again-btn">
@@ -419,7 +419,30 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Modal -->
+            <div class="modal fade" id="condicoesModal" tabindex="-1" role="dialog" aria-labelledby="condicoesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="condicoesModalLabel">Condições Gerais</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        INFORMAÇÕES IMPORTANTES a) Processo SUSEP Nº 15414.002864/2010-51 ; b) O registro deste plano na SUSEP não implica, por parte da Autarquia, incentivo ou recomendação a sua comercialização; c) A aceitação do seguro estará sujeita à análise do risco pela Seguradora; d) Qualquer importância oferecida pelo Proponente junto com a proposta tem natureza de adiantamento do prêmio; e) As garantias previstas neste seguro só serão devidas se o veículo estiver devidamente regularizado junto às autoridades; f) O segurado poderá consultar a situação cadastral de seu Corretor de Seguros, no site www.susep.gov.br, por meio do número de seu registro na SUSEP, nome completo, CNPJ ou CPF; g) Os direitos e obrigações, bem como a descrição completa das coberturas, riscos cobertos e excluídos, encontram-se detalhadas nas condições Gerais e Especiais, que integram esta Proposta de Adesão; h) As Condições Gerais e Especiais encontram-se disponíveis no site www.mbmseguros.com.br.
+                    </p>
+                    <p>
+                        DECLARAÇÕES DO PROPONENTE/ESTIPULANTE a) Declaro ter conhecimento das disposições constantes nas Resoluções CNSP nºs 107/04, 117/04, 060/01, 102/04; Circulares SUSEP nºs 302/05, 316/06, 317/04; e Condições Gerais e Contratuais, estando ciente dos direitos e obrigações do estipulante; b) Autorizo a MBM Seguradora S.A., caso aceite, a emitir a apólice correspondente, comprometendo me a pagar o prêmio devido. Em caso de não aceitação do risco caberá devolução do prêmio, deduzindo o valor referente ao período em que tiver prevalecido a cobertura; c) Assumo integral responsabilidade pela exatidão das informações prestadas, mesmo as não escritas de próprio punho; d) Declaro que estou ciente que as garantias previstas no contrato só serão devidas se o veículo segurado estiver devidamente regularizado e legalizado junto às autoridades competentes, públicas e privadas.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Entendi</button>
+                </div>
+                </div>
+            </div>
+            </div>
 
             <?php /*
             <section id="formLoading">

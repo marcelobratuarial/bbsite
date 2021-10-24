@@ -149,11 +149,12 @@
                     <span class="d-flex mt-3 align-items-center"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">contato@brasilbeneficios.club</a></span>
                 </div>
                 <img class="my-4" width="30%" src="<?= base_url("assets/images/landing/bb_logo.svg")?>" alt="">
-                <ul class="d-flex list-unstyled">
+                <h5>Solicite uma demonstração</h5>
+                <!-- <ul class="d-flex list-unstyled">
                     <li><a class="socialmedia" href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a class="socialmedia" href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a class="socialmedia" href="#"><i class="fa fa-instagram"></i></a></li>
-              </ul>
+              </ul> -->
             </div>
             <div class="col-lg-6 d-flex justify-content-end">
                 <form id="contact" action="" method="post">
