@@ -197,11 +197,11 @@ class Pages extends BaseController
 			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
 		
 			// print_r($query);exit;
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
         
-		// $id = $db->insertID();
-		// $query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$id = $db->insertID();
+		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
@@ -354,15 +354,15 @@ class Pages extends BaseController
 		$formData['Numero'] . "','" .
 		$formData['Complemento'] . "')";
 		
-		// $qry = $db->query($query);
-        // $id = $db->insertID();
-		// $query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
+        $id = $db->insertID();
+		$query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
         
 		if ($this->request->getFile("SinistroEmpresa")->getName() !== null){
 			if ($this->request->getFile("SinistroEmpresa")->getName() != ""){
-				// $query = "update carro_reserva set SinistroEmpresa='".$id.$SinistroEmpresa."', BoletimOcorrencia='".$id.$BoletimOcorrencia."', CRLVVeiculo='".$id.$CRLVVeiculo."', CHNCliente='".$id.$CHNCliente."', AutorizacaoReparo='".$id.$AutorizacaoReparo."' where IDCodigo=".$id;
-				// $qry = $db->query($query);
+				$query = "update carro_reserva set SinistroEmpresa='".$id.$SinistroEmpresa."', BoletimOcorrencia='".$id.$BoletimOcorrencia."', CRLVVeiculo='".$id.$CRLVVeiculo."', CHNCliente='".$id.$CHNCliente."', AutorizacaoReparo='".$id.$AutorizacaoReparo."' where IDCodigo=".$id;
+				$qry = $db->query($query);
 				
 			}
 		}
@@ -526,15 +526,15 @@ class Pages extends BaseController
 		$formData['Tipo'] . "','" .
 		$formData['CapitalSegurado'] . "')";
 		
-		// $qry = $db->query($query);
-        // $id = $db->insertID();
-		// $query = "insert into funeral_status (IDFuneral, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
+        $id = $db->insertID();
+		$query = "insert into funeral_status (IDFuneral, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
         
 		if ($this->request->getFile("Anexo1")->getName() !== null){
 			if ($this->request->getFile("Anexo1")->getName() != ""){
-				// $query = "update funeral set AtestadoObito='".$id.$anexo1."', CPFeRGBeneficiario='".$id.$anexo2."', CPFeRGTitular='".$id.$anexo3."', ComprovanteBancario='".$id.$anexo4."', NotaFiscal='".$id.$anexo5."' where IDCodigo=".$id;
-				// $qry = $db->query($query);
+				$query = "update funeral set AtestadoObito='".$id.$anexo1."', CPFeRGBeneficiario='".$id.$anexo2."', CPFeRGTitular='".$id.$anexo3."', ComprovanteBancario='".$id.$anexo4."', NotaFiscal='".$id.$anexo5."' where IDCodigo=".$id;
+				$qry = $db->query($query);
 				
 			}
 		}
@@ -714,15 +714,15 @@ class Pages extends BaseController
 		$formData['DescricaoSinistro'] . "','" .
 		$formData['AnoModelo'] . "')";
 		
-		// $qry = $db->query($query);
-        // $id = $db->insertID();
-		// $query = "insert into vidro_status (IDVidro, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
+        $id = $db->insertID();
+		$query = "insert into vidro_status (IDVidro, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
         
 		if ($this->request->getFile("Anexo1")->getName() !== null){
 			if ($this->request->getFile("Anexo1")->getName() != ""){
-				// $query = "update vidro set AvisoSinistro='".$id.$AvisoSinistro."', FotosVistoriaPrevia='".$id.$FotosVistoriaPrevia."', FotosVidroDanificado='".$id.$FotosVidroDanificado."' where IDCodigo=".$id;
-				// $qry = $db->query($query);
+				$query = "update vidro set AvisoSinistro='".$id.$AvisoSinistro."', FotosVistoriaPrevia='".$id.$FotosVistoriaPrevia."', FotosVidroDanificado='".$id.$FotosVidroDanificado."' where IDCodigo=".$id;
+				$qry = $db->query($query);
 				
 			}
 		}
@@ -856,10 +856,10 @@ class Pages extends BaseController
 		$formData['Complemento'] . "','" .
 		$formData['Plano'] . "',0)";
 		
-		// $qry = $db->query($query);
-        // $id = $db->insertID();
-		// $query = "insert into pet_status (IDPet, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
-		// $qry = $db->query($query);
+		$qry = $db->query($query);
+        $id = $db->insertID();
+		$query = "insert into pet_status (IDPet, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
+		$qry = $db->query($query);
         
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
