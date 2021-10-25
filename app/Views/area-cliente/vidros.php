@@ -309,6 +309,7 @@
                                                             <option>Parabrisa</option>
                                                             <option>Janelas laterais</option>
                                                             <option>Faróis</option>
+                                                            <option>Lanterna Traseira</option>
                                                         </select>
                                                     </div>
                                                     <div class="col-12 text-center divcampo">
