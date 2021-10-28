@@ -50,6 +50,11 @@ class BaseController extends Controller
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
 
+		$db = \Config\Database::connect('atuarialAlt');
+		$query = "insert into acesso (data) values (current_date)";
+		$qry = $db->query($query);
+		// var_dump($qry);
+		// exit;
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------

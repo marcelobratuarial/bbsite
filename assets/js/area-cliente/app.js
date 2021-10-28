@@ -361,7 +361,16 @@ $(document).ready(function() {
     //         element.mask("(99) 9999-9999?9");
     //     }
     // }).trigger('focusout');
+    var behavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+    options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(behavior.apply({}, arguments), options);
+        }
+    };
 
+    $('.telefone').mask(behavior, options);
     $(".campo").keyup(function(){
         if ($(this).val().split("_").join("").split(".").join("").split("/").join("").split("-").join("").split("(").join("").split(")").join("").split(" ").join("")!="" && $(this).attr("name") != "CNPJEmpresa" && $(this).attr("name") != "CEP"){
             $(this).parent().next().slideDown();
@@ -471,7 +480,8 @@ $(document).ready(function() {
                     $("#formSuccess").find(".icon-message span").
                     removeClass("icon-Danger").addClass("icon-Yes")
                     $("#formSuccess").find("h4").text("Sucesso!")
-                    var m = 'A sua solicitação foi enviada com sucesso!';
+                    var m = 'A sua solicitação foi enviada com sucesso!<br>'+
+                    'Em breve enviaremos boleto e proposta para efetivação da contratação do Seguro APP.';
                     $("#formSuccess").find(".message-response").html(m)
                     
                     console.log(data)
