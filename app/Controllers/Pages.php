@@ -131,7 +131,8 @@ class Pages extends BaseController
 		];
 
 		$db = \Config\Database::connect('atuarial');
-		$query = "INSERT INTO app (IDEmpresa, 
+		$query = "INSERT INTO app (
+			IDEmpresa, 
 			SolicitanteEmpresa, 
 			TelefoneEmpresa, 
 			EmailEmpresa, 
@@ -162,42 +163,75 @@ class Pages extends BaseController
 			Utilizacao, 
 			Cobertura, 
 			CapitalSegurado, 
-			DataSolicitacao) 
-		values (".
-			$formData['IDEmpresa'] . ",'" . 
-			$formData['SolicitanteEmpresa'] . "','".
-			$formData['TelefoneEmpresa'] ."','" .
-			$formData['EmailEmpresa'] . "','" .
-			$formData['Nome'] ."','" .
-			$formData['TelefoneComercial'] ."','". 
-			$formData['RG'] . "', '".
-			$formData['CPF'] ."','". 
-			$formData['Email'] . "','" .
-			$formData['CEP'] . "','" .
-			$formData['Logradouro'] . "','" .
-			$formData['Numero'] . "','" .
-			$formData['Complemento'] . "','" .
-			$formData['Bairro'] . "','" .
-			$formData['Cidade'] . "','" .
-			$formData['UF'] . "','" .
-			$formData['Nome2'] . "','" .
-			$formData['CPF2'] . "','" .
-			$formData['Telefone2'] . "','" .
-			$formData['Email2'] . "','" .
-			$formData['Placa'] . "','" . 
-			$formData['Montadora'] . "','" .
-			$formData['Modelo'] . "','" .
-			$formData['Categoria'] . "','" .
-			$formData['Ano'] . "','" .
-			$formData['Chassi'] . "','" .
-			$formData['Renavam'] . "','" .
-			$formData['LotacaoMaxima'] . "','" .
-			$formData['Utilizacao'] . "','" .
-			$formData['Cobertura'] . "','" .
-			$formData['CapitalSegurado'] . "',CURRENT_DATE)";
-		
+			DataSolicitacao
+		) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_DATE)";
+			// $formData['IDEmpresa'] . ",'" . 
+			// $formData['SolicitanteEmpresa'] . "','".
+			// $formData['TelefoneEmpresa'] ."','" .
+			// $formData['EmailEmpresa'] . "','" .
+			// $formData['Nome'] ."','" .
+			// $formData['TelefoneComercial'] ."','". 
+			// $formData['RG'] . "', '".
+			// $formData['CPF'] ."','". 
+			// $formData['Email'] . "','" .
+			// $formData['CEP'] . "','" .
+			// $formData['Logradouro'] . "','" .
+			// $formData['Numero'] . "','" .
+			// $formData['Complemento'] . "','" .
+			// $formData['Bairro'] . "','" .
+			// $formData['Cidade'] . "','" .
+			// $formData['UF'] . "','" .
+			// $formData['Nome2'] . "','" .
+			// $formData['CPF2'] . "','" .
+			// $formData['Telefone2'] . "','" .
+			// $formData['Email2'] . "','" .
+			// $formData['Placa'] . "','" . 
+			// $formData['Montadora'] . "','" .
+			// $formData['Modelo'] . "','" .
+			// $formData['Categoria'] . "','" .
+			// $formData['Ano'] . "','" .
+			// $formData['Chassi'] . "','" .
+			// $formData['Renavam'] . "','" .
+			// $formData['LotacaoMaxima'] . "','" .
+			// $formData['Utilizacao'] . "','" .
+			// $formData['Cobertura'] . "','" .
+			// $formData['CapitalSegurado'] . 
+			// "',CURRENT_DATE)";
+		$dataToSave = Array(
+			$formData['IDEmpresa'],
+			$formData['SolicitanteEmpresa'],
+			$formData['TelefoneEmpresa'],
+			$formData['EmailEmpresa'],
+			$formData['Nome'],
+			$formData['TelefoneComercial'],
+			$formData['RG'],
+			$formData['CPF'],
+			$formData['Email'],
+			$formData['CEP'],
+			$formData['Logradouro'],
+			$formData['Numero'],
+			$formData['Complemento'],
+			$formData['Bairro'],
+			$formData['Cidade'],
+			$formData['UF'],
+			$formData['Nome2'],
+			$formData['CPF2'],
+			$formData['Telefone2'],
+			$formData['Email2'],
+			$formData['Placa'],
+			$formData['Montadora'],
+			$formData['Modelo'],
+			$formData['Categoria'],
+			$formData['Ano'],
+			$formData['Chassi'],
+			$formData['Renavam'],
+			$formData['LotacaoMaxima'],
+			$formData['Utilizacao'],
+			$formData['Cobertura'],
+			$formData['CapitalSegurado'] 
+		);
 			// print_r($query);exit;
-		$qry = $db->query($query);
+		$qry = $db->query($query, $dataToSave);
         
 		$id = $db->insertID();
 		$query = "insert into app_status (IDApp, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
@@ -327,34 +361,60 @@ class Pages extends BaseController
 		EmailEmpresa, Nome, CPF, Email, Telefone, TipoSolicitacao, Placa, Chassi, QuantidadeDeDiarias, 
 		EstadoRetirada, CidadeRetirada, DataRetirada, HoraRetirada, NomeResponsavelCartao, 
 		CPFResponsavelCartao, CEP, Logradouro, Bairro, Cidade, Estado, Numero, Complemento) 
-		values (CURRENT_DATE, " . 
-		$formData['IDEmpresa'] . ",'" . 
-		$formData['SolicitanteEmpresa'] . "','".
-		$formData['TelefoneEmpresa'] . "','" .
-		$formData['EmailEmpresa'] ."','" .
-		$formData['Nome'] ."','". 
-		$formData['CPF'] . "', '".
-		$formData['Email'] ."','". 
-		$formData['Telefone'] ."','" .
-		$formData['TipoSolicitacao'] . "','" .
-		$formData['Placa'] . "','" .
-		$formData['Chassi'] . "','" .
-		$formData['QuantidadeDeDiarias'] . "','" .
-		$formData['EstadoRetirada'] . "','" .
-		$formData['CidadeRetirada'] . "','" .
-		$formData['DataRetirada'] . "','" .
-		$formData['HoraRetirada'] . "','" .
-		$formData['NomeResponsavelCartao'] . "','" .
-		$formData['CPFResponsavelCartao'] . "','" .
-		$formData['CEP'] . "','" .
-		$formData['Logradouro'] . "','" .
-		$formData['Bairro'] . "','" . 
-		$formData['Cidade'] . "','" .
-		$formData['Estado'] . "','" .
-		$formData['Numero'] . "','" .
-		$formData['Complemento'] . "')";
-		
-		$qry = $db->query($query);
+		values (CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		// $formData['IDEmpresa'] . ",'" . 
+		// $formData['SolicitanteEmpresa'] . "','".
+		// $formData['TelefoneEmpresa'] . "','" .
+		// $formData['EmailEmpresa'] ."','" .
+		// $formData['Nome'] ."','". 
+		// $formData['CPF'] . "', '".
+		// $formData['Email'] ."','". 
+		// $formData['Telefone'] ."','" .
+		// $formData['TipoSolicitacao'] . "','" .
+		// $formData['Placa'] . "','" .
+		// $formData['Chassi'] . "','" .
+		// $formData['QuantidadeDeDiarias'] . "','" .
+		// $formData['EstadoRetirada'] . "','" .
+		// $formData['CidadeRetirada'] . "','" .
+		// $formData['DataRetirada'] . "','" .
+		// $formData['HoraRetirada'] . "','" .
+		// $formData['NomeResponsavelCartao'] . "','" .
+		// $formData['CPFResponsavelCartao'] . "','" .
+		// $formData['CEP'] . "','" .
+		// $formData['Logradouro'] . "','" .
+		// $formData['Bairro'] . "','" . 
+		// $formData['Cidade'] . "','" .
+		// $formData['Estado'] . "','" .
+		// $formData['Numero'] . "','" .
+		// $formData['Complemento'] . "')";
+		$dataToSave = Array(
+			$formData['IDEmpresa'],
+			$formData['SolicitanteEmpresa'],
+			$formData['TelefoneEmpresa'],
+			$formData['EmailEmpresa'],
+			$formData['Nome'],
+			$formData['CPF'],
+			$formData['Email'],
+			$formData['Telefone'],
+			$formData['TipoSolicitacao'],
+			$formData['Placa'],
+			$formData['Chassi'],
+			$formData['QuantidadeDeDiarias'],
+			$formData['EstadoRetirada'],
+			$formData['CidadeRetirada'],
+			$formData['DataRetirada'],
+			$formData['HoraRetirada'],
+			$formData['NomeResponsavelCartao'],
+			$formData['CPFResponsavelCartao'],
+			$formData['CEP'],
+			$formData['Logradouro'],
+			$formData['Bairro'], 
+			$formData['Cidade'],
+			$formData['Estado'],
+			$formData['Numero'],
+			$formData['Complemento']
+		);
+		$qry = $db->query($query, $dataToSave);
         $id = $db->insertID();
 		$query = "insert into carro_reserva_status (IDCarroReserva, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		$qry = $db->query($query);
@@ -514,19 +574,30 @@ class Pages extends BaseController
 		$db = \Config\Database::connect('atuarial');
 		$query = "INSERT INTO funeral (DataSolicitacao, IDEmpresa, SolicitanteEmpresa, TelefoneEmpresa, 
 		EmailEmpresa, Nome, Email, CPF, Telefone, Tipo, CapitalSegurado) 
-		values (CURRENT_DATE, " . 
-		$formData['IDEmpresa'] . ",'" . 
-		$formData['SolicitanteEmpresa'] . "','".
-		$formData['TelefoneEmpresa'] . "','" .
-		$formData['EmailEmpresa'] ."','" .
-		$formData['Nome'] ."','". 
-		$formData['Email'] ."','". 
-		$formData['CPF'] . "', '".
-		$formData['Telefone'] ."','" .
-		$formData['Tipo'] . "','" .
-		$formData['CapitalSegurado'] . "')";
-		
-		$qry = $db->query($query);
+		values (CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; 
+		// $formData['IDEmpresa'] . ",'" . 
+		// $formData['SolicitanteEmpresa'] . "','".
+		// $formData['TelefoneEmpresa'] . "','" .
+		// $formData['EmailEmpresa'] ."','" .
+		// $formData['Nome'] ."','". 
+		// $formData['Email'] ."','". 
+		// $formData['CPF'] . "', '".
+		// $formData['Telefone'] ."','" .
+		// $formData['Tipo'] . "','" .
+		// $formData['CapitalSegurado'] . "')";
+		$dataToSave = Array(
+			$formData['IDEmpresa'],
+			$formData['SolicitanteEmpresa'],
+			$formData['TelefoneEmpresa'],
+			$formData['EmailEmpresa'],
+			$formData['Nome'],
+			$formData['Email'],
+			$formData['CPF'],
+			$formData['Telefone'],
+			$formData['Tipo'],
+			$formData['CapitalSegurado']
+		);
+		$qry = $db->query($query, $dataToSave);
         $id = $db->insertID();
 		$query = "insert into funeral_status (IDFuneral, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		$qry = $db->query($query);
@@ -688,33 +759,58 @@ class Pages extends BaseController
 		// exit;
 		
 		$db = \Config\Database::connect('atuarial');
-		$query = "INSERT INTO vidro (DataSolicitacao, IDEmpresa, SolicitanteEmpresa,
-		TelefoneEmpresa, EmailEmpresa, Nome, CPF, Email, Telefone, Placa, Chassi, Tipo, 
-		Montadora, Modelo, AnoFabricacao, UF, Cidade, PecaDanificada, PossuiSensor, 
-		ModeloVidro, DescricaoSinistro, AnoModelo) 
-		values (CURRENT_DATE, " . 
-		$formData['IDEmpresa'] . ",'" . 
-		$formData['SolicitanteEmpresa'] . "','".
-		$formData['TelefoneEmpresa'] . "','" .
-		$formData['EmailEmpresa'] ."','" .
-		$formData['Nome'] ."','". 
-		$formData['CPF'] . "', '".
-		$formData['Email'] ."','". 
-		$formData['Telefone'] ."','" .
-		$formData['Placa'] . "','" .
-		$formData['Chassi'] . "','" .
-		$formData['Fabricante'] . "','" .
-		$formData['modelo'] . "','" .
-		$formData['AnoFabricacao'] . "','" .
-		$formData['Estado'] . "','" .
-		$formData['Cidade'] . "','" .
-		$formData['Peca'] . "','" .
-		$formData['Sensor'] . "','" .
-		$formData['ModeloVidro'] . "','" .
-		$formData['DescricaoSinistro'] . "','" .
-		$formData['AnoModelo'] . "')";
-		
-		$qry = $db->query($query);
+		$query = "INSERT INTO vidro (DataSolicitacao, 
+		IDEmpresa, SolicitanteEmpresa, TelefoneEmpresa, EmailEmpresa, Nome, 
+		CPF, Email, Telefone, Placa, Chassi, 
+		Tipo, Montadora, Modelo, AnoFabricacao, UF, 
+		Cidade, PecaDanificada, PossuiSensor, ModeloVidro, DescricaoSinistro, 
+		AnoModelo) 
+		values (CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		// $formData['IDEmpresa'] . ",'" . 
+		// $formData['SolicitanteEmpresa'] . "','".
+		// $formData['TelefoneEmpresa'] . "','" .
+		// $formData['EmailEmpresa'] ."','" .
+		// $formData['Nome'] ."','". 
+		// $formData['CPF'] . "', '".
+		// $formData['Email'] ."','". 
+		// $formData['Telefone'] ."','" .
+		// $formData['Placa'] . "','" .
+		// $formData['Chassi'] . "','" .
+		// $formData['Tipo'] . "','" .
+		// $formData['Fabricante'] . "','" .
+		// $formData['modelo'] . "','" .
+		// $formData['AnoFabricacao'] . "','" .
+		// $formData['Estado'] . "','" .
+		// $formData['Cidade'] . "','" .
+		// $formData['Peca'] . "','" .
+		// $formData['Sensor'] . "','" .
+		// $formData['ModeloVidro'] . "','" .
+		// $formData['DescricaoSinistro'] . "','" .
+		// $formData['AnoModelo'] . "')";
+		$dataToSave = Array(
+			$formData['IDEmpresa'],
+			$formData['SolicitanteEmpresa'],
+			$formData['TelefoneEmpresa'],
+			$formData['EmailEmpresa'],
+			$formData['Nome'],
+			$formData['CPF'],
+			$formData['Email'],
+			$formData['Telefone'],
+			$formData['Placa'],
+			$formData['Chassi'],
+			$formData['Tipo'],
+			$formData['Fabricante'],
+			$formData['modelo'],
+			$formData['AnoFabricacao'],
+			$formData['Estado'],
+			$formData['Cidade'],
+			$formData['Peca'],
+			$formData['Sensor'],
+			$formData['ModeloVidro'],
+			$formData['DescricaoSinistro'],
+			$formData['AnoModelo']
+		);
+		$qry = $db->query($query, $dataToSave);
         $id = $db->insertID();
 		$query = "insert into vidro_status (IDVidro, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		$qry = $db->query($query);
@@ -838,25 +934,41 @@ class Pages extends BaseController
 
 		
 		$db = \Config\Database::connect('atuarial');
-		$query = "INSERT INTO pet (DataSolicitacao, Nome, CPF, 
-		DataNascimento, Email, Celular, CEP, Logradouro, Bairro, 
-		Estado, Cidade, Numero, Complemento, Plano, Arquivado) 
-		values (CURRENT_DATE, " . 
-		$formData['Nome'] . ",'" . 
-		$formData['CPF'] . "','".
-		$formData['DataNascimento'] . "','" .
-		$formData['Email'] ."','" .
-		$formData['Celular'] ."','". 
-		$formData['CEP'] . "', '".
-		$formData['Logradouro'] ."','". 
-		$formData['Bairro'] ."','" .
-		$formData['Estado'] . "','" .
-		$formData['Cidade'] . "','" .
-		$formData['Numero'] . "','" .
-		$formData['Complemento'] . "','" .
-		$formData['Plano'] . "',0)";
-		
-		$qry = $db->query($query);
+		$query = "INSERT INTO pet (DataSolicitacao, 
+		Nome, CPF, DataNascimento, Email, Celular, 
+		CEP, Logradouro, Bairro, Estado, Cidade, 
+		Numero, Complemento, Plano, 
+		Arquivado) 
+		values (CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0)"; 
+		// $formData['Nome'] . ",'" . 
+		// $formData['CPF'] . "','".
+		// $formData['DataNascimento'] . "','" .
+		// $formData['Email'] ."','" .
+		// $formData['Celular'] ."','". 
+		// $formData['CEP'] . "', '".
+		// $formData['Logradouro'] ."','". 
+		// $formData['Bairro'] ."','" .
+		// $formData['Estado'] . "','" .
+		// $formData['Cidade'] . "','" .
+		// $formData['Numero'] . "','" .
+		// $formData['Complemento'] . "','" .
+		// $formData['Plano'] . "',0)";
+		$dataToSave = Array(
+			$formData['Nome'],
+			$formData['CPF'],
+			$formData['DataNascimento'],
+			$formData['Email'],
+			$formData['Celular'],
+			$formData['CEP'],
+			$formData['Logradouro'],
+			$formData['Bairro'],
+			$formData['Estado'],
+			$formData['Cidade'],
+			$formData['Numero'],
+			$formData['Complemento'],
+			$formData['Plano']
+		);
+		$qry = $db->query($query, $dataToSave);
         $id = $db->insertID();
 		$query = "insert into pet_status (IDPet, DataHora, NovoStatus) values (".$id.", NOW(), 'SOLICITACAO RECEBIDA')";
 		$qry = $db->query($query);
