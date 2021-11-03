@@ -301,13 +301,32 @@
                             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-andrade.jpg") ?>" alt="Member" style="width: auto;" />
+                                    </div>
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                        <p class="fw-400">
+                                            Queríamos agradecer a Brasil Benefícios pela parceria de sempre, onde a Cooperlink Minas teve a oportunidade de conhecer quando iniciava no mutualismo, e felizmente nos ajudou e ainda nos ajuda muito com uma consultoria que vai além do esperado e fornecimento de benefícios de ponta!
+                                        </p>
+                                        <p class="fw-400">
+                                            Parabéns pelo trabalho desenvolvido, pela transparência de sempre, e pela equipe de ponta que vocês montaram!
+                                        </p>
+                                        <h6 class="fs-0 mb-1 mt-4">Fabrício Andrade</h6>
+                                        <p class="mb-0 color-7">CEO, Cooperlink Minas</p>
+                                    </div>
+                                </div>
+                                
+                            
+                                <div class="row px-lg-8">
+                                    <div class="col-4 col-md-3 mx-auto">
                                         <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.jpg") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
-                                    <p class="fw-400">
-                                        Conquistar o sucesso profissional não é coisa que se consegue da noite para o dia. É preciso persistir e saber superar momentos difíceis, contornar obstáculos e principalmente nunca desistir! </p>
                                         <p class="fw-400">
-                                        A equipe Brasil Benefícios, agradecemos pela inovação e dedicação em nossa parceria. Que continue sempre trazendo novidades para nosso portifólio.</p>
+                                            Conquistar o sucesso profissional não é coisa que se consegue da noite para o dia. É preciso persistir e saber superar momentos difíceis, contornar obstáculos e principalmente nunca desistir!
+                                        </p>
+                                        <p class="fw-400">
+                                            A equipe Brasil Benefícios, agradecemos pela inovação e dedicação em nossa parceria. Que continue sempre trazendo novidades para nosso portifólio.
+                                        </p>
                                         <p class="fw-400">Sucesso!!!</p>
                                         <h6 class="fs-0 mb-1 mt-4">Fabrício Costa</h6>
                                         <p class="mb-0 color-7">CEO da AWA Benefícios Mútuos</p>
@@ -319,12 +338,29 @@
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
-                                        Queremos agradecer em nome de toda Equipe da Connect Clube de Benefícios a oportunidade de negócios que a  Brasil Benefícios enfatizou nossas relações comerciais angariando e ampliando a visão em todos os conceitos desenvolvidos. Antes da participação éramos uma empresa em fase de construção, mas, agora somos uma empresa diferenciada porque os planos de negócios fizeram que nossa visão fossem além de nossas expectativas.
-</p><p class="fw-400">
-Muito obrigado de coração por ter a Brasil Benefícios cuidando de nós com tanta atenção, empenho, agilidade e clareza!
+                                            Queremos agradecer em nome de toda Equipe da Connect Clube de Benefícios a oportunidade de negócios que a  Brasil Benefícios enfatizou nossas relações comerciais angariando e ampliando a visão em todos os conceitos desenvolvidos. Antes da participação éramos uma empresa em fase de construção, mas, agora somos uma empresa diferenciada porque os planos de negócios fizeram que nossa visão fossem além de nossas expectativas.
+                                        </p>
+                                        <p class="fw-400">
+                                            Muito obrigado de coração por ter a Brasil Benefícios cuidando de nós com tanta atenção, empenho, agilidade e clareza!
                                         </p>
                                         <h6 class="fs-0 mb-1 mt-4">Jânio Gomes</h6>
                                         <p class="mb-0 color-7">CEO, Connect</p>
+                                    </div>
+                                </div>
+                                <div class="row px-lg-8">
+                                    <div class="col-4 col-md-3 mx-auto">
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/renato-oliveira.jpg") ?>" alt="Member" style="width: auto;" />
+                                    </div>
+                                    <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
+                                        <p class="fw-400">
+                                        O Grupo Brasil Atuarial já nos acompanha a muitos anos mas neste momento em específico quero destacar o 
+                                        CLUBE DE BENEFÍCIOS que nos ajudou e ajuda a fortalecer nosso trabalho trazendo uma gama extensa de 
+                                        produtos e serviços que levam conforto e economia a nossos associados através de empresas conceituadas 
+                                        e com a possibilidade incrível de trazermos também os comércios e serviços regionais o que nos 
+                                        aproxima ainda mais de nossos associados.
+                                        </p>
+                                        <h6 class="fs-0 mb-1 mt-4">Renato Oliveira</h6>
+                                        <p class="mb-0 color-7">CEO, Multibenefícios</p>
                                     </div>
                                 </div>
                                 <!-- <div class="row px-lg-8">
