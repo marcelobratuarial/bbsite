@@ -170,7 +170,8 @@
                                                 <div class="row dadosDaAssociacao mt-5" style="height:100%">
                                                     <div class="col-12 text-center">
                                                         <label>CNPJ</label><br>
-                                                        <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" class="campo cnpj" autocomplete="off">
+                                                        <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" placeholder="Ex.: 00.000.000.0000-00" class="campo cnpj" autocomplete="off">
+                                                        <span class="cnpjSpin" style="display:none"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></span>
                                                         <input type="hidden" name="IDEmpresa" id="IDEmpresa">
                                                         <input type="hidden" name="NomeEmpresa" id="NomeEmpresa">
                                                     </div>
@@ -214,7 +215,7 @@
                                                 <div class="row dadosSolicitacao mt-5" style="height:100%">
                                                     <div class="col-12 text-center">
                                                         <label>Placa:</label><br>
-                                                        <input type="text" name="Placa" required="" id="Placa" class="campo placa">
+                                                        <input type="text" name="Placa" pattern="[a-zA-Z0-9]+" required="" id="Placa" class="campo placa">
                                                     </div>
                                                     <div class="col-12 text-center divcampo">
                                                         <label>Chassi:</label><br>

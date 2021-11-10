@@ -1,20 +1,6 @@
 $(document).ready(function() {
     var Gvetor
-    var inputs = $('input').keypress(function(e){
-        console.log(e.which) 
-        if (e.which == 13) {
-           $(this).blur()
-           console.log("entrou")
-           e.preventDefault();
-           var nextInput = inputs.get(inputs.index(this) + 1);
-           console.log(inputs)
-           if (nextInput) {
-              nextInput.focus();
-           }
-        } else {
-            console.log("n entrou")
-        }
-    });
+    
     
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
@@ -28,11 +14,14 @@ $(document).ready(function() {
     
     $("#CNPJEmpresa").change(function(){
         var cnpj = $(this).val();
-        
+        console.log($(this).cleanVal().length)
+        if($(this).cleanVal().length < 14) {
+            return false
+        }
         $.ajax({
             type: 'POST',
             url:  base_url + '/f-empresa',
-            async: false,
+            async: true,
             data: 
             {
                 'CPFCNPJ' : cnpj
@@ -41,6 +30,7 @@ $(document).ready(function() {
                 if (response=="0"){
                     confError('CNPJ não cadastrado', "CNPJ não cadastrado no sistema da Brasil Atuarial. Gentileza entrar em contato através dos números (31) 2510-8536 | (31) 99279-0202 e formalizar sua contratação!")
                 }else{
+                    $(".cnpjSpin").fadeIn(200)
                     var vetor = response.split("|");
                     $("#IDEmpresa").val(vetor[0]);
                     $("#NomeEmpresa").val(vetor[1]);
@@ -64,6 +54,10 @@ $(document).ready(function() {
             },
             error: function() {
                 confError();
+            },
+            complete: function() {
+                console.log("DONE")
+                $(".cnpjSpin").fadeOut(200)
             }
         });
     });

@@ -150,3 +150,13 @@ animation: lds-hourglass 1.2s infinite;
         width: 150px;
         height: auto;
     }
+    
+    /* input.loadingCNPJ:after, .cnpj::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 1px;
+        height: 30px;
+        width: 30px;
+        border: solid 1px red;
+    } */

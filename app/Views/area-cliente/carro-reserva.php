@@ -84,6 +84,7 @@
                                             <div class="col-12 text-center">
                                                 <label>CNPJ</label><br>
                                                 <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" class="campo cnpj" autocomplete="off">
+                                                <span class="cnpjSpin" style="display:none"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></span>
                                                 <input type="hidden" name="IDEmpresa" id="IDEmpresa">
                                                 <input type="hidden" name="NomeEmpresa" id="NomeEmpresa">
                                             </div>

@@ -1,14 +1,14 @@
 $(document).ready(function() {
-    var inputs = $(':input').keypress(function(e){ 
-        if (e.which == 13) {
-           e.preventDefault();
-           $(this).blur()
-           var nextInput = inputs.get(inputs.index(this) + 1);
-           if (nextInput) {
-              nextInput.focus();
-           }
-        }
-    });
+    // var inputs = $(':input').keypress(function(e){ 
+    //     if (e.which == 13) {
+    //        e.preventDefault();
+    //        $(this).blur()
+    //        var nextInput = inputs.get(inputs.index(this) + 1);
+    //        if (nextInput) {
+    //           nextInput.focus();
+    //        }
+    //     }
+    // });
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
@@ -18,7 +18,9 @@ $(document).ready(function() {
     };
     $("#CNPJEmpresa").change(function(){
         var cnpj = $(this).val();
-        
+        if($(this).cleanVal().length < 14) {
+            return false
+        }
         $.ajax({
             type: 'POST',
             url:  base_url + '/f-empresa',
@@ -43,6 +45,9 @@ $(document).ready(function() {
             },
             error: function() {
                 confError();
+            },
+            complete: function() {
+                $(".cnpjSpin").fadeOut(200)
             }
         });
     });
