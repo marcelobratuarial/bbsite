@@ -94,9 +94,9 @@
     <!--  -->
         <!--    JavaScripts-->
         <!--    =============================================-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="<?= base_url("assets/js/modernizr.min.js") ?>"></script>
         <script src="<?= base_url("assets/lib/jquery/dist/jquery.min.js") ?>"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="<?= base_url("assets/lib/bootstrap/dist/js/popper.min.js") ?>"></script>
         <script src="<?= base_url("assets/lib/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
         <!-- <script src="<?= base_url("assets/js/bs-stepper.min.js") ?>"></script> -->
         <script src="<?= base_url("assets/lib/loaders.css/loaders.css.js") ?>"></script>
@@ -106,15 +106,15 @@
         <script src="<?= base_url("assets/lib/CustomEase.min.js") ?>"></script>
         <script src="<?= base_url("assets/js/config.js") ?>"></script>
         <script src="<?= base_url("assets/js/zanimation.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
         <script src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
-        <script src="<?= base_url("assets/js/core.js") ?>"></script>
-        <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
-        <script src="<?= base_url("assets/js/aos.js") ?>"></script>
-        <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
-        <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/js/core.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/js/aos.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+        <script rel="preload" data-src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
         <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
         <?= $this->renderSection('cScripts') ?>
         
@@ -159,5 +159,63 @@
                 
             })
         </script>
+        <script>
+
+            $(document).ready(function() {
+                $(document).ready(function() {
+                    setTimeout(() => {
+                        $.each($("script[rel=preload]"), function(a,b) {
+                            // console.log(a)
+                            // console.log(b)
+                            var p = new Promise((resolve, reject) => {
+                                // console.log("teste")
+                                $(b)
+                                .attr("src", $(b).data("src")).removeAttr("rel")
+                                resolve("OK")
+                                // .attr("rel", "stylesheet")
+                            }).then(()=>{
+                                // console.log("resolvido")
+                            })
+                            
+                        })
+                        // $("link[rel=preload]")
+                        // .attr("href", $("link[rel=preload]").data("href"))
+                        // .attr("rel", "stylesheet")
+
+                        $.each($("link[rel=preload]"), function(a,b) {
+                            // console.log(a)
+                            // console.log(b)
+                            $(b)
+                            .attr("href", $(b).data("href"))
+                            .attr("rel", "stylesheet")
+                        })
+                    }, 240);
+                }) 
+
+                document.addEventListener("DOMContentLoaded", function() {
+                var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+                    if ("IntersectionObserver" in window) {
+                        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                let lazyImage = entry.target;
+                                lazyImage.src = lazyImage.dataset.src;
+                                // lazyImage.srcset = lazyImage.dataset.srcset;
+                                lazyImage.classList.remove("lazy");
+                                lazyImageObserver.unobserve(lazyImage);
+                                }
+                            });
+                        });
+
+                        lazyImages.forEach(function(lazyImage) {
+                        lazyImageObserver.observe(lazyImage);
+                        });
+                    } else {
+                        // Possibly fall back to event handlers here
+                    }
+                });
+            })
+            </script>
     </body>
 </html>
