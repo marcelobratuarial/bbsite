@@ -72,16 +72,16 @@
                     <div class="row">
                         <div class="col-sm-6  col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                            <img width="5%" src="assets/svg/target.png" alt=""> Missão</h5>
+                            <img width="5%" src="<?= base_url("assets/svg/target.webp")?>" alt=""> Missão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores.</p>
 
                             <h5 data-zanim='{"delay":0}'>
-                            <img width="5%" src="assets/svg/eye.png" alt=""> Visão</h5>
+                            <img width="5%" src="assets/svg/eye.webp" alt=""> Visão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Ser a empresa de benefícios mais amada do Brasil</p>
                         </div>
                         <div class="col-sm-6 col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <img width="5%" src="assets/svg/diamond.png" alt=""> Nossos valores</h5>
+                                <img width="5%" src="assets/svg/diamond.webp" alt=""> Nossos valores</h5>
                             <!-- <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'> -->
                             <ul data-zanim='{"delay":0.2}'>
                                 <li>Honestidade: Agimos com coerência e verdade</li>
@@ -103,7 +103,7 @@
                     <div class="row no-gutters pos-relative mt-6">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-                            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/k.jpg") ?>);"> </div>
+                            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/k.webp") ?>);"> </div>
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
@@ -140,7 +140,7 @@
                     <div class="row no-gutters pos-relative mt-4 mt-lg-0">
                         <div class="elixir-caret d-none d-lg-block"></div>
                         <div class="col-lg-6 py-3 py-lg-0 mb-0 order-lg-2" style="min-height:400px;">
-                            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/dental.jpg") ?>);"> </div>
+                            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(<?= base_url("assets/images/dental.webp") ?>);"> </div>
                             <!--/.background-holder-->
                         </div>
                         <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
@@ -301,7 +301,7 @@
                             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-andrade.jpg") ?>" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-andrade.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -318,7 +318,7 @@
                             
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.jpg") ?>" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -334,7 +334,7 @@
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.jpg") ?>" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -349,7 +349,7 @@
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/renato-oliveira.jpg") ?>" alt="Member" style="width: auto;" />
+                                        <img class="radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/renato-oliveira.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
