@@ -10,7 +10,7 @@
                     <div class="row mt-md-5">
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex justify-content-center align-items-center" data-zanim='{"delay":0}' style="height:100px; width:100px;">
-                                <img class="lazy" src="assets/images/shield.png" alt="">
+                                <img class="lazy" data-src="assets/images/shield.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Soluções para Carro, Casa, Vida e Saúde</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Solution for every business related problems, readily
@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex justify-content-center align-items-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                                <img class="lazy ml-3" src="assets/images/mobile.png" alt="">
+                                <img class="lazy ml-3" data-src="assets/images/mobile.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Processo 100% digital. Contratação e acionamento na palma da mão</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Calculate every possible risk in your business, take
@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-3 mt-4" data-zanim-timeline='{"delay":0.1}' data-zanim-trigger="scroll">
                             <div class="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center justify-content-center" data-zanim='{"trigger":"scroll"}' style="height:100px; width:100px;">
-                            <img class="lazy" src="assets/images/call.png" alt="">
+                            <img class="lazy" data-src="assets/images/call.png" alt="">
                             </div>
                             <h5 class="mt-4" data-zanim='{"delay":0.1}'>Suporte 24 horas por dia através de nossa central de atendimentos</h5>
                             <!-- <p class="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>Experience unparalleled service, from beginning
@@ -72,16 +72,16 @@
                     <div class="row">
                         <div class="col-sm-6  col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                            <img class="lazy" width="5%" src="<?= base_url("assets/svg/target.webp")?>" alt=""> Missão</h5>
+                            <img class="lazy" width="5%" data-src="<?= base_url("assets/svg/target.webp")?>" alt=""> Missão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Nossa missão é tornar a vida mais fácil, oferecendo serviços de excelência agregado aos nossos valores.</p>
 
                             <h5 data-zanim='{"delay":0}'>
-                            <img class="lazy" width="5%" src="assets/svg/eye.webp" alt=""> Visão</h5>
+                            <img class="lazy" width="5%" data-src="assets/svg/eye.webp" alt=""> Visão</h5>
                             <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'>Ser a empresa de benefícios mais amada do Brasil</p>
                         </div>
                         <div class="col-sm-6 col-lg-6 mt-3 mt-lg-0 text-lg-left px-4 px-sm-3" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <h5 data-zanim='{"delay":0}'>
-                                <img class="lazy" width="5%" src="assets/svg/diamond.webp" alt=""> Nossos valores</h5>
+                                <img class="lazy" width="5%" data-src="assets/svg/diamond.webp" alt=""> Nossos valores</h5>
                             <!-- <p class="mt-3 pr-3 pr-lg-5" data-zanim='{"delay":0.1}'> -->
                             <ul data-zanim='{"delay":0.2}'>
                                 <li>Honestidade: Agimos com coerência e verdade</li>
@@ -229,7 +229,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-6 pr-0 pr-lg-3">
-                            <img class="lazy radius-secondary" src="<?= base_url("assets/images/n.webp") ?>" alt="" />
+                            <img class="lazy radius-secondary" data-src="<?= base_url("assets/images/n.webp") ?>" alt="" />
                         </div>
                         <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0 text-justify" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                             <div class="overflow-hidden">
@@ -301,7 +301,7 @@
                             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="lazy radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-andrade.webp") ?>" alt="Member" style="width: auto;" />
+                                        <img class="lazy radius-secondary mx-auto" data-src="<?= base_url("assets/images/depoimentos/fabricio-andrade.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -318,7 +318,7 @@
                             
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="lazy radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/fabricio-costa.webp") ?>" alt="Member" style="width: auto;" />
+                                        <img class="lazy radius-secondary mx-auto" data-src="<?= base_url("assets/images/depoimentos/fabricio-costa.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -334,7 +334,7 @@
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="lazy radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/janio-gomes.webp") ?>" alt="Member" style="width: auto;" />
+                                        <img class="lazy radius-secondary mx-auto" data-src="<?= base_url("assets/images/depoimentos/janio-gomes.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
@@ -349,7 +349,7 @@
                                 </div>
                                 <div class="row px-lg-8">
                                     <div class="col-4 col-md-3 mx-auto">
-                                        <img class="lazy radius-secondary mx-auto" src="<?= base_url("assets/images/depoimentos/renato-oliveira.webp") ?>" alt="Member" style="width: auto;" />
+                                        <img class="lazy radius-secondary mx-auto" data-src="<?= base_url("assets/images/depoimentos/renato-oliveira.webp") ?>" alt="Member" style="width: auto;" />
                                     </div>
                                     <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3 text-justify">
                                         <p class="fw-400">
