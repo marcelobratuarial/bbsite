@@ -24,22 +24,30 @@ $(document).ready(function() {
 
             if($(".homebart").hasClass("show")) {
                 $(".homebart").slideUp(300).removeClass("show")
-                console.log("IF")
+                // console.log("IF")
                 if(distance > 750) {
-                    console.log(">>>")
+                    // console.log(">>>")
                     
                     $("#znav-container").removeClass("sticky-top").addClass("pos-absolute")
                         .removeClass("background-white")
                 } else {
-                    console.log("<<<")
+                    // console.log("<<<")
                     $("#znav-container")
                         .addClass("background-white")
                 }
-                console.log(base_url)
-                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+                // console.log(base_url)
+                var cur = $(".navbar-brand").find("img").attr("src");
+                var comp = base_url + "/assets/images/landing/bb_logo_branca.svg";
+                console.log(cur != comp)
+                if(cur != comp)
+                    $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
             } else {
-                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
-                console.log("ELSE")
+                var cur = $(".navbar-brand").find("img").attr("src");
+                var comp = base_url + "/assets/images/landing/bb_logo.svg";
+                console.log(cur != comp)
+                if(cur != comp)
+                    $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+                // console.log("ELSE")
                 $(".navbt").addClass("btn-outline-primary").removeClass("btn-outline-white")
                 $(".homebart").slideDown(300).addClass("show")
                 $("#znav-container")
@@ -100,7 +108,7 @@ $(document).on("scroll", function() {
         var scrollTop     = $(window).scrollTop(),
             elementOffset = $('.main-ref-anchor').offset().top,
             distance      = (elementOffset - scrollTop);
-        console.log(distance)
+        
         if(distance < 40) {
             console.log("o")
             $(".navbt").addClass("btn-outline-primary").removeClass("btn-outline-white")
@@ -108,16 +116,31 @@ $(document).on("scroll", function() {
             .addClass("sticky-top").removeClass("pos-absolute")
             .addClass("background-white")
             .addClass("color-primary")
-            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+            
+            var cur = $(".navbar-brand").find("img").attr("src");
+            var comp = base_url + "/assets/images/landing/bb_logo.svg";
+            if(cur != comp)
+                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
                
         } else {
+            console.log(distance)
             console.log("i")
-            $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
-               
+            var cur = $(".navbar-brand").find("img").attr("src");
+            var comp = base_url + "/assets/images/landing/bb_logo.svg";
+            if(cur != comp) {
+                // $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+                console.log(" tesafdsa1")
+            }
+            else {
+                console.log(" tesafdsa2")
+            }
             if(distance > 40 && $(".homebart").hasClass("show")) {
                 console.log("e")
                 $(".navbt").removeClass("btn-outline-primary").addClass("btn-outline-white")
-                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
+                var cur = $(".navbar-brand").find("img").attr("src");
+                var comp = base_url + "/assets/images/landing/bb_logo.svg";
+                if(cur != comp)
+                    $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo.svg")
                
             
                 $("#znav-container")
@@ -125,8 +148,17 @@ $(document).on("scroll", function() {
                 // .addClass("background-white")
                 .addClass("color-primary")
             } else {
-                console.log("a")
-                $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+                // console.log("a")
+                var cur = $(".navbar-brand").find("img").attr("src");
+                var comp = base_url + "/assets/images/landing/bb_logo_branca.svg";
+                console.log(cur != comp)
+                console.log(comp)
+                console.log(cur)
+                if(cur != comp)
+                    $(".navbar-brand").find("img").attr("src", base_url + "/assets/images/landing/bb_logo_branca.svg")
+                else {
+                    console.log("noo")
+                }
                 $(".navbt").removeClass("btn-outline-primary").addClass("btn-outline-white")
             
                 $("#znav-container")

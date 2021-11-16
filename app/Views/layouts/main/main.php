@@ -23,26 +23,28 @@
         <!--    Stylesheets-->
         <!--    =============================================-->
         <!-- Default stylesheets-->
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://code.ionicframework.com">
         <link href="<?= base_url("assets/lib/bootstrap/dist/css/bootstrap.min.css") ?>" rel="stylesheet">
         <!-- Template specific stylesheets-->
         
         <!-- <link href="<?= base_url("assets/css/bs-stepper.min.css") ?>" rel="stylesheet"> -->
         <link href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
-        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link async href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link async href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
+        <link async href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
         <link href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/remodal/dist/remodal.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/remodal/dist/remodal-default-theme.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/flexslider/flexslider.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/remodal/dist/remodal.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/remodal/dist/remodal-default-theme.css") ?>" rel="stylesheet">
+        <link async href="<?= base_url("assets/lib/flexslider/flexslider.css") ?>" rel="stylesheet">
+        <link defer rel="preload" as="style" data-href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
         <!-- Main stylesheet and color file-->
-        <link href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
-        <link href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
+        <link async rel="preload" as="style" data-href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
+        <link async rel="preload" as="style" data-href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
+        <link async rel="preload" as="style" data-href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
         <?= $this->renderSection('cCss') ?>
         <link href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
         
@@ -100,22 +102,23 @@
         <script src="<?= base_url("assets/lib/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
         <!-- <script src="<?= base_url("assets/js/bs-stepper.min.js") ?>"></script> -->
         <script src="<?= base_url("assets/lib/loaders.css/loaders.css.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
+        <script type="module" defer src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
+        <script defer src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
+        <script type="module" defer src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
         <script src="<?= base_url("assets/lib/CustomEase.min.js") ?>"></script>
-        <script src="<?= base_url("assets/js/config.js") ?>"></script>
+        
         <script src="<?= base_url("assets/js/zanimation.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
-        <script src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
+        <script type="module" async src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
+        <script rel="preload" defer data-src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
+        <script rel="preload" defer data-src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
         <script src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
-        <script src="<?= base_url("assets/js/core.js") ?>"></script>
-        <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
+        <script rel="preload" defer data-src="<?= base_url("assets/js/core.js") ?>"></script>
+        <script defer rel="preload" data-src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
-        <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
-        <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
-        <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
+        <script async src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+        <script async src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
+        <script async src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
+        <script rel="preload" async  src="<?= base_url("assets/js/config.js") ?>"></script>
         <?= $this->renderSection('cScripts') ?>
         
         <script>
