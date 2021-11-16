@@ -102,23 +102,23 @@
         <script src="<?= base_url("assets/lib/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
         <!-- <script src="<?= base_url("assets/js/bs-stepper.min.js") ?>"></script> -->
         <script src="<?= base_url("assets/lib/loaders.css/loaders.css.js") ?>"></script>
-        <script type="module" defer src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
-        <script defer src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
-        <script type="module" defer src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
         <script src="<?= base_url("assets/lib/CustomEase.min.js") ?>"></script>
         
         <script src="<?= base_url("assets/js/zanimation.js") ?>"></script>
-        <script type="module" async src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
-        <script rel="preload" defer data-src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
-        <script rel="preload" defer data-src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
+        <script src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
         <script src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
-        <script rel="preload" defer data-src="<?= base_url("assets/js/core.js") ?>"></script>
-        <script defer rel="preload" data-src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
+        <script src="<?= base_url("assets/js/core.js") ?>"></script>
+        <script src="<?= base_url("assets/js/main.js?". time())  ?>"></script>
         <script src="<?= base_url("assets/js/aos.js") ?>"></script>
-        <script async src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
-        <script async src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
-        <script async src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
-        <script rel="preload" async  src="<?= base_url("assets/js/config.js") ?>"></script>
+        <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+        <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
+        <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
+        <script src="<?= base_url("assets/js/config.js") ?>"></script>
         <?= $this->renderSection('cScripts') ?>
         
         <script>
