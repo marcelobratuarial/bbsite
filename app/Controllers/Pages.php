@@ -40,7 +40,7 @@ class Pages extends BaseController
 		foreach($res as $m) {
 			$responses .=  $m["modeloCarro"]. "|";
 		}
-		$responses = rtrim($responses, "|");
+		// $responses = rtrim($responses, "|");
 		// $responses = $res["IDCodigo"]."|".$res["RazaoSocial"]."|".$res["PessoaContato"]."|".$res["Telefone"]."|".$res["Email"]."|".$res["Refaturado"];
 		
 		echo $responses;
