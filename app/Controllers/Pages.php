@@ -241,7 +241,7 @@ class Pages extends BaseController
 		$config['mailType'] = 'html';
 		$config['SMTPTimeout'] = '20';
 		$config['protocol'] = 'smtp';
-		$config['CRLF'] = "\r\n";
+		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
 		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
 		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
