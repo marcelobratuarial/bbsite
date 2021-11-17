@@ -33,7 +33,7 @@ class Pages extends BaseController
 		
 		$cod = $this->request->getPost("cod");
 
-		$query = $db->query("SELECT * FROM modeloCarro where codMontadora = '".$cod."'");
+		$query = $db->query("SELECT * FROM modeloCarro where codMontadora = '".$cod."' order by modeloCarro ASC");
         
 		$res = $query->getResultArray();
 		$responses = "";
