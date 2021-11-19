@@ -41,6 +41,7 @@
                 Pesquisa: <input type="text" name="q" id="q">
                 <input type="submit" value="Go!">
             </form>
+            <?php if(isset($result)) :?>
             <div class="result">
                 <?php //print_r($result); ?>
                 <table>
@@ -83,6 +84,7 @@
                 
                
             </div>
+            <?php endif ?>
         </div>
         
     </div>
