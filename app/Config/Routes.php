@@ -33,9 +33,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-$routes->get('voffice', 'TempRes::index');
-$routes->post('/voffice', 'TempRes::find/$1');
 $routes->get('/voffice/open/(:num)', 'TempRes::open/$1');
+$routes->get('/voffice/find', 'TempRes::find');
+$routes->get('voffice', 'TempRes::index');
 
 
 

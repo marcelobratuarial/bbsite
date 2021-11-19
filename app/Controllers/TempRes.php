@@ -10,7 +10,9 @@ class TempRes extends BaseController
 		return view("tempRes/index");
 	}
 	public function find() {
-		// print_r($this->request->getVar("q"));exit;
+		// echo $this->request->getVar("q");
+		// print_r($q);
+		// exit;
 		$db = \Config\Database::connect('atuarial');
 		$q = explode(" ",$this->request->getVar("q"));
 		$qr = '';

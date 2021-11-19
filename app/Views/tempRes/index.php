@@ -37,7 +37,7 @@
 <body>
     <div class="wrap">
         <div class="formBox">
-            <form action="<?= base_url("voffice")?>" method="post">
+            <form action="<?= base_url("voffice/find")?>" method="get">
                 Pesquisa: <input type="text" name="q" id="q">
                 <input type="submit" value="Go!">
             </form>
