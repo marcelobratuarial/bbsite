@@ -36,7 +36,7 @@
     <?php /*<link async rel="preload" data-href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet"> */ ?>
     <link defer rel="preload" as="font" data-href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link defer rel="preload" as="font" data-href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
-    <link defer rel="preload" as="font" data-href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link defer rel="preload" as="font" data-href="<?= base_url("assets/lib/ionicons-2.0.1/css/ionicons.min.css") ?>" rel="stylesheet">
     <link async href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
     <link async rel="preload" as="font" href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
     <link defer href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
@@ -101,29 +101,29 @@
     <!--  -->
     <!--    JavaScripts-->
     <!--    =============================================-->
-    <script src="<?= base_url("assets/js/modernizr.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/modernizr.min.js") ?>"></script>
     <script src="<?= base_url("assets/lib/jquery/dist/jquery.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/bootstrap/dist/js/popper.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/bootstrap/dist/js/popper.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/bootstrap/dist/js/bootstrap.min.js") ?>"></script>
     <!-- <script src="<?= base_url("assets/js/bs-stepper.min.js") ?>"></script> -->
-    <script src="<?= base_url("assets/lib/loaders.css/loaders.css.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/CustomEase.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/loaders.css/loaders.css.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/imagesloaded/imagesloaded.pkgd.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/gsap/src/minified/TweenMax.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/CustomEase.min.js") ?>"></script>
 
-    <script src="<?= base_url("assets/js/zanimation.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
-    <script src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
-    <script src="<?= base_url("assets/js/core.js") ?>"></script>
-    <script src="<?= base_url("assets/js/main.js?" . time())  ?>"></script>
-    <script src="<?= base_url("assets/js/aos.js") ?>"></script>
-    <script src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
-    <script src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
-    <script src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
-    <script src="<?= base_url("assets/js/config.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/zanimation.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/owl.carousel/dist/owl.carousel.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/remodal/dist/remodal.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/lightbox2/dist/js/lightbox.js") ?>"></script>
+    <script defer src="<?= base_url("assets/lib/flexslider/jquery.flexslider-min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/core.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/main.js?" . time())  ?>"></script>
+    <script defer src="<?= base_url("assets/js/aos.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/jquery.maskedinput.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/jquery.mask.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/bootstrap-datepicker.min.js") ?>"></script>
+    <script defer src="<?= base_url("assets/js/config.js") ?>"></script>
     <?= $this->renderSection('cScripts') ?>
 
     <script>
