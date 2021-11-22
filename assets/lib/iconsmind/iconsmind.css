@@ -5,6 +5,7 @@
 		url('iconsmind.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 [class^="icon-"], [class*=" icon-"] {
