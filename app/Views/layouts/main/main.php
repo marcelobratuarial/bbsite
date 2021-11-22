@@ -2,6 +2,9 @@
 <html lang="en-US">
 
 <head>
+    <style>
+        .CustomLoader.active{opacity:1;display:-webkit-box;display:-ms-flexbox;display:flex;z-index:10001!important}.CustomLoader{position:fixed;top:0;left:0;right:0;display:flex;bottom:0;z-index:0;background-color:#fff;opacity:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#Loader{width:150px;height:auto}
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,24 +33,24 @@
     <!-- Template specific stylesheets-->
 
     <!-- <link href="<?= base_url("assets/css/bs-stepper.min.css") ?>" rel="stylesheet"> -->
-    <link href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link rel="preload" as="font" href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
-    <link rel="preload" as="font" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
-    <link rel="preload" as="font" href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/remodal/dist/remodal.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/remodal/dist/remodal-default-theme.css") ?>" rel="stylesheet">
-    <link async href="<?= base_url("assets/lib/flexslider/flexslider.css") ?>" rel="stylesheet">
-    <link href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
+    <?php /*<link async rel="preload" data-href="<?= base_url("assets/lib/loaders.css/loaders.min.css") ?>" rel="stylesheet"> */ ?>
+    <link defer rel="preload" as="font" data-href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link defer rel="preload" as="font" data-href="<?= base_url("assets/lib/iconsmind/iconsmind.css") ?>" rel="stylesheet">
+    <link defer rel="preload" as="font" data-href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link async href="<?= base_url("assets/lib/hamburgers/dist/hamburgers.min.css") ?>" rel="stylesheet">
+    <link async rel="preload" as="font" href="<?= base_url("assets/lib/font-awesome/css/font-awesome.min.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.carousel.min.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/remodal/dist/remodal.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/remodal/dist/remodal-default-theme.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/flexslider/flexslider.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
     <!-- Main stylesheet and color file-->
-    <link async href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
-    <link async href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
-    <link async href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
+    <link defer href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
+    <?php /*<link defer href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet"> */ ?>
+    <link defer href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
     <?= $this->renderSection('cCss') ?>
-    <link async href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
+    <?php /*<link defer href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet"> */ ?>
 
 
 
@@ -165,7 +168,7 @@
         })
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        function lim () {
             var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
             console.log(lazyImages)
             if ("IntersectionObserver" in window) {
@@ -193,7 +196,8 @@
                 console.log("dddd")
                 // Possibly fall back to event handlers here
             }
-        });
+        }
+        document.addEventListener("DOMContentLoaded", lim, {passive: true});
         $(document).ready(function() {
             
             setTimeout(() => {
