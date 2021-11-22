@@ -3,6 +3,9 @@
 
 <head>
     <style>
+        * {
+            font-display: optional
+        }
         .CustomLoader.active{opacity:1;display:-webkit-box;display:-ms-flexbox;display:flex;z-index:10001!important}.CustomLoader{position:fixed;top:0;left:0;right:0;display:flex;bottom:0;z-index:0;background-color:#fff;opacity:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#Loader{width:150px;height:auto}
     </style>
     <meta charset="utf-8">
@@ -47,7 +50,7 @@
     <link defer href="<?= base_url("assets/lib/lightbox2/dist/css/lightbox.css") ?>" rel="stylesheet">
     <!-- Main stylesheet and color file-->
     <link defer href="<?= base_url("assets/css/bootstrap-datepicker.3.2.css") ?>" rel="stylesheet">
-    <?php /*<link defer href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet"> */ ?>
+    <link defer href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet">
     <link defer href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
     <?= $this->renderSection('cCss') ?>
     <?php /*<link defer href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet"> */ ?>
@@ -197,7 +200,7 @@
                 // Possibly fall back to event handlers here
             }
         }
-        document.addEventListener("DOMContentLoaded", lim, {passive: true});
+        document.addEventListener("DOMContentLoaded", lim, {capture: true});
         $(document).ready(function() {
             
             setTimeout(() => {
