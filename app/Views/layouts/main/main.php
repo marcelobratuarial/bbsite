@@ -50,7 +50,7 @@
     <?php /*<link defer href="<?= base_url("assets/css/aos.css") ?>" rel="stylesheet"> */ ?>
     <link defer href="<?= base_url("assets/css/style.css") ?>" rel="stylesheet">
     <?= $this->renderSection('cCss') ?>
-    <link defer href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet">
+    <?php /*<link defer href="<?= base_url("assets/css/custom.css") ?>" rel="stylesheet"> */ ?>
 
 
 

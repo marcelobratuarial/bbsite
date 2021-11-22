@@ -460,6 +460,9 @@
 
 <?= $this->section('cCss') ?>
 <!-- Carro Reserva CSS -->
+<style>
+    .lds-hourglass{display:inline-block;position:relative;width:80px;height:80px}.lds-hourglass:after{content:" ";display:block;border-radius:50%;width:0;height:0;margin:8px;box-sizing:border-box;background-color:#0987ff;border:32px solid #e33f2c;border-color:#e33f2c transparent #e33f2c transparent;animation:lds-hourglass 1.2s infinite}@keyframes lds-hourglass{0%{transform:rotate(0);animation-timing-function:cubic-bezier(0.55,0.055,0.675,0.19)}50%{transform:rotate(900deg);animation-timing-function:cubic-bezier(0.215,0.61,0.355,1)}100%{transform:rotate(1800deg)}}#formLoading,#formSuccess{display:none}#formSuccess .icon-message{color:#4d9436}.CustomLoader.active{opacity:1;display:-webkit-box;display:-ms-flexbox;display:flex;z-index:10001!important}.CustomLoader{position:fixed;top:0;left:0;right:0;display:flex;bottom:0;z-index:0;background-color:#fff;opacity:0;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}#Loader{width:150px;height:auto}
+</style>
 <link href="<?= base_url("assets/css/area-cliente/pet.css") ?>" rel="stylesheet">
 <?= $this->endSection() ?>
 
