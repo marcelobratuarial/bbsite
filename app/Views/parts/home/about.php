@@ -51,7 +51,7 @@
                         <div class="col-11 col-md-12">
                             <!-- <div class="pos-relative mt-4 py-5 py-md-11"> -->
                             <div class="pos-relative mt-2 py-2 py-md-2">
-                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/637175893?h=85d85d87f6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Conhe&amp;ccedil;a a Brasil Benef&amp;iacute;cios"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                <div style="padding:56.25% 0 0 0;position:relative;"><iframe loading="lazy" src="https://player.vimeo.com/video/637175893?h=85d85d87f6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Conhe&amp;ccedil;a a Brasil Benef&amp;iacute;cios"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                                 <!-- <iframe width="900" height="506" src="https://www.youtube.com/embed/HHSQUEvSRAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                                 <?php /*<div class="background-holder radius-secondary" style="background-image:url(<?= base_url("assets/images/j.webp") ?>);"></div>
                                 <!--/.background-holder-->
