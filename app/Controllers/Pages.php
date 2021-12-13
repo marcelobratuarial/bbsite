@@ -239,19 +239,19 @@ class Pages extends BaseController
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
-		$config['SMTPTimeout'] = '20';
-		$config['protocol'] = 'smtp';
+		// $config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'mail';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
-		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
-		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
-		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
-		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		// $config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		// $config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		// $config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		// $config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		// $config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('SOLICITAÇÃO DE CONTRATAÇÃO APP');
-		$email->setFrom('contato@brasilbeneficios.club', "Site");
+		$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 		
 
@@ -279,7 +279,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO DE SOLICITAÇÃO DE CONTRATAÇÃO APP');
-				$email->setFrom('contato@brasilbeneficios.club', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_app', $formData);
 				
@@ -430,19 +430,19 @@ class Pages extends BaseController
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
-		$config['SMTPTimeout'] = '20';
-		$config['protocol'] = 'smtp';
+		// $config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'mail';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
-		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
-		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
-		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
-		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		// $config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		// $config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		// $config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		// $config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		// $config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('AVISO DE SINISTRO CARRO');
-		$email->setFrom('contato@brasilbeneficios.club', "Site");
+		$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 
 		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='carro_reserva.php'");
@@ -504,7 +504,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO AVISO DE SINISTRO CARRO');
-				$email->setFrom('contato@brasilbeneficios.club', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_carro_reserva', $formData);
 				
@@ -613,19 +613,19 @@ class Pages extends BaseController
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
-		$config['SMTPTimeout'] = '20';
-		$config['protocol'] = 'smtp';
+		// $config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'mail';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
-		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
-		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
-		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
-		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		// $config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		// $config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		// $config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		// $config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		// $config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('AVISO DE ACIONAMENTO FUNERAL');
-		$email->setFrom('contato@brasilbeneficios.club', "Site");
+		$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 
 		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='funeral.php'");
@@ -685,7 +685,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO AVISO DE ACIONAMENTO FUNERAL');
-				$email->setFrom('contato@brasilbeneficios.club', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_funeral', $formData);
 				
@@ -826,19 +826,19 @@ class Pages extends BaseController
 
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
-		$config['SMTPTimeout'] = '20';
-		$config['protocol'] = 'smtp';
+		// $config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'mail';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
-		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
-		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
-		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
-		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		// $config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		// $config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		// $config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		// $config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		// $config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('AVISO DE SINISTRO VIDRO');
-		$email->setFrom('contato@brasilbeneficios.club', "Site");
+		$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 
 		
@@ -888,7 +888,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO AVISO DE SINISTRO VIDRO');
-				$email->setFrom('contato@brasilbeneficios.club', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_vidros', $formData);
 				
@@ -975,22 +975,21 @@ class Pages extends BaseController
         
 		$email = \Config\Services::email();
 		$config['mailType'] = 'html';
-		$config['SMTPTimeout'] = '20';
-		$config['protocol'] = 'smtp';
+		// $config['SMTPTimeout'] = '20';
+		$config['protocol'] = 'mail';
 		// $config['CRLF'] = "\r\n";
 		$config['newline'] = "\r\n";
-		$config['SMTPHost'] = $_SERVER['SMTP_HOST'];
-		$config['SMTPUser'] = $_SERVER['SMTP_USER'];
-		$config['SMTPPass'] = $_SERVER['SMTP_PASS'];
-		$config['SMTPPort'] = $_SERVER['SMTP_PORT'];
-		$config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
+		// $config['SMTPHost'] = $_SERVER['SMTP_HOST'];
+		// $config['SMTPUser'] = $_SERVER['SMTP_USER'];
+		// $config['SMTPPass'] = $_SERVER['SMTP_PASS'];
+		// $config['SMTPPort'] = $_SERVER['SMTP_PORT'];
+		// $config['SMTPCrypto'] = $_SERVER['SMTP_CRYPTO'];
 		$email->initialize($config);
 
 		$email->setSubject('PEDIDO DE PET BRASIL ATUARIAL');
-		$email->setFrom('contato@brasilbeneficios.club', "Site");
+		$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 		$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 
-		
 		$query = $db->query("select usuarios.Email, usuarios.Nome from usuarios_acessos inner join usuarios on usuarios.IDCodigo = usuarios_acessos.IDUsuario where Pagina='pet.php'");
 		$res = $query->getResultArray();
 		
@@ -1016,7 +1015,7 @@ class Pages extends BaseController
 				
 				$email->clear();
 				$email->setSubject('CONFIRMAÇÃO PEDIDO DE PET BRASIL ATUARIAL');
-				$email->setFrom('contato@brasilbeneficios.club', "Site");
+				$email->setFrom('contato@brasilbeneficios.club', "Brasil Benefícios");
 				$email->setTo('marcelo@agenciabrasildigital.com.br', "Marcelo Dênis");
 				$message = view('area-cliente/mail/to_client_pet', $formData);
 				
