@@ -357,11 +357,11 @@ class Pages extends BaseController
 		// exit;
 		
 		$db = \Config\Database::connect('atuarial');
-		$query = "INSERT INTO carro_reserva (DataSolicitacao, IDEmpresa, SolicitanteEmpresa, TelefoneEmpresa, 
+		$query = "INSERT INTO carro_reserva (DataSolicitacao, DataAbertura, IDEmpresa, SolicitanteEmpresa, TelefoneEmpresa, 
 		EmailEmpresa, Nome, CPF, Email, Telefone, TipoSolicitacao, Placa, Chassi, QuantidadeDeDiarias, 
 		EstadoRetirada, CidadeRetirada, DataRetirada, HoraRetirada, NomeResponsavelCartao, 
-		CPFResponsavelCartao, CEP, Logradouro, Bairro, Cidade, Estado, Numero, Complemento) 
-		values (CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		CPFResponsavelCartao, CEP, Logradouro, Bairro, Cidade, Estado, Numero, Complemento, ResponsavelPelaReserva, AgenciaAbertura, DiariasAutorizadas,UFAbertura,CidadeAbertura) 
+		values (CURRENT_DATE, CURRENT_DATE, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		// $formData['IDEmpresa'] . ",'" . 
 		// $formData['SolicitanteEmpresa'] . "','".
 		// $formData['TelefoneEmpresa'] . "','" .
@@ -388,31 +388,36 @@ class Pages extends BaseController
 		// $formData['Numero'] . "','" .
 		// $formData['Complemento'] . "')";
 		$dataToSave = Array(
-			$formData['IDEmpresa'],
-			$formData['SolicitanteEmpresa'],
-			$formData['TelefoneEmpresa'],
-			$formData['EmailEmpresa'],
-			$formData['Nome'],
-			$formData['CPF'],
-			$formData['Email'],
-			$formData['Telefone'],
-			$formData['TipoSolicitacao'],
-			$formData['Placa'],
-			$formData['Chassi'],
-			$formData['QuantidadeDeDiarias'],
-			$formData['EstadoRetirada'],
-			$formData['CidadeRetirada'],
-			$formData['DataRetirada'],
-			$formData['HoraRetirada'],
-			$formData['NomeResponsavelCartao'],
-			$formData['CPFResponsavelCartao'],
-			$formData['CEP'],
-			$formData['Logradouro'],
-			$formData['Bairro'], 
-			$formData['Cidade'],
-			$formData['Estado'],
-			$formData['Numero'],
-			$formData['Complemento']
+			$formData['IDEmpresa'], //OK
+			$formData['SolicitanteEmpresa'], //OK
+			$formData['TelefoneEmpresa'], //OK
+			$formData['EmailEmpresa'], //OK
+			$formData['Nome'], //OK
+			$formData['CPF'], //OK
+			$formData['Email'], //OK
+			$formData['Telefone'], //OK
+			$formData['TipoSolicitacao'], //OK
+			$formData['Placa'], //OK
+			$formData['Chassi'], //OK
+			$formData['QuantidadeDeDiarias'], //OK
+			$formData['EstadoRetirada'], //OK
+			$formData['CidadeRetirada'], //OK
+			$formData['DataRetirada'], //OK
+			$formData['HoraRetirada'], //OK
+			$formData['NomeResponsavelCartao'], //OK
+			$formData['CPFResponsavelCartao'], //OK
+			$formData['CEP'], //OK
+			$formData['Logradouro'], //OK
+			$formData['Bairro'], //OK
+			$formData['Cidade'], //OK
+			$formData['Estado'], //OK
+			$formData['Numero'], //OK
+			$formData['Complemento'], //OK
+			$formData['Nome'], //OK
+			$formData['Cidade'], //OK
+			$formData['QuantidadeDeDiarias'], //OK
+			$formData['Estado'], //OK
+			$formData['Cidade'], //OK
 		);
 		$qry = $db->query($query, $dataToSave);
         $id = $db->insertID();
