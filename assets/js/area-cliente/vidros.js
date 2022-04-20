@@ -425,7 +425,7 @@ $(document).ready(function() {
                     removeClass("icon-Danger").addClass("icon-Yes")
                     $("#formSuccess").find("h4").text("Sucesso!")
                     var m = 'Sua solicitação foi realizada com sucesso!<br>'+
-                    'Em até 48 horas entraremos em contato para fazer a liberação do seu carro reserva!';
+                    'Em até 48 horas entraremos em contato!';
                     $("#formSuccess").find(".message-response").html(m)
                     
                     console.log(data)
