@@ -158,7 +158,7 @@ img[class="image"] {
   <tr>
     <td style="text-align:center; padding: 40px;">
       <a href="<?= base_url("/")?>" title="Brasil Atuarial">
-        <img src="http://bplink.com.br/projetos/bbsitegit/assets/images/logo-dark.png" alt="">
+        <img src="https://brasilbeneficios.club/assets/images/landing/bb_logo.svg" alt="">
       </a>
     </td>
   </tr>
