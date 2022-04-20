@@ -399,7 +399,7 @@
                                 <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
                                 <div class="text-center">
                                     <div class="message-response">A sua solicitação foi enviada com sucesso!<br>
-                                    Em breve enviaremos boleto e proposta para efetivação da contratação do Seguro APP.
+                                    Em breve enviaremos boleto e proposta para efetivação da contratação do Seguro APP. 
                                     </div>
                                     <hr>
                                     <p class="message-response-try-again-btn">

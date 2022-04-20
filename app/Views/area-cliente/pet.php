@@ -248,7 +248,7 @@
                                 <h4 style="margin: 20px 0; font-weight: 600">Sucesso!</h4>
                                 <div class="text-center">
                                     <div class="message-response">Sua solicitação foi realizada com sucesso.<br>
-                                            Em até 48 horas entraremos em contato!
+                                            Em até 48 horas entraremos em contato! 
                                     </div>
                                     <hr>
                                     <p class="message-response-try-again-btn">
