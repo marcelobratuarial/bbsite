@@ -13,7 +13,7 @@
         <div class="colrp3 col-lg-6 d-flex align-items-center justify-content-center pr-0">
 
             <div class="mt-3 mr-4 background-white radius-secondary">
-                <h5 class="mb-3">Endereço</h5>Av. Sebastião de Brito,<br> 805, Dona Clara, BH 
+                <h5 class="mb-3">Endereço</h5>Rua Batista Santiago, 805<br>Liberdade, Belo Horizonte/MG
             </div>
 
             <div class=" background-white radius-secondary">
@@ -21,7 +21,7 @@
                 <a class="d-inline-block mt-2" href="#">
                     <span class="fa fa-facebook-square fs-2 mx-2 color-primary"></span>
                 </a>
-                <a class="d-inline-block mt-2" href="#">
+                <a class="d-inline-block mt-2" target="_blank" href="https://www.instagram.com/beneficiosbrasilatuarial/">
                     <span class="fa fa-instagram fs-2 ml-2 color-primary"></span>
                 </a>
             </div>
