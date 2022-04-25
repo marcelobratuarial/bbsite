@@ -13,7 +13,7 @@
         <div class="colrp3 col-lg-6 d-flex align-items-center justify-content-center pr-0">
 
             <div class="mt-3 mr-4 background-white radius-secondary">
-                <h5 class="mb-3">Endereço</h5>Rua Batista Santiago, 805<br>Liberdade, Belo Horizonte/MG
+                <h5 class="mb-3">Endereço</h5>Rua Batista Santiago, 81<br>Liberdade, Belo Horizonte/MG
             </div>
 
             <div class=" background-white radius-secondary">
